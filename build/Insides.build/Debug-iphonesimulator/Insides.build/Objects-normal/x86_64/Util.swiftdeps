@@ -7,6 +7,7 @@ provides-member:
 - ["7Insides4UtilC", ""]
 provides-dynamic-lookup:
 - "isValidEmail"
+- "showAlert"
 - "styleSocialButton"
 - "styleTextField"
 depends-top-level:
@@ -23,6 +24,8 @@ depends-top-level:
 - !private "NSPredicate"
 - "String"
 - !private "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
 - "UIButton"
 - !private "UIColor"
 - "UITextField"
@@ -54,6 +57,8 @@ depends-member:
 - !private ["So6CGRectV", "init"]
 - !private ["So6CGRectV", "width"]
 - !private ["So6CGSizeV", "init"]
+- !private ["s7CVarArgP", "Style"]
+- !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addSublayer"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "borderStyle"]
@@ -68,6 +73,8 @@ depends-member:
 - !private ["s7CVarArgP", "shadowOffset"]
 - !private ["s7CVarArgP", "shadowOpacity"]
 - !private ["s7CVarArgP", "shadowRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "Style"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "addSublayer"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "borderStyle"]
@@ -87,6 +94,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "Style"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addSublayer"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "borderStyle"]
@@ -107,10 +116,14 @@ depends-member:
 - !private ["SE", "height"]
 - !private ["SE", "init"]
 - !private ["SE", "width"]
+- !private ["SQ", "Style"]
+- !private ["SQ", "addAction"]
 - !private ["SQ", "addSublayer"]
+- !private ["SQ", "alert"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "borderStyle"]
 - !private ["SQ", "cgColor"]
+- !private ["SQ", "default"]
 - !private ["SQ", "evaluate"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "height"]
@@ -124,10 +137,14 @@ depends-member:
 - !private ["SQ", "shadowOpacity"]
 - !private ["SQ", "shadowRadius"]
 - !private ["SQ", "width"]
+- !private ["SH", "Style"]
+- !private ["SH", "addAction"]
 - !private ["SH", "addSublayer"]
+- !private ["SH", "alert"]
 - !private ["SH", "backgroundColor"]
 - !private ["SH", "borderStyle"]
 - !private ["SH", "cgColor"]
+- !private ["SH", "default"]
 - !private ["SH", "evaluate"]
 - !private ["SH", "frame"]
 - !private ["SH", "init"]
@@ -139,6 +156,8 @@ depends-member:
 - !private ["SH", "shadowOffset"]
 - !private ["SH", "shadowOpacity"]
 - !private ["SH", "shadowRadius"]
+- !private ["So8NSCodingP", "Style"]
+- !private ["So8NSCodingP", "addAction"]
 - !private ["So8NSCodingP", "addSublayer"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "borderStyle"]
@@ -153,16 +172,22 @@ depends-member:
 - !private ["So8NSCodingP", "shadowOffset"]
 - !private ["So8NSCodingP", "shadowOpacity"]
 - !private ["So8NSCodingP", "shadowRadius"]
+- !private ["So9NSCopyingP", "Style"]
 - !private ["So9NSCopyingP", "cgColor"]
 - !private ["So9NSCopyingP", "evaluate"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "lightGray"]
+- !private ["So26NSExtensionRequestHandlingP", "Style"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "lightGray"]
 - !private ["So21NSItemProviderWritingP", "cgColor"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "lightGray"]
+- !private ["So8NSObjectC", "Style"]
+- !private ["So8NSObjectC", "addAction"]
 - !private ["So8NSObjectC", "addSublayer"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "borderStyle"]
@@ -177,6 +202,8 @@ depends-member:
 - !private ["So8NSObjectC", "shadowOffset"]
 - !private ["So8NSObjectC", "shadowOpacity"]
 - !private ["So8NSObjectC", "shadowRadius"]
+- !private ["So8NSObjectP", "Style"]
+- !private ["So8NSObjectP", "addAction"]
 - !private ["So8NSObjectP", "addSublayer"]
 - !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "borderStyle"]
@@ -205,21 +232,36 @@ depends-member:
 - !private ["So14NSSecureCodingP", "shadowOffset"]
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
 - !private ["So14NSSecureCodingP", "shadowRadius"]
+- !private ["SY", "alert"]
+- !private ["SY", "default"]
 - !private ["SY", "none"]
+- !private ["So22UIAlertControllerStyleV", "alert"]
+- !private ["So18UIAlertActionStyleV", "default"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "borderStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
+- !private ["So13UIAlertActionC", "Style"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["So17UIAlertControllerC", "Style"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
 - !private ["So12UIAppearanceP", "borderStyle"]
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "layer"]
+- !private ["So21UIAppearanceContainerP", "Style"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "borderStyle"]
 - !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So8UIButtonC", "layer"]
 - !private ["So7UIColorC", "cgColor"]
 - !private ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "lightGray"]
+- !private ["So18UIContentContainerP", "Style"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "init"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "borderStyle"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "frame"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "layer"]
@@ -232,8 +274,11 @@ depends-member:
 - !private ["So13UIDynamicItemP", "borderStyle"]
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "layer"]
+- !private ["So18UIFocusEnvironmentP", "Style"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "borderStyle"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So11UIFocusItemP", "borderStyle"]
 - !private ["So11UIFocusItemP", "frame"]
@@ -247,16 +292,31 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "borderStyle"]
 - !private ["So24UILargeContentViewerItemP", "frame"]
 - !private ["So24UILargeContentViewerItemP", "layer"]
+- !private ["So30UIPasteConfigurationSupportingP", "Style"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "borderStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- !private ["So11UIResponderC", "Style"]
+- !private ["So11UIResponderC", "addAction"]
 - !private ["So11UIResponderC", "borderStyle"]
 - !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
+- !private ["So30UIResponderStandardEditActionsP", "Style"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "borderStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "Style"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
+- !private ["So16UIStateRestoringP", "Style"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "init"]
 - !private ["So15UITextDraggableP", "borderStyle"]
 - !private ["So15UITextDraggableP", "frame"]
 - !private ["So15UITextDraggableP", "layer"]
@@ -275,27 +335,39 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "borderStyle"]
 - !private ["So34UITextPasteConfigurationSupportingP", "frame"]
 - !private ["So34UITextPasteConfigurationSupportingP", "layer"]
+- !private ["So18UITraitEnvironmentP", "Style"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "borderStyle"]
 - !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "Style"]
+- !private ["So23UIUserActivityRestoringP", "addAction"]
 - !private ["So23UIUserActivityRestoringP", "borderStyle"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So6UIViewC", "borderStyle"]
 - !private ["So6UIViewC", "frame"]
 - !private ["So6UIViewC", "layer"]
+- !private ["So16UIViewControllerC", "Style"]
+- !private ["So16UIViewControllerC", "addAction"]
+- !private ["So16UIViewControllerC", "init"]
 - ["7Insides4UtilC", "Bool"]
 - !private ["7Insides4UtilC", "CALayer"]
 - !private ["7Insides4UtilC", "CGRect"]
 - !private ["7Insides4UtilC", "CGSize"]
 - !private ["7Insides4UtilC", "NSPredicate"]
 - ["7Insides4UtilC", "String"]
+- !private ["7Insides4UtilC", "UIAlertAction"]
+- !private ["7Insides4UtilC", "UIAlertController"]
 - ["7Insides4UtilC", "UIButton"]
 - !private ["7Insides4UtilC", "UIColor"]
 - ["7Insides4UtilC", "UITextField"]
 - ["7Insides4UtilC", "deinit"]
 - ["7Insides4UtilC", "init"]
 - ["7Insides4UtilC", "isValidEmail"]
+- ["7Insides4UtilC", "showAlert"]
 - ["7Insides4UtilC", "styleSocialButton"]
 - ["7Insides4UtilC", "styleTextField"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -304,6 +376,8 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Style"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSublayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "borderStyle"]
@@ -318,6 +392,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Style"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addSublayer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "borderStyle"]
@@ -355,6 +431,7 @@ depends-nominal:
 - !private "SH"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - !private "So8NSObjectC"
@@ -362,12 +439,17 @@ depends-nominal:
 - !private "So11NSPredicateC"
 - !private "So14NSSecureCodingP"
 - !private "SY"
+- !private "So22UIAlertControllerStyleV"
+- !private "So18UIAlertActionStyleV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "So17UIAlertControllerC"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
 - !private "So8UIButtonC"
 - !private "So7UIColorC"
+- !private "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
 - !private "So17UICoordinateSpaceP"
@@ -381,6 +463,7 @@ depends-nominal:
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So16UIStateRestoringP"
 - !private "So15UITextDraggableP"
 - !private "So15UITextDroppableP"
 - !private "So11UITextFieldC"
@@ -390,6 +473,7 @@ depends-nominal:
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
+- !private "So16UIViewControllerC"
 - "7Insides4UtilC"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s26_ExpressibleByColorLiteralP"
@@ -502,4 +586,4 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c38e1cb57f0d2843b89aba3f88128b11"
+interface-hash: "bf17e0c1bb1ccab379ba925ce93166d1"

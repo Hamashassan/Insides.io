@@ -230,6 +230,9 @@ SWIFT_CLASS("_TtC7Insides24AddCounterViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+@class UIWindow;
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -239,6 +242,7 @@ SWIFT_CLASS("_TtC7Insides24AddCounterViewController")
 
 SWIFT_CLASS("_TtC7Insides11AppDelegate")
 @interface AppDelegate : UIResponder <GIDSignInDelegate, UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
@@ -258,6 +262,23 @@ SWIFT_CLASS("_TtC7Insides30AppSettingsTableViewController")
 - (void)viewDidLoad;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (IBAction)onDarkThemePress:(id _Nonnull)sender;
+- (IBAction)onBackPress:(id _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Insides22CalendarViewController")
+@interface CalendarViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified dateField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified fromField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified toField;
+- (void)viewDidLoad;
+- (void)donePress;
+- (void)donePress2;
+- (void)donePress3;
+- (IBAction)onDonePress:(id _Nonnull)sender;
 - (IBAction)onBackPress:(id _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -299,14 +320,26 @@ SWIFT_CLASS("_TtC7Insides29CounterSettingsViewController")
 @property (nonatomic, weak) IBOutlet UITableViewCell * _Null_unspecified counterHistoryCell;
 - (void)viewDidLoad;
 - (IBAction)onBackPress:(id _Nonnull)sender;
+- (IBAction)onSavePress:(id _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+SWIFT_CLASS("_TtC7Insides21DetailsViewController")
+@interface DetailsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified navigationTtile;
+- (void)viewDidLoad;
+- (IBAction)onCalendarPress:(id _Nonnull)sender;
+- (IBAction)onBackPress:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Insides18HomeViewController")
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (IBAction)didTapButton;
@@ -319,17 +352,19 @@ SWIFT_CLASS("_TtC7Insides18HomeViewController")
 @interface HomeViewController (SWIFT_EXTENSION(Insides)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)onCounterButtonPressWithSender:(UIButton * _Nonnull)sender;
 - (void)onCounterSettingsPressWithSender:(UIButton * _Nonnull)sender;
 @end
 
-@class UIWindow;
 @class UIScene;
+@class NSUserActivity;
 
 SWIFT_CLASS("_TtC7Insides13SceneDelegate")
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (void)scene:(UIScene * _Nonnull)scene willConnectToSession:(UISceneSession * _Nonnull)session options:(UISceneConnectionOptions * _Nonnull)connectionOptions;
+- (void)scene:(UIScene * _Nonnull)scene continueUserActivity:(NSUserActivity * _Nonnull)userActivity;
 - (void)sceneDidDisconnect:(UIScene * _Nonnull)scene;
 - (void)sceneDidBecomeActive:(UIScene * _Nonnull)scene;
 - (void)sceneWillResignActive:(UIScene * _Nonnull)scene;

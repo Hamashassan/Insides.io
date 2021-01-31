@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     
     
     
@@ -28,6 +28,9 @@ class HomeViewController: UIViewController {
         tableView?.backgroundView = nil;
         tableView?.isOpaque = false;
         tableView?.backgroundColor = .clear
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        
         
         
         
@@ -159,22 +162,71 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        print("Working")
+        
+        let vc = storyboard?.instantiateViewController(identifier:
+            "DetailsScreen") as! DetailsViewController
+        
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
+        //        vc.name = counter.counterName
+        //        vc.id = counter.id
+        //        vc.name = counter
+        //        vc.reciv
+        //        let vc = CounterSettingsViewController(name:"Hello")
+        //        vc.modalPresentationStyle = .formSheet
+        //        present(vc,animated: true)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
+    func incrementCounter(id:String){
+        
+        print("called from siri \(id)")
+        
+        let id2 =  "258D98B7-0B56-4567-8F72-6D0E6FE1C158"
+        
+        ref.child("users").child(userID!).child("counters").child(id).observeSingleEvent(of: .value, with: { (snap) in
+            
+            if let mainObj = snap.value as? [String: AnyObject]{
+                let count = mainObj["counter"] as? Int
+                
+                let userInfoDictionary = ["counter":count! + 1] as [String : Any]
+                
+                self.ref.child("users").child(self.userID!).child("counters").child(id).updateChildValues(userInfoDictionary)
+                
+                
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+    }
     
     
     
     @objc func onCounterButtonPress(sender: UIButton){
         
+        
         let counter = self.counters[sender.tag]
         
         dump("mycounter \(counter.id)")
+        
+        
         
         let userInfoDictionary = ["counter":counter.count + 1] as [String : Any]
         
         self.ref.child("users").child(userID!).child("counters").child(counter.id).updateChildValues(userInfoDictionary)
         
-        print()
+        
+        
     }
+    
     
     @objc func onCounterSettingsPress(sender: UIButton){
         
@@ -185,9 +237,10 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         let vc = storyboard?.instantiateViewController(identifier: "CounterSettings") as! CounterSettingsViewController
         
         vc.name = counter.counterName
-//        vc.name = counter
+        vc.id = counter.id
+        //        vc.name = counter
         //        vc.reciv
-//        let vc = CounterSettingsViewController(name:"Hello")
+        //        let vc = CounterSettingsViewController(name:"Hello")
         vc.modalPresentationStyle = .formSheet
         present(vc,animated: true)
         

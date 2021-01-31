@@ -24,6 +24,8 @@
 		AE7EA1DC25C31E85000EDFC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE7EA1DB25C31E85000EDFC6 /* GoogleService-Info.plist */; };
 		AEC299B925C52158009BC629 /* CounterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */; };
 		AED584C725C2F1BF002824BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED584C625C2F1BF002824BA /* SignUpViewController.swift */; };
+		AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */; };
+		AEE68CF525C62665008AAA71 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF425C62664008AAA71 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,10 @@
 		AE65810025C21D140041AA48 /* CounterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModal.swift; sourceTree = "<group>"; };
 		AE7EA1DB25C31E85000EDFC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/29 Day Beginner Challenge/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterSettingsViewController.swift; sourceTree = "<group>"; };
+		AEC299BA25C56CEF009BC629 /* Insides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Insides.entitlements; sourceTree = "<group>"; };
 		AED584C625C2F1BF002824BA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AEE68CF425C62664008AAA71 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 		AE44626F25B501360082BCD0 /* Insides */ = {
 			isa = PBXGroup;
 			children = (
+				AEC299BA25C56CEF009BC629 /* Insides.entitlements */,
 				AE1CC26425C3A3E400194FC4 /* Helpers */,
 				AE7EA1DB25C31E85000EDFC6 /* GoogleService-Info.plist */,
 				AE44627025B501360082BCD0 /* AppDelegate.swift */,
@@ -125,6 +131,8 @@
 				AE65810025C21D140041AA48 /* CounterModal.swift */,
 				AED584C625C2F1BF002824BA /* SignUpViewController.swift */,
 				AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */,
+				AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */,
+				AEE68CF425C62664008AAA71 /* CalendarViewController.swift */,
 			);
 			path = Insides;
 			sourceTree = "<group>";
@@ -274,6 +282,8 @@
 				AE6580FF25C21B930041AA48 /* CounterCell.swift in Sources */,
 				AE44627325B501360082BCD0 /* SceneDelegate.swift in Sources */,
 				AE6580F925C0E58A0041AA48 /* ColorsCollectionViewCell.swift in Sources */,
+				AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */,
+				AEE68CF525C62665008AAA71 /* CalendarViewController.swift in Sources */,
 				AE6580F325BE07A20041AA48 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,6 +429,7 @@
 			baseConfigurationReference = 67BB5AF7525F32A21E05A6AE /* Pods-Insides.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Insides/Insides.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Insides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -437,6 +448,7 @@
 			baseConfigurationReference = 9E8B855A8E90E069694CCE5D /* Pods-Insides.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Insides/Insides.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Insides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

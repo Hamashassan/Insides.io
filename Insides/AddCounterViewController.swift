@@ -37,7 +37,7 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         backButton.addTarget(self, action: #selector(onBackPress), for: .touchUpInside)
         
         let nav = self.navigationController?.navigationBar
-                
+        
         
         //Initialize the title for the ViewController
         nav?.topItem?.title = "Andrey"
@@ -115,12 +115,29 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         self.ref.child("users").child(userID).child("counters").child(identifier).setValue(userInfoDictionary)
         
+        self.donateUserActivity(id: identifier,title: counterName)
         
         
     }
     
     @objc func onBackPress(){
         self.dismiss(animated: true, completion: nil) }
+}
+
+
+extension AddCounterViewController {
+    func donateUserActivity(id: String,title:String) {
+        let activityTypeName = "com.insides.io.counter"
+        let activity = NSUserActivity(activityType: activityTypeName)
+        activity.title = "Increment \(title)"
+        activity.userInfo = ["id" : id]
+        activity.isEligibleForSearch = true
+        activity.isEligibleForPrediction = true
+        //        activity.suggestedInvocationPhrase = "Increment \(counter.counterName)"
+        view.userActivity = activity
+        
+        activity.becomeCurrent()
     }
-    
+}
+
 

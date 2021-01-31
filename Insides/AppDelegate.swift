@@ -12,16 +12,66 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     
+    var window: UIWindow?
+    let drinkActivityName = "com.insides.io.counter"
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        print("Launching Fresh")
+        
+        //        let activityDic = launchOptions![UIApplication.LaunchOptionsKey.userActivityDictionary] as? [AnyHashable : Any]
+        //
+        
+        //        if activityDic != nil {
+        //
+        //            print("Hello")
+        ////            if window!.rootViewController != nil {
+        ////                let userActivity = activityDic["UIApplicationLaunchOptionsUserActivityKey"] as? NSUserActivity
+        ////                if let userActivity = userActivity {
+        ////                    window?.rootViewController?.restoreUserActivityState(userActivity)
+        ////                }
+        ////            }
+        //        }
+        
+        
+        
         FirebaseApp.configure()
         
         GIDSignIn.sharedInstance()?.clientID = "1092795728888-7vgmep898ed1u106i68lei3vg7ru2b1f.apps.googleusercontent.com"
         GIDSignIn.sharedInstance()?.delegate = self
         
         // Override point for customization after application launch.
+        
+ 
+            let userActivityDictionary = (launchOptions?[UIApplication.LaunchOptionsKey.userActivityDictionary] as? [UIApplication.LaunchOptionsKey: Any])
+        
+        print("userActivityDictionary \(userActivityDictionary as Any)")
+        
+        let alert = UIAlertController(title: "App Del", message: "Hello", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: {action in
+            print("cancel")
+        }))
+        
+        window?.rootViewController?.present(alert, animated: true, completion: nil)
+        
+        
+        let viewController = window?.rootViewController as? HomeViewController
+        
+        viewController?.incrementCounter(id: "")
+        
+        print("App launched")
         return true
     }
+    
+    //      func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+    //
+    //            print("OPEN FROM SIRI")
+    //
+    //        return true
+    //    }
     
     // MARK: UISceneSession Lifecycle
     
@@ -46,6 +96,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         GIDSignIn.sharedInstance().handle(url)
     }
     
+    //    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    //
+    //
+    //        print("APPP DELLLEGAATEE")
+    //
+    //        switch userActivity.activityType {
+    //        case drinkActivityName:
+    //            // You can define your action due to application logic
+    //            guard let viewController = window?.rootViewController as? HomeViewController else {
+    //                return false
+    //            }
+    //
+    //            // Check for drinkType which we passed while donating userActivity
+    //            let counter_id = (userActivity.userInfo?["id"] as? String)!
+    //
+    //            print("app delegate \(counter_id)")
+    //
+    //
+    //            // Pass argument to viewController for increment counter
+    //            viewController.incrementCounter(id: counter_id)
+    //
+    //            return true
+    //
+    //        default:
+    //            return false
+    //        }
+    //    }
+    //
+    
+    //    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool;){
+    //    print("fuuck")
+    //    }
+    
+    private func application(application: UIApplication,
+                             continueUserActivity userActivity: NSUserActivity,
+                             restorationHandler: (([AnyObject]?) -> Void))
+        -> Bool {
+            
+            let userInfo = userActivity.userInfo! as NSDictionary
+            print("Received a payload via handoff: \(userInfo)")
+            return true
+    }
+    
+    
     
 }
-

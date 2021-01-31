@@ -4,9 +4,7 @@
 <dict>
 	<key>application-identifier</key>
 	<string>XLSGNTC5U8.com.insides.io</string>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>XLSGNTC5U8.com.insides.io</string>
-	</array>
+	<key>com.apple.developer.siri</key>
+	<true/>
 </dict>
 </plist>

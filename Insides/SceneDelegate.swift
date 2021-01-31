@@ -11,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    
+    let counterActivityName = "com.insides.io.counter"
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,10 +19,62 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         
-//        let homeViewController = HomeViewController()
         
-//        self.window?.rootViewController = homeViewController
-//        self.window?.makeKeyAndVisible()
+        //        let homeViewController = HomeViewController()
+        
+        //        self.window?.rootViewController = homeViewController
+        //        self.window?.makeKeyAndVisible()
+        
+        //        print("SCENE DELEGATE \(connectionOptions.userActivities)")
+        if let userActivity = connectionOptions.userActivities.first {
+            print("SCENE userActivity \(userActivity)")
+            switch userActivity.activityType {
+            case counterActivityName:
+                
+                
+                //            let viewController = window?.rootViewController as? HomeViewController
+                
+                let vc = HomeViewController()
+                
+                let counter_id = (userActivity.userInfo?["id"] as? String)!
+                
+                print("app delegate \(counter_id)")
+                //
+                //            viewController?.incrementCounter(id: counter_id)
+                
+                vc.incrementCounter(id: counter_id)
+                
+            default:
+                print("no acticity")
+                //             return false
+            }
+        }
+    }
+    
+    
+    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        
+        print("APPP DELLLEGAATEE")
+        
+        switch userActivity.activityType {
+        case counterActivityName:
+            
+            //            let viewController = window?.rootViewController as? HomeViewController
+            
+            let vc = HomeViewController()
+            
+            let counter_id = (userActivity.userInfo?["id"] as? String)!
+            
+            print("app delegate \(counter_id)")
+            //
+            //            viewController?.incrementCounter(id: counter_id)
+            
+            vc.incrementCounter(id: counter_id)
+            
+        default:
+            print("no acticity")
+        }
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
