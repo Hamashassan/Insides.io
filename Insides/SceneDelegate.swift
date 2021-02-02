@@ -16,6 +16,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
+        if let userActivity = connectionOptions.userActivities.first {
+                  print("SCENE userActivity \(userActivity)")
+                  switch userActivity.activityType {
+                  case counterActivityName:
+                      
+                      
+                      //            let viewController = window?.rootViewController as? HomeViewController
+                      
+                      let vc = HomeViewController()
+                      
+                      let counter_id = (userActivity.userInfo?["id"] as? String)!
+                      
+                      print("app delegate \(counter_id)")
+                      //
+                      //            viewController?.incrementCounter(id: counter_id)
+                      
+                      vc.incrementCounter(id: counter_id)
+                      
+                  default:
+                      print("no acticity")
+                      //             return false
+                  }
+              }
+        
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
@@ -41,29 +65,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         
-        if let userActivity = connectionOptions.userActivities.first {
-            print("SCENE userActivity \(userActivity)")
-            switch userActivity.activityType {
-            case counterActivityName:
-                
-                
-                //            let viewController = window?.rootViewController as? HomeViewController
-                
-                let vc = HomeViewController()
-                
-                let counter_id = (userActivity.userInfo?["id"] as? String)!
-                
-                print("app delegate \(counter_id)")
-                //
-                //            viewController?.incrementCounter(id: counter_id)
-                
-                vc.incrementCounter(id: counter_id)
-                
-            default:
-                print("no acticity")
-                //             return false
-            }
-        }
+      
     }
     
     

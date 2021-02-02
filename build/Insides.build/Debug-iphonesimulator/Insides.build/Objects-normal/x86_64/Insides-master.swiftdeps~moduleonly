@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "d6f1e8535a83d285a52e5ae6feadb404"
-build_time: [1612257020, 563109000]
+build_time: [1612257738, 881277000]
 inputs:
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/Helpers/Util.swift": [1612038999, 612707722]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/ViewController.swift": [1612255173, 34567989]
@@ -12,7 +12,7 @@ inputs:
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CounterSettingsViewController.swift": [1612046543, 845894050]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CounterModal.swift": [1611982402, 99595768]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CounterCell.swift": [1611981298, 607107335]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/SceneDelegate.swift": [1612256622, 632440698]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/SceneDelegate.swift": [1612257738, 369677783]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/DetailsViewController.swift": [1612251348, 857650611]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CalendarViewController.swift": [1612056192, 959031425]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/HomeViewController.swift": [1612251940, 263343300]
