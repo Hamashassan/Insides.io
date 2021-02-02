@@ -1,18 +1,18 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "bc77ca493a011d17b7a66ce4fa00df18"
-build_time: [1612058622, 694615000]
+options: "d6f1e8535a83d285a52e5ae6feadb404"
+build_time: [1612257020, 563109000]
 inputs:
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/Helpers/Util.swift": [1612038999, 612707722]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/ViewController.swift": [1611891775, 241958720]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/AppDelegate.swift": [1612039675, 933221507]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/AddCounterViewController.swift": [1612003766, 339634993]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/AppSettingsTableViewController.swift": [1611989496, 889167915]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/ViewController.swift": [1612255173, 34567989]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/AppDelegate.swift": [1612255884, 571677898]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/AddCounterViewController.swift": [1612250684, 578138644]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/AppSettingsTableViewController.swift": [1612257020, 105558519]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/SignUpViewController.swift": [1611969412, 636273933]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/ColorsCollectionViewCell.swift": [1612250684, 565812970]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CounterSettingsViewController.swift": [1612046543, 845894050]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CounterModal.swift": [1611982402, 99595768]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CounterCell.swift": [1611981298, 607107335]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/SceneDelegate.swift": [1612058622, 199940957]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/ColorsCollectionViewCell.swift": [1611850518, 208621941]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/DetailsViewController.swift": [1612051433, 107084625]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/SceneDelegate.swift": [1612256622, 632440698]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/DetailsViewController.swift": [1612251348, 857650611]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CalendarViewController.swift": [1612056192, 959031425]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/HomeViewController.swift": [1612058622, 135999659]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/HomeViewController.swift": [1612251940, 263343300]

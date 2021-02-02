@@ -8,9 +8,14 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+import GoogleSignIn
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GIDSignInDelegate {
+    
+    
+    
     
     @IBOutlet weak var usernameField: UITextField!
     
@@ -26,6 +31,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var googleButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
+    
+    var ref: DatabaseReference!
     
     var counters = ["C1","C2","C3","C1","C2","C3","C1","C2","C3","C1","C2","C3","C1","C2","C3","C1","C2","C3"]
     
@@ -45,11 +52,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        
+        // initialize firebase
+        ref = Database.database().reference()
+        
         self.setupLabelTap()
         
         usernameField.becomeFirstResponder()
         
         errorLabel.alpha = 0
+        
+        
         
         // Social Button Shadow
         Util.styleSocialButton(appleButton)
@@ -61,13 +75,59 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         signInButton.addTarget(self, action: #selector(onSignInPress), for: .touchUpInside)
         
-        
+        googleButton.addTarget(self, action: #selector(onGoogleSignInPress), for: .touchUpInside)
         
         
         
         
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    @objc func onGoogleSignInPress(){
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        // ...
+        if let error = error {
+            // ...
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        // ...
+        
+        let userId = user.userID              // For client-side use only!
+        let idToken = user.authentication.idToken // Safe to send to the server
+        let fullName = user.profile.name
+        let givenName = user.profile.givenName
+        let familyName = user.profile.familyName
+        let email = user.profile.email
+        
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                print("Login error: \(error?.localizedDescription)")
+                return
+            }else{
+                
+                guard let userID = Auth.auth().currentUser?.uid else { return }
+                
+                let userInfoDictionary = ["username" : userId ?? "" ,
+                                          "email" : email ?? "","couunters":[]] as [String : Any]
+                
+                self.ref.child("users").child(userID).setValue(userInfoDictionary)
+                
+                self.transitionToHome()
+            }
+        })
+        
+        
+    }
+    
     
     
     @objc func onSignInPress(){
@@ -90,13 +150,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 
                 if error != nil {
-                
+                    
                     self.showError("Something went wrong, Please try again")
                     
                 }else{
                     
                     self.transitionToHome()
-                
+                    
                 }
             })
         }

@@ -9,27 +9,36 @@ provides-dynamic-lookup:
 - "darkThemeSwitch"
 - "onBackPress"
 - "onDarkThemePress"
+- "resetToLogin"
 - "sendFeedbackCell"
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
 - "AppSettingsTableViewController"
+- "AssignmentPrecedence"
+- !private "Auth"
 - !private "BooleanLiteralType"
+- "CastingPrecedence"
 - !private "FloatLiteralType"
 - "IndexPath"
 - !private "IntegerLiteralType"
+- !private "NSError"
 - !private "StringLiteralType"
 - "UISwitch"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
+- !private "ViewController"
 - !private "print"
 - !private "~="
 depends-member:
+- !private ["7Insides30AppSettingsTableViewControllerC", "Auth"]
 - ["7Insides30AppSettingsTableViewControllerC", "IndexPath"]
+- !private ["7Insides30AppSettingsTableViewControllerC", "NSError"]
 - ["7Insides30AppSettingsTableViewControllerC", "UISwitch"]
 - ["7Insides30AppSettingsTableViewControllerC", "UITableView"]
 - ["7Insides30AppSettingsTableViewControllerC", "UITableViewCell"]
+- !private ["7Insides30AppSettingsTableViewControllerC", "ViewController"]
 - ["7Insides30AppSettingsTableViewControllerC", "darkThemeSwitch"]
 - ["7Insides30AppSettingsTableViewControllerC", "deinit"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "dismiss"]
@@ -37,99 +46,269 @@ depends-member:
 - ["7Insides30AppSettingsTableViewControllerC", "onBackPress"]
 - ["7Insides30AppSettingsTableViewControllerC", "onDarkThemePress"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "print"]
+- ["7Insides30AppSettingsTableViewControllerC", "resetToLogin"]
 - ["7Insides30AppSettingsTableViewControllerC", "sendFeedbackCell"]
+- !private ["7Insides30AppSettingsTableViewControllerC", "storyboard"]
 - ["7Insides30AppSettingsTableViewControllerC", "tableView"]
+- !private ["7Insides30AppSettingsTableViewControllerC", "view"]
 - ["7Insides30AppSettingsTableViewControllerC", "viewDidLoad"]
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So7FIRAuthC", "signOut"]
+- !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["So15CALayerDelegateP", "window"]
+- !private ["s7CVarArgP", "Auth"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "makeKeyAndVisible"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "resetToLogin"]
+- !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "signOut"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "resetToLogin"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "signOut"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s17CustomReflectableP", "window"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "resetToLogin"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "signOut"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "window"]
+- !private ["Se", "window"]
+- !private ["SE", "window"]
+- !private ["SQ", "Auth"]
 - ["SQ", ""]
+- !private ["SQ", "auth"]
 - !private ["SQ", "dismiss"]
+- !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "makeKeyAndVisible"]
 - !private ["SQ", "print"]
+- !private ["SQ", "resetToLogin"]
+- !private ["SQ", "rootViewController"]
+- !private ["SQ", "signOut"]
+- !private ["SQ", "storyboard"]
+- !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "window"]
+- !private ["s23ExpressibleByNilLiteralP", "window"]
+- !private ["SH", "Auth"]
 - ["SH", ""]
+- !private ["SH", "auth"]
 - !private ["SH", "dismiss"]
+- !private ["SH", "instantiateViewController"]
+- !private ["SH", "makeKeyAndVisible"]
 - !private ["SH", "print"]
+- !private ["SH", "resetToLogin"]
+- !private ["SH", "rootViewController"]
+- !private ["SH", "signOut"]
+- !private ["SH", "storyboard"]
+- !private ["SH", "view"]
 - !private ["SH", "viewDidLoad"]
+- !private ["SH", "window"]
+- !private ["So8NSCodingP", "Auth"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "resetToLogin"]
+- !private ["So8NSCodingP", "rootViewController"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "window"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "resetToLogin"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "IndexPath"]
+- !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "UISwitch"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- !private ["So8NSObjectC", "ViewController"]
+- !private ["So8NSObjectC", "auth"]
 - ["So8NSObjectC", "darkThemeSwitch"]
 - !private ["So8NSObjectC", "dismiss"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "makeKeyAndVisible"]
 - ["So8NSObjectC", "onBackPress"]
 - ["So8NSObjectC", "onDarkThemePress"]
 - !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "resetToLogin"]
+- !private ["So8NSObjectC", "rootViewController"]
 - ["So8NSObjectC", "sendFeedbackCell"]
+- !private ["So8NSObjectC", "signOut"]
+- !private ["So8NSObjectC", "storyboard"]
 - ["So8NSObjectC", "tableView"]
+- !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "Auth"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "makeKeyAndVisible"]
 - !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "resetToLogin"]
+- !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "signOut"]
+- !private ["So8NSObjectP", "storyboard"]
+- !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "window"]
+- !private ["Sq", "window"]
+- !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So29UIAccessibilityIdentificationP", "window"]
+- !private ["So12UIAppearanceP", "makeKeyAndVisible"]
+- !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So12UIAppearanceP", "window"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "resetToLogin"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "window"]
+- !private ["So18UIContentContainerP", "Auth"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "resetToLogin"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So17UICoordinateSpaceP", "window"]
+- !private ["So13UIDynamicItemP", "makeKeyAndVisible"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "window"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "resetToLogin"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "window"]
+- !private ["So11UIFocusItemP", "makeKeyAndVisible"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So11UIFocusItemP", "window"]
+- !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
+- !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So20UIFocusItemContainerP", "window"]
+- !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
+- !private ["So24UILargeContentViewerItemP", "rootViewController"]
+- !private ["So24UILargeContentViewerItemP", "window"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "resetToLogin"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "window"]
+- !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "IndexPath"]
+- !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "UISwitch"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- !private ["So11UIResponderC", "ViewController"]
 - ["So11UIResponderC", "darkThemeSwitch"]
 - !private ["So11UIResponderC", "dismiss"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "makeKeyAndVisible"]
 - ["So11UIResponderC", "onBackPress"]
 - ["So11UIResponderC", "onDarkThemePress"]
 - !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "resetToLogin"]
+- !private ["So11UIResponderC", "rootViewController"]
 - ["So11UIResponderC", "sendFeedbackCell"]
+- !private ["So11UIResponderC", "storyboard"]
 - ["So11UIResponderC", "tableView"]
+- !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
+- !private ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "resetToLogin"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["So20UIScrollViewDelegateP", "Auth"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "dismiss"]
 - !private ["So20UIScrollViewDelegateP", "print"]
+- !private ["So20UIScrollViewDelegateP", "resetToLogin"]
+- !private ["So20UIScrollViewDelegateP", "storyboard"]
+- !private ["So20UIScrollViewDelegateP", "view"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "Auth"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "resetToLogin"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So21UITableViewControllerC", "Auth"]
 - ["So21UITableViewControllerC", "IndexPath"]
+- !private ["So21UITableViewControllerC", "NSError"]
 - ["So21UITableViewControllerC", "UISwitch"]
 - ["So21UITableViewControllerC", "UITableView"]
 - ["So21UITableViewControllerC", "UITableViewCell"]
+- !private ["So21UITableViewControllerC", "ViewController"]
 - ["So21UITableViewControllerC", ""]
 - ["So21UITableViewControllerC", "darkThemeSwitch"]
 - !private ["So21UITableViewControllerC", "dismiss"]
@@ -137,73 +316,152 @@ depends-member:
 - ["So21UITableViewControllerC", "onBackPress"]
 - ["So21UITableViewControllerC", "onDarkThemePress"]
 - !private ["So21UITableViewControllerC", "print"]
+- ["So21UITableViewControllerC", "resetToLogin"]
 - ["So21UITableViewControllerC", "sendFeedbackCell"]
+- !private ["So21UITableViewControllerC", "storyboard"]
 - ["So21UITableViewControllerC", "tableView"]
+- !private ["So21UITableViewControllerC", "view"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
+- !private ["So21UITableViewDataSourceP", "Auth"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "dismiss"]
 - !private ["So21UITableViewDataSourceP", "print"]
+- !private ["So21UITableViewDataSourceP", "resetToLogin"]
+- !private ["So21UITableViewDataSourceP", "storyboard"]
+- !private ["So21UITableViewDataSourceP", "view"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
+- !private ["So19UITableViewDelegateP", "Auth"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "dismiss"]
 - !private ["So19UITableViewDelegateP", "print"]
+- !private ["So19UITableViewDelegateP", "resetToLogin"]
+- !private ["So19UITableViewDelegateP", "storyboard"]
+- !private ["So19UITableViewDelegateP", "view"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "resetToLogin"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "window"]
+- !private ["So23UIUserActivityRestoringP", "Auth"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
+- !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
 - !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "resetToLogin"]
+- !private ["So23UIUserActivityRestoringP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "storyboard"]
+- !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "window"]
+- !private ["So6UIViewC", "makeKeyAndVisible"]
+- !private ["So6UIViewC", "rootViewController"]
+- !private ["So6UIViewC", "window"]
+- !private ["So16UIViewControllerC", "Auth"]
 - ["So16UIViewControllerC", "IndexPath"]
+- !private ["So16UIViewControllerC", "NSError"]
 - ["So16UIViewControllerC", "UISwitch"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- !private ["So16UIViewControllerC", "ViewController"]
 - ["So16UIViewControllerC", "darkThemeSwitch"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "onBackPress"]
 - ["So16UIViewControllerC", "onDarkThemePress"]
 - !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "resetToLogin"]
 - ["So16UIViewControllerC", "sendFeedbackCell"]
+- !private ["So16UIViewControllerC", "storyboard"]
 - ["So16UIViewControllerC", "tableView"]
+- !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["So8UIWindowC", "makeKeyAndVisible"]
+- !private ["So8UIWindowC", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resetToLogin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signOut"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Auth"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeKeyAndVisible"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resetToLogin"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "signOut"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "storyboard"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
+- !private ["s21_ObjectiveCBridgeableP", "window"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "window"]
 depends-nominal:
 - "7Insides30AppSettingsTableViewControllerC"
+- !private "So7FIRAuthC"
+- !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
 - "SQ"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sq"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So20UIScrollViewDelegateP"
 - "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
 - "So21UITableViewControllerC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "So8UIWindowC"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -219,10 +477,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -282,6 +542,7 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsErrors.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsAuthTokenResult.h"
@@ -296,6 +557,7 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -309,4 +571,4 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "eef835c059cfb1836c7d3a3bc93214cc"
+interface-hash: "439ce54f91571fb5377117b45ee71f07"

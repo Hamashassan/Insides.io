@@ -15,6 +15,9 @@ provides-dynamic-lookup:
 - "sceneWillResignActive"
 - "window"
 depends-top-level:
+- !private "!="
+- "AssignmentPrecedence"
+- !private "Auth"
 - "CastingPrecedence"
 - !private "FloatLiteralType"
 - !private "HomeViewController"
@@ -26,20 +29,35 @@ depends-top-level:
 - "UIResponder"
 - "UIScene"
 - "UISceneSession"
+- !private "UIStoryboard"
 - "UIWindow"
+- !private "UIWindowScene"
 - "UIWindowSceneDelegate"
 - !private "print"
 - !private "~="
 depends-member:
+- !private ["So7FIRAuthC", "addStateDidChangeListener"]
+- !private ["So7FIRAuthC", "auth"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["s7CVarArgP", "Auth"]
 - ["s7CVarArgP", "ConnectionOptions"]
 - !private ["s7CVarArgP", "HomeViewController"]
+- !private ["s7CVarArgP", "UIStoryboard"]
+- !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "activityType"]
+- !private ["s7CVarArgP", "addStateDidChangeListener"]
+- !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "counterActivityName"]
 - !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "incrementCounter"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "makeKeyAndVisible"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "rootViewController"]
 - ["s7CVarArgP", "scene"]
 - ["s7CVarArgP", "sceneDidBecomeActive"]
 - ["s7CVarArgP", "sceneDidDisconnect"]
@@ -56,15 +74,23 @@ depends-member:
 - !private ["Sl", "first"]
 - !private ["Sl", "subscript"]
 - !private ["So24UISceneConnectionOptionsC", "userActivities"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "HomeViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
+- !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "activityType"]
+- !private ["s28CustomDebugStringConvertibleP", "addStateDidChangeListener"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "counterActivityName"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "incrementCounter"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
 - ["s28CustomDebugStringConvertibleP", "scene"]
 - ["s28CustomDebugStringConvertibleP", "sceneDidBecomeActive"]
 - ["s28CustomDebugStringConvertibleP", "sceneDidDisconnect"]
@@ -80,17 +106,25 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
 - !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
 - !private ["s23CustomStringConvertibleP", "HomeViewController"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
+- !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "activityType"]
+- !private ["s23CustomStringConvertibleP", "addStateDidChangeListener"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "counterActivityName"]
 - !private ["s23CustomStringConvertibleP", "first"]
 - !private ["s23CustomStringConvertibleP", "incrementCounter"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
 - ["s23CustomStringConvertibleP", "scene"]
 - ["s23CustomStringConvertibleP", "sceneDidBecomeActive"]
 - ["s23CustomStringConvertibleP", "sceneDidDisconnect"]
@@ -111,15 +145,23 @@ depends-member:
 - !private ["SD", "subscript"]
 - !private ["SE", "first"]
 - !private ["SE", "subscript"]
+- !private ["SQ", "Auth"]
 - ["SQ", "ConnectionOptions"]
 - !private ["SQ", "HomeViewController"]
+- !private ["SQ", "UIStoryboard"]
+- !private ["SQ", "UIWindow"]
 - ["SQ", ""]
 - !private ["SQ", "activityType"]
+- !private ["SQ", "addStateDidChangeListener"]
+- !private ["SQ", "auth"]
 - !private ["SQ", "counterActivityName"]
 - !private ["SQ", "first"]
 - !private ["SQ", "incrementCounter"]
 - !private ["SQ", "init"]
+- !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "makeKeyAndVisible"]
 - !private ["SQ", "print"]
+- !private ["SQ", "rootViewController"]
 - ["SQ", "scene"]
 - ["SQ", "sceneDidBecomeActive"]
 - ["SQ", "sceneDidDisconnect"]
@@ -135,15 +177,23 @@ depends-member:
 - ["SQ", "windowScene"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["SH", "Auth"]
 - ["SH", "ConnectionOptions"]
 - !private ["SH", "HomeViewController"]
+- !private ["SH", "UIStoryboard"]
+- !private ["SH", "UIWindow"]
 - ["SH", ""]
 - !private ["SH", "activityType"]
+- !private ["SH", "addStateDidChangeListener"]
+- !private ["SH", "auth"]
 - !private ["SH", "counterActivityName"]
 - !private ["SH", "first"]
 - !private ["SH", "incrementCounter"]
 - !private ["SH", "init"]
+- !private ["SH", "instantiateViewController"]
+- !private ["SH", "makeKeyAndVisible"]
 - !private ["SH", "print"]
+- !private ["SH", "rootViewController"]
 - ["SH", "scene"]
 - ["SH", "sceneDidBecomeActive"]
 - ["SH", "sceneDidDisconnect"]
@@ -162,24 +212,34 @@ depends-member:
 - !private ["7Insides18HomeViewControllerC", "init"]
 - !private ["So8NSCodingP", "incrementCounter"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "makeKeyAndVisible"]
+- !private ["So8NSCodingP", "rootViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "incrementCounter"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So21NSItemProviderReadingP", "activityType"]
 - !private ["So21NSItemProviderReadingP", "userInfo"]
 - !private ["So21NSItemProviderWritingP", "activityType"]
 - !private ["So21NSItemProviderWritingP", "userInfo"]
+- !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "ConnectionOptions"]
 - !private ["So8NSObjectC", "HomeViewController"]
 - ["So8NSObjectC", "NSUserActivity"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
+- !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UIWindow"]
+- !private ["So8NSObjectC", "UIWindowScene"]
 - !private ["So8NSObjectC", "activityType"]
+- !private ["So8NSObjectC", "addStateDidChangeListener"]
+- !private ["So8NSObjectC", "auth"]
 - ["So8NSObjectC", "counterActivityName"]
 - !private ["So8NSObjectC", "incrementCounter"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "makeKeyAndVisible"]
 - !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "rootViewController"]
 - ["So8NSObjectC", "scene"]
 - ["So8NSObjectC", "sceneDidBecomeActive"]
 - ["So8NSObjectC", "sceneDidDisconnect"]
@@ -192,14 +252,22 @@ depends-member:
 - !private ["So8NSObjectC", "userInfo"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
+- !private ["So8NSObjectP", "Auth"]
 - ["So8NSObjectP", "ConnectionOptions"]
 - !private ["So8NSObjectP", "HomeViewController"]
+- !private ["So8NSObjectP", "UIStoryboard"]
+- !private ["So8NSObjectP", "UIWindow"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "activityType"]
+- !private ["So8NSObjectP", "addStateDidChangeListener"]
+- !private ["So8NSObjectP", "auth"]
 - !private ["So8NSObjectP", "counterActivityName"]
 - !private ["So8NSObjectP", "incrementCounter"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "makeKeyAndVisible"]
 - !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "rootViewController"]
 - ["So8NSObjectP", "scene"]
 - ["So8NSObjectP", "sceneDidBecomeActive"]
 - ["So8NSObjectP", "sceneDidDisconnect"]
@@ -214,12 +282,15 @@ depends-member:
 - ["So8NSObjectP", "windowScene"]
 - !private ["So14NSUserActivityC", "activityType"]
 - !private ["So14NSUserActivityC", "userInfo"]
+- !private ["7Insides13SceneDelegateC", "Auth"]
 - !private ["7Insides13SceneDelegateC", "HomeViewController"]
 - ["7Insides13SceneDelegateC", "NSUserActivity"]
 - !private ["7Insides13SceneDelegateC", "String"]
 - ["7Insides13SceneDelegateC", "UIScene"]
 - ["7Insides13SceneDelegateC", "UISceneSession"]
+- !private ["7Insides13SceneDelegateC", "UIStoryboard"]
 - ["7Insides13SceneDelegateC", "UIWindow"]
+- !private ["7Insides13SceneDelegateC", "UIWindowScene"]
 - ["7Insides13SceneDelegateC", "counterActivityName"]
 - ["7Insides13SceneDelegateC", "deinit"]
 - ["7Insides13SceneDelegateC", "init"]
@@ -242,21 +313,51 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "makeKeyAndVisible"]
+- !private ["So12UIAppearanceP", "rootViewController"]
 - !private ["So21UIAppearanceContainerP", "incrementCounter"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
 - !private ["So18UIContentContainerP", "incrementCounter"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "makeKeyAndVisible"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
 - !private ["So18UIFocusEnvironmentP", "incrementCounter"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "makeKeyAndVisible"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
+- !private ["So20UIFocusItemContainerP", "rootViewController"]
 - !private ["So27UIGestureRecognizerDelegateP", "incrementCounter"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
+- !private ["So24UILargeContentViewerItemP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "HomeViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "counterActivityName"]
 - !private ["So30UIPasteConfigurationSupportingP", "incrementCounter"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
 - ["So30UIPasteConfigurationSupportingP", "scene"]
 - ["So30UIPasteConfigurationSupportingP", "sceneDidBecomeActive"]
 - ["So30UIPasteConfigurationSupportingP", "sceneDidDisconnect"]
@@ -267,18 +368,23 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "stateRestorationActivityForScene"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
+- !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "ConnectionOptions"]
 - !private ["So11UIResponderC", "HomeViewController"]
 - ["So11UIResponderC", "NSUserActivity"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
+- !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UIWindow"]
+- !private ["So11UIResponderC", "UIWindowScene"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "counterActivityName"]
 - !private ["So11UIResponderC", "incrementCounter"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "makeKeyAndVisible"]
 - !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "rootViewController"]
 - ["So11UIResponderC", "scene"]
 - ["So11UIResponderC", "sceneDidBecomeActive"]
 - ["So11UIResponderC", "sceneDidDisconnect"]
@@ -289,13 +395,18 @@ depends-member:
 - ["So11UIResponderC", "stateRestorationActivityForScene"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "HomeViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
+- !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "counterActivityName"]
 - !private ["So30UIResponderStandardEditActionsP", "incrementCounter"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
 - ["So30UIResponderStandardEditActionsP", "scene"]
 - ["So30UIResponderStandardEditActionsP", "sceneDidBecomeActive"]
 - ["So30UIResponderStandardEditActionsP", "sceneDidDisconnect"]
@@ -307,7 +418,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
 - ["So7UISceneC", "ConnectionOptions"]
+- !private ["So15UISceneDelegateP", "Auth"]
 - !private ["So15UISceneDelegateP", "HomeViewController"]
+- !private ["So15UISceneDelegateP", "UIStoryboard"]
+- !private ["So15UISceneDelegateP", "UIWindow"]
 - ["So15UISceneDelegateP", ""]
 - !private ["So15UISceneDelegateP", "counterActivityName"]
 - !private ["So15UISceneDelegateP", "print"]
@@ -325,19 +439,28 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So16UIStateRestoringP", "incrementCounter"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So21UITableViewDataSourceP", "incrementCounter"]
 - !private ["So21UITableViewDataSourceP", "init"]
 - !private ["So19UITableViewDelegateP", "incrementCounter"]
 - !private ["So19UITableViewDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "incrementCounter"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "Auth"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
 - !private ["So23UIUserActivityRestoringP", "HomeViewController"]
+- !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
+- !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "counterActivityName"]
 - !private ["So23UIUserActivityRestoringP", "incrementCounter"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
 - !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "rootViewController"]
 - ["So23UIUserActivityRestoringP", "scene"]
 - ["So23UIUserActivityRestoringP", "sceneDidBecomeActive"]
 - ["So23UIUserActivityRestoringP", "sceneDidDisconnect"]
@@ -348,9 +471,18 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "stateRestorationActivityForScene"]
 - ["So23UIUserActivityRestoringP", "window"]
 - ["So23UIUserActivityRestoringP", "windowScene"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "makeKeyAndVisible"]
+- !private ["So6UIViewC", "rootViewController"]
 - !private ["So16UIViewControllerC", "incrementCounter"]
 - !private ["So16UIViewControllerC", "init"]
+- !private ["So8UIWindowC", "init"]
+- !private ["So8UIWindowC", "makeKeyAndVisible"]
+- !private ["So8UIWindowC", "rootViewController"]
+- !private ["So21UIWindowSceneDelegateP", "Auth"]
 - !private ["So21UIWindowSceneDelegateP", "HomeViewController"]
+- !private ["So21UIWindowSceneDelegateP", "UIStoryboard"]
+- !private ["So21UIWindowSceneDelegateP", "UIWindow"]
 - ["So21UIWindowSceneDelegateP", ""]
 - !private ["So21UIWindowSceneDelegateP", "counterActivityName"]
 - !private ["So21UIWindowSceneDelegateP", "print"]
@@ -366,14 +498,22 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "windowScene"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "HomeViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "activityType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addStateDidChangeListener"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "counterActivityName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "incrementCounter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sceneDidBecomeActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sceneDidDisconnect"]
@@ -386,14 +526,22 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Auth"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "HomeViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIStoryboard"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "activityType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addStateDidChangeListener"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "auth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "counterActivityName"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "incrementCounter"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeKeyAndVisible"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scene"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sceneDidBecomeActive"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sceneDidDisconnect"]
@@ -408,7 +556,12 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "windowScene"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
 depends-nominal:
+- !private "So7FIRAuthC"
+- !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "Sl"
 - !private "So24UISceneConnectionOptionsC"
@@ -437,10 +590,17 @@ depends-nominal:
 - !private "s10SetAlgebraP"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
 - !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So27UIGestureRecognizerDelegateP"
+- !private "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -448,16 +608,20 @@ depends-nominal:
 - "So15UISceneDelegateP"
 - !private "So20UIScrollViewDelegateP"
 - !private "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
 - !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
 - !private "So16UIViewControllerC"
+- !private "So8UIWindowC"
 - "So21UIWindowSceneDelegateP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -473,10 +637,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -536,6 +702,7 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsErrors.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsAuthTokenResult.h"
@@ -550,6 +717,7 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -563,4 +731,4 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1edf6c5fedac9ecb87794b09a6d4d524"
+interface-hash: "b7c1a1229b3b20407abc5493ee1ec4b0"

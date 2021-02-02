@@ -63,9 +63,9 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath) as! ColorsCollectionViewCell
-        
+//
         cell.configureCell(color: .red)
-        
+//
         return cell
     }
     

@@ -1,3 +1,4 @@
+
 //
 //  ColorsCollectionViewCell.swift
 //  Insides
@@ -5,7 +6,6 @@
 //  Created by Hamas Hassan on 1/27/21.
 //  Copyright © 2021 Hamas Hassan. All rights reserved.
 //
-
 import UIKit
 
 class ColorsCollectionViewCell: UICollectionViewCell {

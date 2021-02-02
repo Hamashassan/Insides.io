@@ -42,6 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         GIDSignIn.sharedInstance()?.clientID = "1092795728888-7vgmep898ed1u106i68lei3vg7ru2b1f.apps.googleusercontent.com"
         GIDSignIn.sharedInstance()?.delegate = self
         
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+
+        
         // Override point for customization after application launch.
         
  
@@ -93,7 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        GIDSignIn.sharedInstance().handle(url)
+      return GIDSignIn.sharedInstance().handle(url)
     }
     
     //    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {

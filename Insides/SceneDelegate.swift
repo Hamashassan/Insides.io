@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -14,18 +15,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let counterActivityName = "com.insides.io.counter"
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(windowScene: windowScene)
         
         
         
-        //        let homeViewController = HomeViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // Make sure you set an Storyboard ID for the view controller you want to instantiate
+        window?.makeKeyAndVisible()
         
-        //        self.window?.rootViewController = homeViewController
-        //        self.window?.makeKeyAndVisible()
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            print("user",user)
+            if user != nil {
+                self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeScreen")
+            } else {
+                self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginScreen")
+            }
+        }
         
-        //        print("SCENE DELEGATE \(connectionOptions.userActivities)")
+        //        HomeScreen
+        //        LoginScreen
+        
+        
+        
         if let userActivity = connectionOptions.userActivities.first {
             print("SCENE userActivity \(userActivity)")
             switch userActivity.activityType {

@@ -32,6 +32,35 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         navigationController?.setNavigationBarHidden(true, animated: true)
         
         
+//        navigationController?.title = "hi"
+        
+//
+//
+//        let titles = ["All", "Missed"]
+//       var segmentControl = UISegmentedControl(items: titles)
+//        segmentControl.tintColor = UIColor.white
+//        segmentControl.backgroundColor = UIColor.blue
+//        segmentControl.selectedSegmentIndex = 0
+//        for index in 0...titles.count-1 {
+//            segmentControl.setWidth(60, forSegmentAt: index)
+//        }
+//        segmentControl.sizeToFit()
+////        segmentControl.addTarget(self, action: #selector(segmentChanged), for: .valueChanged)
+//        segmentControl.selectedSegmentIndex = 0
+//        segmentControl.sendActions(for: .valueChanged)
+//        navigationItem.titleView = segmentControl
+////        navigationController?.navigationBar.barTintColor = UIColor.init(named: "backgroundColor")
+//
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.layoutIfNeeded()
+//
+//        let add = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(onAddCounter))
+//          let play = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddCounter))
+//        navigationItem.rightBarButtonItems = [add]
+//        navigationItem.leftBarButtonItem = play
+
+        
         
         
         print("userID \(userID!)")
@@ -91,6 +120,13 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     //
     //
     //    }
+    
+    
+    @objc func onAddCounter(){
+        let vc = storyboard?.instantiateViewController(identifier: "CreateCounter") as! AddCounterViewController
+             vc.modalPresentationStyle = .formSheet
+             present(vc,animated: true)
+    }
     
     
     
@@ -165,12 +201,14 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        print("Working")
+       
         
         let vc = storyboard?.instantiateViewController(identifier:
             "DetailsScreen") as! DetailsViewController
         
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
+       print("Working fvcf \(vc)")
+        
+//        navigationController?.interactivePopGestureRecognizer?.delegate = self
         
         //        vc.name = counter.counterName
         //        vc.id = counter.id
@@ -180,7 +218,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         //        vc.modalPresentationStyle = .formSheet
         //        present(vc,animated: true)
         
-        self.navigationController?.pushViewController(vc, animated: true)
+       navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -188,7 +226,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         print("called from siri \(id)")
         
-        let id2 =  "258D98B7-0B56-4567-8F72-6D0E6FE1C158"
+//        let id2 =  "258D98B7-0B56-4567-8F72-6D0E6FE1C158"
         
         ref.child("users").child(userID!).child("counters").child(id).observeSingleEvent(of: .value, with: { (snap) in
             

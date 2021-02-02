@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 - "counters"
 - "didTapButton"
 - "incrementCounter"
+- "onAddCounter"
 - "onAppSettingsPress"
 - "onCounterButtonPress"
 - "onCounterSettingsPress"
@@ -115,7 +116,6 @@ depends-member:
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s7CVarArgP", "instantiateViewController"]
-- !private ["s7CVarArgP", "interactivePopGestureRecognizer"]
 - !private ["s7CVarArgP", "isOpaque"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "modalPresentationStyle"]
@@ -221,7 +221,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
-- !private ["s28CustomDebugStringConvertibleP", "interactivePopGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "isOpaque"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "modalPresentationStyle"]
@@ -317,7 +316,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
-- !private ["s23CustomStringConvertibleP", "interactivePopGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "isOpaque"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "modalPresentationStyle"]
@@ -394,6 +392,7 @@ depends-member:
 - !private ["Se", "tag"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["7Insides21DetailsViewControllerC", "deinit"]
 - !private ["SD", "subscript"]
 - !private ["SE", "addTarget"]
 - !private ["SE", "append"]
@@ -441,7 +440,6 @@ depends-member:
 - ["SQ", "indexPathForPreferredFocusedView"]
 - ["SQ", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["SQ", "instantiateViewController"]
-- !private ["SQ", "interactivePopGestureRecognizer"]
 - !private ["SQ", "isOpaque"]
 - !private ["SQ", "layer"]
 - !private ["SQ", "modalPresentationStyle"]
@@ -541,7 +539,6 @@ depends-member:
 - ["SH", "indexPathForPreferredFocusedView"]
 - ["SH", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["SH", "instantiateViewController"]
-- !private ["SH", "interactivePopGestureRecognizer"]
 - !private ["SH", "isOpaque"]
 - !private ["SH", "layer"]
 - !private ["SH", "modalPresentationStyle"]
@@ -619,6 +616,7 @@ depends-member:
 - !private ["7Insides18HomeViewControllerC", "navigationController"]
 - ["7Insides18HomeViewControllerC", "numberOfSections"]
 - ["7Insides18HomeViewControllerC", "numberOfSectionsInTableView"]
+- ["7Insides18HomeViewControllerC", "onAddCounter"]
 - ["7Insides18HomeViewControllerC", "onAppSettingsPress"]
 - ["7Insides18HomeViewControllerC", "onCounterButtonPress"]
 - ["7Insides18HomeViewControllerC", "onCounterSettingsPress"]
@@ -684,7 +682,6 @@ depends-member:
 - !private ["So8NSCodingP", "id"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So8NSCodingP", "interactivePopGestureRecognizer"]
 - !private ["So8NSCodingP", "isOpaque"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "modalPresentationStyle"]
@@ -741,7 +738,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "id"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So26NSExtensionRequestHandlingP", "interactivePopGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "name"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
@@ -833,7 +829,6 @@ depends-member:
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
-- !private ["So8NSObjectC", "interactivePopGestureRecognizer"]
 - !private ["So8NSObjectC", "isOpaque"]
 - !private ["So8NSObjectC", "layer"]
 - !private ["So8NSObjectC", "modalPresentationStyle"]
@@ -843,6 +838,7 @@ depends-member:
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "observe"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
+- ["So8NSObjectC", "onAddCounter"]
 - ["So8NSObjectC", "onAppSettingsPress"]
 - ["So8NSObjectC", "onCounterButtonPress"]
 - ["So8NSObjectC", "onCounterSettingsPress"]
@@ -914,7 +910,6 @@ depends-member:
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So8NSObjectP", "instantiateViewController"]
-- !private ["So8NSObjectP", "interactivePopGestureRecognizer"]
 - !private ["So8NSObjectP", "isOpaque"]
 - !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "modalPresentationStyle"]
@@ -1046,7 +1041,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "id"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So21UIAppearanceContainerP", "interactivePopGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "isOpaque"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "modalPresentationStyle"]
@@ -1106,7 +1100,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "id"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So18UIContentContainerP", "interactivePopGestureRecognizer"]
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "name"]
 - !private ["So18UIContentContainerP", "navigationController"]
@@ -1199,7 +1192,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "id"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So18UIFocusEnvironmentP", "interactivePopGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "isOpaque"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "modalPresentationStyle"]
@@ -1274,7 +1266,6 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
 - !private ["So30UIFocusItemScrollableContainerP", "isOpaque"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
-- !private ["So19UIGestureRecognizerC", "delegate"]
 - ["So27UIGestureRecognizerDelegateP", "Auth"]
 - !private ["So27UIGestureRecognizerDelegateP", "Counter"]
 - ["So27UIGestureRecognizerDelegateP", "Database"]
@@ -1335,7 +1326,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "setCounter"]
 - !private ["So24UILargeContentViewerItemP", "tag"]
 - !private ["So24UIModalPresentationStyleV", "formSheet"]
-- !private ["So22UINavigationControllerC", "interactivePopGestureRecognizer"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
 - !private ["So22UINavigationControllerC", "setNavigationBarHidden"]
 - ["So30UIPasteConfigurationSupportingP", "Auth"]
@@ -1359,7 +1349,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "id"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So30UIPasteConfigurationSupportingP", "interactivePopGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "isOpaque"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "modalPresentationStyle"]
@@ -1434,7 +1423,6 @@ depends-member:
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "interactivePopGestureRecognizer"]
 - !private ["So11UIResponderC", "isOpaque"]
 - !private ["So11UIResponderC", "layer"]
 - !private ["So11UIResponderC", "modalPresentationStyle"]
@@ -1442,6 +1430,7 @@ depends-member:
 - !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
+- ["So11UIResponderC", "onAddCounter"]
 - ["So11UIResponderC", "onAppSettingsPress"]
 - ["So11UIResponderC", "onCounterButtonPress"]
 - ["So11UIResponderC", "onCounterSettingsPress"]
@@ -1496,7 +1485,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "id"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So30UIResponderStandardEditActionsP", "interactivePopGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "isOpaque"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "modalPresentationStyle"]
@@ -1607,7 +1595,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "id"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So16UIStateRestoringP", "interactivePopGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "name"]
 - !private ["So16UIStateRestoringP", "navigationController"]
@@ -1765,7 +1752,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "id"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So18UITraitEnvironmentP", "interactivePopGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "isOpaque"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "modalPresentationStyle"]
@@ -1826,7 +1812,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "id"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["So23UIUserActivityRestoringP", "interactivePopGestureRecognizer"]
 - !private ["So23UIUserActivityRestoringP", "isOpaque"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "modalPresentationStyle"]
@@ -1907,12 +1892,12 @@ depends-member:
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
-- !private ["So16UIViewControllerC", "interactivePopGestureRecognizer"]
 - !private ["So16UIViewControllerC", "modalPresentationStyle"]
 - !private ["So16UIViewControllerC", "name"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
+- ["So16UIViewControllerC", "onAddCounter"]
 - ["So16UIViewControllerC", "onAppSettingsPress"]
 - ["So16UIViewControllerC", "onCounterButtonPress"]
 - ["So16UIViewControllerC", "onCounterSettingsPress"]
@@ -1999,7 +1984,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "interactivePopGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isOpaque"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "modalPresentationStyle"]
@@ -2079,7 +2063,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "interactivePopGestureRecognizer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isOpaque"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "modalPresentationStyle"]
@@ -2174,6 +2157,7 @@ depends-nominal:
 - !private "So20FIRDatabaseReferenceC"
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
+- !private "7Insides21DetailsViewControllerC"
 - !private "SD"
 - !private "SE"
 - "SQ"
@@ -2224,7 +2208,6 @@ depends-nominal:
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
-- !private "So19UIGestureRecognizerC"
 - "So27UIGestureRecognizerDelegateP"
 - !private "So24UILargeContentViewerItemP"
 - !private "So24UIModalPresentationStyleV"
@@ -2272,10 +2255,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
@@ -2335,6 +2320,7 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsErrors.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsAuthTokenResult.h"
@@ -2349,6 +2335,7 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -2362,4 +2349,4 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "50e6f7146aa9d7e6e22e8154a9490423"
+interface-hash: "7a41a0c1c82d1a843bd5fb279f5faccc"

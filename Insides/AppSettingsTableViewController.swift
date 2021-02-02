@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class AppSettingsTableViewController: UITableViewController {
     
@@ -17,7 +18,7 @@ class AppSettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     
@@ -34,16 +35,35 @@ class AppSettingsTableViewController: UITableViewController {
             print("Feedback")
         case [2,1]:
             print("Privacy")
+        case [3,0]:
+            print("Logout")
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                resetToLogin()
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
         default:
             print("unknown")
         }
     }
     
     @IBAction func onDarkThemePress(_ sender: Any) {
-          print("hi")
+        print("hi")
+    }
+    
+    @IBAction func onBackPress(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func resetToLogin() {
+          
+          let login = storyboard?.instantiateViewController(identifier: "LoginScreen") as? ViewController
+          
+          view.window?.rootViewController = login
+          view.window?.makeKeyAndVisible()
+          
       }
-      
-      @IBAction func onBackPress(_ sender: Any) {
-          self.dismiss(animated: true, completion: nil)
-      }
+    
 }

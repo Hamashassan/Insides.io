@@ -326,13 +326,19 @@ SWIFT_CLASS("_TtC7Insides29CounterSettingsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollView;
 
 SWIFT_CLASS("_TtC7Insides21DetailsViewController")
-@interface DetailsViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified navigationTtile;
+@interface DetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 - (void)viewDidLoad;
-- (IBAction)onCalendarPress:(id _Nonnull)sender;
-- (IBAction)onBackPress:(id _Nonnull)sender;
+- (void)viewDidLayoutSubviews;
+- (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+- (void)onBackPress;
+- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -342,6 +348,7 @@ SWIFT_CLASS("_TtC7Insides18HomeViewController")
 @interface HomeViewController : UIViewController <UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)onAddCounter;
 - (IBAction)didTapButton;
 - (IBAction)onAppSettingsPress;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -395,7 +402,7 @@ SWIFT_CLASS("_TtC7Insides20SignUpViewController")
 
 
 SWIFT_CLASS("_TtC7Insides14ViewController")
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <GIDSignInDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified signUpLabel;
@@ -406,6 +413,8 @@ SWIFT_CLASS("_TtC7Insides14ViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
+- (void)onGoogleSignInPress;
+- (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
 - (void)onSignInPress;
 - (void)labelTapped:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

@@ -17,11 +17,11 @@
 		AE44627D25B501390082BCD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE44627B25B501390082BCD0 /* LaunchScreen.storyboard */; };
 		AE6580F325BE07A20041AA48 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6580F225BE07A20041AA48 /* HomeViewController.swift */; };
 		AE6580F525C07F1D0041AA48 /* AddCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6580F425C07F1D0041AA48 /* AddCounterViewController.swift */; };
-		AE6580F925C0E58A0041AA48 /* ColorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6580F825C0E58A0041AA48 /* ColorsCollectionViewCell.swift */; };
 		AE6580FD25C164D50041AA48 /* AppSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6580FC25C164D50041AA48 /* AppSettingsTableViewController.swift */; };
 		AE6580FF25C21B930041AA48 /* CounterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6580FE25C21B930041AA48 /* CounterCell.swift */; };
 		AE65810125C21D140041AA48 /* CounterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65810025C21D140041AA48 /* CounterModal.swift */; };
 		AE7EA1DC25C31E85000EDFC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE7EA1DB25C31E85000EDFC6 /* GoogleService-Info.plist */; };
+		AEB2BD0925C9358400E97379 /* ColorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2BD0825C9358400E97379 /* ColorsCollectionViewCell.swift */; };
 		AEC299B925C52158009BC629 /* CounterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */; };
 		AED584C725C2F1BF002824BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED584C625C2F1BF002824BA /* SignUpViewController.swift */; };
 		AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */; };
@@ -43,11 +43,11 @@
 		AE44627E25B501390082BCD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6580F225BE07A20041AA48 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AE6580F425C07F1D0041AA48 /* AddCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewController.swift; sourceTree = "<group>"; };
-		AE6580F825C0E58A0041AA48 /* ColorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE6580FC25C164D50041AA48 /* AppSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsTableViewController.swift; sourceTree = "<group>"; };
 		AE6580FE25C21B930041AA48 /* CounterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCell.swift; sourceTree = "<group>"; };
 		AE65810025C21D140041AA48 /* CounterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModal.swift; sourceTree = "<group>"; };
 		AE7EA1DB25C31E85000EDFC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/29 Day Beginner Challenge/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEB2BD0825C9358400E97379 /* ColorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterSettingsViewController.swift; sourceTree = "<group>"; };
 		AEC299BA25C56CEF009BC629 /* Insides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Insides.entitlements; sourceTree = "<group>"; };
 		AED584C625C2F1BF002824BA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +125,6 @@
 				AE44627E25B501390082BCD0 /* Info.plist */,
 				AE6580F225BE07A20041AA48 /* HomeViewController.swift */,
 				AE6580F425C07F1D0041AA48 /* AddCounterViewController.swift */,
-				AE6580F825C0E58A0041AA48 /* ColorsCollectionViewCell.swift */,
 				AE6580FC25C164D50041AA48 /* AppSettingsTableViewController.swift */,
 				AE6580FE25C21B930041AA48 /* CounterCell.swift */,
 				AE65810025C21D140041AA48 /* CounterModal.swift */,
@@ -133,6 +132,7 @@
 				AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */,
 				AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */,
 				AEE68CF425C62664008AAA71 /* CalendarViewController.swift */,
+				AEB2BD0825C9358400E97379 /* ColorsCollectionViewCell.swift */,
 			);
 			path = Insides;
 			sourceTree = "<group>";
@@ -277,11 +277,11 @@
 				AE6580F525C07F1D0041AA48 /* AddCounterViewController.swift in Sources */,
 				AE6580FD25C164D50041AA48 /* AppSettingsTableViewController.swift in Sources */,
 				AED584C725C2F1BF002824BA /* SignUpViewController.swift in Sources */,
+				AEB2BD0925C9358400E97379 /* ColorsCollectionViewCell.swift in Sources */,
 				AEC299B925C52158009BC629 /* CounterSettingsViewController.swift in Sources */,
 				AE65810125C21D140041AA48 /* CounterModal.swift in Sources */,
 				AE6580FF25C21B930041AA48 /* CounterCell.swift in Sources */,
 				AE44627325B501360082BCD0 /* SceneDelegate.swift in Sources */,
-				AE6580F925C0E58A0041AA48 /* ColorsCollectionViewCell.swift in Sources */,
 				AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */,
 				AEE68CF525C62665008AAA71 /* CalendarViewController.swift in Sources */,
 				AE6580F325BE07A20041AA48 /* HomeViewController.swift in Sources */,
