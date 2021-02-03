@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "dbf4ac246dd5297a6cb2d2162bdd9901"
-build_time: [1612216896, 634603000]
+build_time: [1612311938, 41090000]
 inputs:
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/Charts/Source/Charts/Jobs/AnimatedMoveViewJob.swift": [1612058899, 351703037]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/Charts/Source/Charts/Jobs/AnimatedViewPortJob.swift": [1612058899, 351264250]

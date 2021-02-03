@@ -12,6 +12,11 @@ import FirebaseDatabase
 
 class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    @IBOutlet weak var segmentTab: UISegmentedControl!
+    
+
+    
+    @IBOutlet weak var bottomDetailView: UIView!
     
     
     var counters : [Counter] = []
@@ -28,6 +33,19 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         tableView?.backgroundView = nil;
         tableView?.isOpaque = false;
         tableView?.backgroundColor = .clear
+        
+     
+        bottomDetailView.layer.cornerRadius = 20
+        bottomDetailView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        bottomDetailView.layer.shadowColor = UIColor.black.cgColor
+        bottomDetailView.layer.shadowOpacity = 0.5
+        bottomDetailView.layer.shadowOffset = .zero
+        bottomDetailView.layer.shadowRadius = 3
+        
+        
+//        bottomDetailView.backgroundColor = .red
+        
+//        segmentTab.bo
         
         navigationController?.setNavigationBarHidden(true, animated: true)
         
@@ -170,6 +188,8 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+         print("indexPath \(indexPath)")
         let counter = self.counters[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CounterCell") as! CounterCell
@@ -198,6 +218,16 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    {
+        let verticalPadding: CGFloat = 12
+
+        let maskLayer = CALayer()
+        maskLayer.backgroundColor = UIColor.black.cgColor
+        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
+        cell.layer.mask = maskLayer
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
@@ -206,7 +236,9 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         let vc = storyboard?.instantiateViewController(identifier:
             "DetailsScreen") as! DetailsViewController
         
-       print("Working fvcf \(vc)")
+        
+        
+        print("Working fvcf \(navigationController)")
         
 //        navigationController?.interactivePopGestureRecognizer?.delegate = self
         
@@ -218,7 +250,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         //        vc.modalPresentationStyle = .formSheet
         //        present(vc,animated: true)
         
-       navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     

@@ -92,7 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        print("user email \(user.profile.email ?? "No email")")
+//        print("user email \(user.profile.email ?? "No email")")
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {

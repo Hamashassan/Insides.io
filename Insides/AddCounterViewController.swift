@@ -10,11 +10,17 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var colors : [UIColor] = [.green, .orange, .red,.green, .orange, .red,.green, .orange, .red,.green, .orange, .red]
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
+    
+    let one = UIColor.init(named: "one")
+    
+    var colors : [String] = ["#e56969", "#ef916b", "#e9b35d", "#e3ca2f", "#68c163" ,"#43cead" ,"#49c6da" ,"#4fb3f1" ,"#556dc3", "#8453bc", "#b27adb", "#e691d2", "#8f9297", "#c2c2c2", "#989795" ]
+    
+    var dataSource : [String] = ["USA", "Brazil", "China", "UAE","USA", "Brazil", "China", "UAE","USA", "Brazil", "China", "UAE", ]
     
     @IBOutlet weak var counterNameField: UITextField!
     
@@ -22,10 +28,19 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
     
     @IBOutlet weak var backButton: UIButton!
     
+    
+    
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let margin: CGFloat = 20
+        
+        guard let collectionView = collectionView, let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        
+        flowLayout.minimumInteritemSpacing = margin
+        flowLayout.minimumLineSpacing = margin
+        flowLayout.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
         
         
         ref = Database.database().reference()
@@ -53,52 +68,59 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         // Do any additional setup after loading the view.
     }
     
+    //    override func viewDidLayoutSubviews() {
+    //        super.viewDidLayoutSubviews()
+    //        let height = collectionView.collectionViewLayout.collectionViewContentSize.height
+    //        collectionViewHeight.constant = height + 40
+    //        self.view.layoutIfNeeded()
+    //    }
+    
     @objc func editTapped(){
         print("edit")
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        print("Select ho bharwa")
+        
+        
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return colors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath) as! ColorsCollectionViewCell
-//
-        cell.configureCell(color: .red)
-//
+        
+        
+        
+        cell.configure(color: colors[indexPath.row],size: 50)
+        //
+        //
         return cell
     }
     
-    //    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-    //
-    //
-    //        let colorCell = cell as? ColorsCollectionViewCell
-    //
-    //
-    //        colorCell?.configureCell(color: colors[indexPath.row])    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let noOfCellsInRow = 5  //number of column you want
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        let totalSpace = flowLayout.sectionInset.left
+            + flowLayout.sectionInset.right
+            + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
+        
+        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
+        
+        //
+        
+        return CGSize(width: size, height: size)
+    }
     
     
     
-    
-    
-    //    {
-    //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "colorCell", for: indexPath)
-    //        cell.backgroundColor = colors[indexPath.row]
-    //
-    //        return cell
-    //
-    //    }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    //    didSelectItemAt
     
     @objc func onCreatePress(){
         
@@ -117,6 +139,7 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         self.donateUserActivity(id: identifier,title: counterName)
         
+        self.onBackPress()
         
     }
     

@@ -116,7 +116,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 guard let userID = Auth.auth().currentUser?.uid else { return }
                 
-                let userInfoDictionary = ["username" : userId ?? "" ,
+                let userInfoDictionary = ["username" : "" ,
                                           "email" : email ?? "","couunters":[]] as [String : Any]
                 
                 self.ref.child("users").child(userID).setValue(userInfoDictionary)

@@ -208,22 +208,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UICollectionView;
+@class NSLayoutConstraint;
 @class UITextField;
 @class UIButton;
 @class UICollectionViewCell;
+@class UICollectionViewLayout;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC7Insides24AddCounterViewController")
-@interface AddCounterViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface AddCounterViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified collectionViewHeight;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified counterNameField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backButton;
 - (void)viewDidLoad;
 - (void)editTapped;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)onCreatePress;
 - (void)onBackPress;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -286,22 +291,24 @@ SWIFT_CLASS("_TtC7Insides22CalendarViewController")
 @end
 
 @class UIView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC7Insides24ColorsCollectionViewCell")
 @interface ColorsCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified colorView;
-- (void)awakeFromNib;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+- (IBAction)onBtnPress:(id _Nonnull)sender;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC7Insides11CounterCell")
 @interface CounterCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified counterName;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified counterSettingButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified counterButton;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -343,9 +350,12 @@ SWIFT_CLASS("_TtC7Insides21DetailsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC7Insides18HomeViewController")
 @interface HomeViewController : UIViewController <UIGestureRecognizerDelegate>
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentTab;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified bottomDetailView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)onAddCounter;
@@ -359,6 +369,7 @@ SWIFT_CLASS("_TtC7Insides18HomeViewController")
 @interface HomeViewController (SWIFT_EXTENSION(Insides)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)onCounterButtonPressWithSender:(UIButton * _Nonnull)sender;
 - (void)onCounterSettingsPressWithSender:(UIButton * _Nonnull)sender;
