@@ -15,13 +15,17 @@ class ColorsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
     func configure(color: String,size: CGFloat){
+        
+        
 //        label?.text = name
        
-       self.contentView.isUserInteractionEnabled = true
+//       self.contentView.isUserInteractionEnabled = true
 
         self.contentView.backgroundColor = hexStringToUIColor(hex: color)
         self.contentView.layer.cornerRadius = size/2
     }
+    
+    
     
     
     

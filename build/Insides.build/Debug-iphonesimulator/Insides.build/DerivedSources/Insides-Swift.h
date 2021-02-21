@@ -339,6 +339,7 @@ SWIFT_CLASS("_TtC7Insides21DetailsViewController")
 @interface DetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -355,6 +356,7 @@ SWIFT_CLASS("_TtC7Insides21DetailsViewController")
 SWIFT_CLASS("_TtC7Insides18HomeViewController")
 @interface HomeViewController : UIViewController <UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentTab;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified totalLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified bottomDetailView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;

@@ -10,6 +10,10 @@ import UIKit
 
 class CalendarViewController: UITableViewController {
     
+//    var onSave: ((_ date:String)-> Void)?
+    
+    var onSave: ((_ id: Date) -> Void)?
+
     
     @IBOutlet weak var dateField: UITextField!
     
@@ -20,6 +24,10 @@ class CalendarViewController: UITableViewController {
     let datePicer = UIDatePicker()
     let datePicer2 = UIDatePicker()
     let datePicer3 = UIDatePicker()
+    
+    var date = Date()
+        
+   
     
     
     var selectedDateType : String = ""
@@ -114,7 +122,7 @@ class CalendarViewController: UITableViewController {
         let dateForatter = DateFormatter()
         dateForatter.dateStyle = .medium
         dateForatter.timeStyle = .none
-        
+        self.date = datePicer.date
         self.dateField.text = dateForatter.string(from: datePicer.date)
         self.view.endEditing(true)
         
@@ -148,11 +156,18 @@ class CalendarViewController: UITableViewController {
     
     @IBAction func onDonePress(_ sender: Any) {
         
+//        if dateField.text as AnyObject? !== "" as AnyObject {
+//            print("empty date")
+//        }
+        
+        print("dateField\(dateField.text)")
+        self.onSave!(self.date)
         dismiss(animated: true, completion: nil)
     }
     
     
     @IBAction func onBackPress(_ sender: Any) {
+        
         
         dismiss(animated: true, completion: nil)
     }

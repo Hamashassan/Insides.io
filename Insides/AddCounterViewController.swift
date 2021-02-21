@@ -59,6 +59,8 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        self.collectionView.isUserInteractionEnabled = true
+           self.collectionView.allowsSelection = true
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editTapped)
         )

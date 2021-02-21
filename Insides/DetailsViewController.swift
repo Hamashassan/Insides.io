@@ -8,15 +8,33 @@
 
 import Charts
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+
+struct Objects {
+    var sectionName: String!
+    var sectionObjects: [String]!
+}
 
 class DetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
+    
+    var dateList = [Objects]()
     
     var barChart =  BarChartView()
     
     var scrollView = UIScrollView()
     
+    var counterId : String = ""
+    
     let screenHeight = UIScreen.main.bounds.height
     let scrollViewContentHeight = 1200 as CGFloat
+    
+    var ref = Database.database().reference()
+    
+    let userID = Auth.auth().currentUser?.uid
+    
+    var listData = [String]()
+    var sectionData = [String]()
     
     let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .insetGrouped)
@@ -24,10 +42,15 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         return table
     }()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(scrollView)
+        
+        self.fetchData()
+        //        self.fetchDataFromDate()
         
         scrollView.frame = view.bounds
         scrollView.backgroundColor = UIColor.init(named: "backgroundColor")
@@ -35,7 +58,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         scrollView.contentSize =  CGSize(width: self.view.frame.size.width,
                                          height: self.view.frame.size.height)
         scrollView.delegate = self
-                scrollView.isScrollEnabled = false
+        scrollView.isScrollEnabled = false
         scrollView.bounces = false
         tableView.bounces = false
         
@@ -46,14 +69,15 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         //            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         //        ])
         
-//        tableView.heightAnchor.constraint(equalToConstant: self.view.frame.height-64)
+        
+        //        tableView.heightAnchor.constraint(equalToConstant: self.view.frame.height-64)
         
         
         
         //        view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate   = self
-        
+        tableView.isEditing = true
         
         
         setNavigationBar()
@@ -74,55 +98,83 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("DELETE")
+        }
+    }
     
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section Title \(section)"
+        
+        let data = dateList[section].sectionName
+        
+        return data
     }
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return dateList.count
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return dateList[section].sectionObjects.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath)
         
-        cell.textLabel?.text = "Hello World: \(indexPath.section) | row : \(indexPath.row)"
+        print("dateList\(dateList)")
+        
+        let data = self.dateList[indexPath.section].sectionObjects.sorted().reversed()[indexPath.row]
+        
+        //            .sorted().reversed()[indexPath.row]
+        
+        print("hehe",data)
+        
+        cell.textLabel?.text = data
         
         return cell
     }
     
     func configureBarChart(){
         
-        barChart.frame = CGRect(x:10,y:0,width: self.view.frame.size.width-40,
-                                height: self.view.frame.size.width/1.5)
+        barChart.frame = CGRect(x:10,y:0,width: self.view.frame.size.width-200,
+                                height: self.view.frame.size.width)
         
         barChart.backgroundColor = UIColor(named: "itemColor")
-        
+        let labels = ["Value 1", "Value 2", "Value 3"]
         barChart.fitBars = true
         barChart.layer.cornerRadius = 200
         barChart.legend.enabled = false
         barChart.rightAxis.enabled = false
         barChart.xAxis.labelPosition = .bottom
+        barChart.xAxis.drawLabelsEnabled = true
         barChart.leftAxis.labelTextColor = .red
         let formatter = NumberFormatter()
         formatter.numberStyle = .none
         barChart.leftAxis.valueFormatter = DefaultAxisValueFormatter(formatter: formatter)
         barChart.leftAxis.axisMinimum = 0
         barChart.xAxis.drawGridLinesEnabled = false
+        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values:labels)
+        //        barChart.xAxis.granularity = 1
         
         var entries = [BarChartDataEntry]()
         
-        for x in 0..<10 {
-            entries.append(BarChartDataEntry(x: Double(x), y: Double(x)))
+        print("entries \(dateList.count)")
+        
+        for x in dateList {
+            entries.append(BarChartDataEntry(x: Double(x.sectionObjects.count), y: Double(x.sectionObjects.count)))
         }
+        
+        
+        //        for x in 0..<10 {
+        //                 entries.append(BarChartDataEntry(x: Double(x), y: Double(x+20)))
+        //             }
+        
+        
+        
         
         let set = BarChartDataSet(entries:entries)
         //        set.colors = ChartColorTemplates.joyful()
@@ -138,11 +190,11 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-       // Disabling horizontal scrolling
-           scrollView.contentOffset.x = 0.0
-
-           print(scrollView.contentOffset.y)
-       }
+        // Disabling horizontal scrolling
+        scrollView.contentOffset.x = 0.0
+        
+        print(scrollView.contentOffset.y)
+    }
     
     
     
@@ -170,10 +222,10 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         stackView.frame = scrollView.bounds
         stackView.backgroundColor = .black
         stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fillEqually
         stackView.spacing = 20
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        //        stackView.translatesAutoresizingMaskIntoConstraints = false
         
         
         scrollView.addSubview(stackView)
@@ -184,8 +236,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             barChart.leftAnchor.constraint(equalTo: stackView.leftAnchor,constant: 0),
             barChart.rightAnchor.constraint(equalTo: stackView.rightAnchor,constant: 0),
             barChart.bottomAnchor.constraint(equalTo: tableView.topAnchor),
-            //                 barChart.widthAnchor.constraint(equalToConstant:  self.view.frame.size.width-40),
-            //                 barChart.heightAnchor.constraint(equalToConstant: self.view.frame.size.width/1.5),
+            //                             barChart.widthAnchor.constraint(equalToConstant:  self.view.frame.size.width/2),
+            //                             barChart.heightAnchor.constraint(equalToConstant: self.view.frame.size.height/3),
         ])
         //
         //        NSLayoutConstraint.activate([
@@ -200,8 +252,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             stackView.leftAnchor.constraint(equalTo: scrollView.leftAnchor),
             stackView.rightAnchor.constraint(equalTo: scrollView.rightAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            stackView.widthAnchor.constraint(equalToConstant: scrollView.contentSize.width),
-            stackView.heightAnchor.constraint(equalToConstant: scrollView.contentSize.height)
+            //            stackView.widthAnchor.constraint(equalToConstant: scrollView.contentSize.width),
+            //            stackView.heightAnchor.constraint(equalToConstant: scrollView.contentSize.height)
         ])
         
         //        NSLayoutConstraint.activate([
@@ -264,6 +316,17 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         let vc = storyboard?.instantiateViewController(identifier: "CalendarScreen") as! CalendarViewController
         
         vc.modalPresentationStyle = .formSheet
+        vc.onSave = { (date) -> Void in
+            print("callback")
+            print(date)
+            self.fetchDataFromDate(date: date)
+            let dateForatter = DateFormatter()
+            dateForatter.dateStyle = .medium
+            dateForatter.timeStyle = .none
+//            let mytitle = dateForatter.string(from: date)
+            self.title =  dateForatter.string(from: date)
+        }
+        
         present(vc,animated: true)
     }
     
@@ -278,5 +341,78 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
             
         }
     }
+    
+    func fetchData(){
+        ref.child("users").child(userID!).child("counters").child(self.counterId).child("countersData").observe(.value, with: { (snapshot) in
+            
+            if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
+                
+                for snap in snapShot {
+                    
+                    if let mainObj = snap.value as? [String: AnyObject]{
+                        print("mainObj \(mainObj)")
+                        print("inside \(snap.value)")
+                        let date = mainObj["date"] as? String
+                        
+                        var newlist = [String]()
+                        
+                        for m in mainObj {
+                            print("mf\(m.value)")
+                            
+                            newlist.append(m.key)
+                        }
+                        
+                        
+                        let section = "\(snap.key) [\(mainObj.count)]"
+                        self.dateList.append(Objects(sectionName: section, sectionObjects: newlist))
+                        
+                        self.tableView.reloadData()
+                    }
+                }
+                self.configureBarChart()
+            }
+        })
+    }
+    
+    func fetchDataFromDate(date:Date){
+        
+        let myDate = date
+        let selectedDate = myDate.getFormattedDate(format: "dd-MM-yyyy")
+        print("formate \(selectedDate)")
+        
+        
+        
+        ref.child("users").child(userID!).child("counters").child(self.counterId).child("countersData").child(selectedDate).observe(.value, with: { (snapshot) in
+            print("hi")
+            if let snapShot = snapshot.children.allObjects as?
+                [DataSnapshot]{
+                
+                var newlist = [String]()
+                
+                for snap in snapShot {
+                    newlist.append(snap.key)
+                }
+                
+                let section = "\(selectedDate) [\(newlist.count)]"
+                
+                self.dateList.removeAll()
+                
+                self.dateList.append(Objects(sectionName: section, sectionObjects: newlist))
+                
+                self.tableView.reloadData()
+                
+                self.configureBarChart()
+            }
+        })
+    }
+    
 }
 
+//   ref.child("users").child(userID!).child("counters").child("243CE1FA-8CD4-4E5A-922C-5AF6821ECDF9").child("countersData")
+extension Date {
+    func getFormattedDate(format: String) -> String {
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = format
+        return dateformat.string(from: self)
+    }
+}

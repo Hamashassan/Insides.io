@@ -52,7 +52,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
         
         Auth.auth().addStateDidChangeListener { (auth, user) in
-            print("user",user)
             if user != nil {
                 self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeScreen")
             } else {

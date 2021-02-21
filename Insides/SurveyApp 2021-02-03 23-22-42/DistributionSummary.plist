@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SurveyApp.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>BB4D070F8DD9BC7C56CCA0C8C39BF730BD5A06EF</string>
+				<key>dateExpires</key>
+				<string>6/29/21</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>XLSGNTC5U8.org.reactjs.native.example.SurveyApp</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>XLSGNTC5U8</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>XLSGNTC5U8.org.reactjs.native.example.SurveyApp</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>SurveyApp.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>ca8b49bb-307b-4211-a4e4-d21529850720</string>
+				<key>name</key>
+				<string>CubixDistribution</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>XLSGNTC5U8</string>
+				<key>name</key>
+				<string>CUBIX INC</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

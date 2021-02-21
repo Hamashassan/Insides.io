@@ -31,6 +31,8 @@ class CounterSettingsViewController: UITableViewController {
     
     @IBOutlet weak var counterHistoryCell: UITableViewCell!
     
+    let userID = Auth.auth().currentUser?.uid
+    
     var ref: DatabaseReference!
     
     
@@ -38,9 +40,9 @@ class CounterSettingsViewController: UITableViewController {
     var name : String = ""
     var id : String = ""
     //    let color : UIColor
-    //    let today_count : Int
+    //        let today_count : Int
     //    let weekly_count : Int
-    //    let monthly_count : Int
+    var monthly_count : Int = 0
     
     
     
@@ -54,6 +56,45 @@ class CounterSettingsViewController: UITableViewController {
         
         counterNameField.text = name
         //        print(name.counterName)
+        
+        ref.child("users").child(userID!).child("counters").child(self.id).child("countersData").observe(.value, with: { (snapshot) in
+            
+            if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
+                
+                
+                let today = Date()
+                let formatter1 = DateFormatter()
+                formatter1.dateFormat = "dd-MM-yyyy"
+                let todayDate = formatter1.string(from: today)
+                //                2021-02-21
+                let todayCount = snapshot.childSnapshot(forPath: todayDate).childrenCount
+                self.todayLabel.text = String(todayCount)
+                print("Seting shot",todayCount)
+                var newlist = [String]()
+                for snap in snapShot {
+                    
+                    if let mainObj = snap.value as? [String: AnyObject]{
+                        print("mainObj \(mainObj)")
+                        print("inside \(snap.value)")
+                        
+                        
+                        
+                        
+                        
+                        for m in mainObj {
+                            print("mf\(m.value)")
+                            
+                            newlist.append(m.key)
+                        }
+                        
+                        self.last7DaysLabel.text = String(newlist.count / 2)
+                        self.last30DaysLabel.text =  String(newlist.count)
+                        
+                    }
+                }
+                
+            }
+        })
         
         
     }

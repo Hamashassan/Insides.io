@@ -14,7 +14,8 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var segmentTab: UISegmentedControl!
     
-
+    
+    @IBOutlet weak var totalLabel: UILabel!
     
     @IBOutlet weak var bottomDetailView: UIView!
     
@@ -34,7 +35,7 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         tableView?.isOpaque = false;
         tableView?.backgroundColor = .clear
         
-     
+        
         bottomDetailView.layer.cornerRadius = 20
         bottomDetailView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         bottomDetailView.layer.shadowColor = UIColor.black.cgColor
@@ -43,41 +44,41 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         bottomDetailView.layer.shadowRadius = 3
         
         
-//        bottomDetailView.backgroundColor = .red
+        //        bottomDetailView.backgroundColor = .red
         
-//        segmentTab.bo
+        //        segmentTab.bo
         
         navigationController?.setNavigationBarHidden(true, animated: true)
         
         
-//        navigationController?.title = "hi"
+        //        navigationController?.title = "hi"
         
-//
-//
-//        let titles = ["All", "Missed"]
-//       var segmentControl = UISegmentedControl(items: titles)
-//        segmentControl.tintColor = UIColor.white
-//        segmentControl.backgroundColor = UIColor.blue
-//        segmentControl.selectedSegmentIndex = 0
-//        for index in 0...titles.count-1 {
-//            segmentControl.setWidth(60, forSegmentAt: index)
-//        }
-//        segmentControl.sizeToFit()
-////        segmentControl.addTarget(self, action: #selector(segmentChanged), for: .valueChanged)
-//        segmentControl.selectedSegmentIndex = 0
-//        segmentControl.sendActions(for: .valueChanged)
-//        navigationItem.titleView = segmentControl
-////        navigationController?.navigationBar.barTintColor = UIColor.init(named: "backgroundColor")
-//
-//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
-//        self.navigationController?.navigationBar.shadowImage = UIImage()
-//        self.navigationController?.navigationBar.layoutIfNeeded()
-//
-//        let add = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(onAddCounter))
-//          let play = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddCounter))
-//        navigationItem.rightBarButtonItems = [add]
-//        navigationItem.leftBarButtonItem = play
-
+        //
+        //
+        //        let titles = ["All", "Missed"]
+        //       var segmentControl = UISegmentedControl(items: titles)
+        //        segmentControl.tintColor = UIColor.white
+        //        segmentControl.backgroundColor = UIColor.blue
+        //        segmentControl.selectedSegmentIndex = 0
+        //        for index in 0...titles.count-1 {
+        //            segmentControl.setWidth(60, forSegmentAt: index)
+        //        }
+        //        segmentControl.sizeToFit()
+        ////        segmentControl.addTarget(self, action: #selector(segmentChanged), for: .valueChanged)
+        //        segmentControl.selectedSegmentIndex = 0
+        //        segmentControl.sendActions(for: .valueChanged)
+        //        navigationItem.titleView = segmentControl
+        ////        navigationController?.navigationBar.barTintColor = UIColor.init(named: "backgroundColor")
+        //
+        //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        //        self.navigationController?.navigationBar.shadowImage = UIImage()
+        //        self.navigationController?.navigationBar.layoutIfNeeded()
+        //
+        //        let add = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(onAddCounter))
+        //          let play = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddCounter))
+        //        navigationItem.rightBarButtonItems = [add]
+        //        navigationItem.leftBarButtonItem = play
+        
         
         
         
@@ -86,16 +87,22 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         ref.child("users").child(userID!).child("counters").observe(.value, with: { (snapshot) in
             
             //        self.ref.child("users").observe(.value, with: { (snapshot) in
-            
+            var total = 0
+            var snaps = 0
             if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
                 self.counters.removeAll()
                 for snap in snapShot {
                     print("mySnap \(snap)")
+                    
                     if let mainObj = snap.value as? [String: AnyObject]{
                         let id = mainObj["identifier"] as? String
                         let counterName = mainObj["counte_name"] as? String
                         let counter = mainObj["counter"] as? Int
                         let color = mainObj["counter_color"] as? String
+                        
+                        total = total + counter!
+                        snaps = snaps + 1
+                        
                         
                         self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0, counterColor: .blue))
                         self.tableView.reloadData()
@@ -104,6 +111,13 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
                 }
                 
             }
+            print("XX total XX",snaps)
+            if snaps > 0 {
+                self.totalLabel.text = "Total: \(total), Average: \(total/snaps)"
+            }
+            
+            
+            
             
             
         })
@@ -142,8 +156,8 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func onAddCounter(){
         let vc = storyboard?.instantiateViewController(identifier: "CreateCounter") as! AddCounterViewController
-             vc.modalPresentationStyle = .formSheet
-             present(vc,animated: true)
+        vc.modalPresentationStyle = .formSheet
+        present(vc,animated: true)
     }
     
     
@@ -189,29 +203,17 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-         print("indexPath \(indexPath)")
+        print("indexPath \(indexPath)")
         let counter = self.counters[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CounterCell") as! CounterCell
         
         cell.counterButton.tag = indexPath.row
         cell.counterButton.addTarget(self, action: #selector(onCounterButtonPress(sender:)), for: .touchUpInside)
-        
-        
-        
         cell.counterSettingButton.tag = indexPath.row
         cell.counterSettingButton.addTarget(self, action: #selector(onCounterSettingsPress), for: .touchUpInside)
-        
-        
-        
         cell.setCounter(counter: counter)
-        
-        //        Cell Style
-        
-        //        cell.backgroundColor = UIColor.systemBackground
         cell.layer.borderColor = UIColor.black.cgColor
-        //        cell.layer.borderWidth = 1
-        
         cell.layer.cornerRadius = 15
         cell.clipsToBounds = true
         
@@ -221,7 +223,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
         let verticalPadding: CGFloat = 12
-
+        
         let maskLayer = CALayer()
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
@@ -231,24 +233,12 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-       
+        let counterId = self.counters[indexPath.row].id
         
         let vc = storyboard?.instantiateViewController(identifier:
             "DetailsScreen") as! DetailsViewController
         
-        
-        
-        print("Working fvcf \(navigationController)")
-        
-//        navigationController?.interactivePopGestureRecognizer?.delegate = self
-        
-        //        vc.name = counter.counterName
-        //        vc.id = counter.id
-        //        vc.name = counter
-        //        vc.reciv
-        //        let vc = CounterSettingsViewController(name:"Hello")
-        //        vc.modalPresentationStyle = .formSheet
-        //        present(vc,animated: true)
+        vc.counterId = counterId
         
         self.navigationController?.pushViewController(vc, animated: true)
         
@@ -258,8 +248,6 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         print("called from siri \(id)")
         
-//        let id2 =  "258D98B7-0B56-4567-8F72-6D0E6FE1C158"
-        
         ref.child("users").child(userID!).child("counters").child(id).observeSingleEvent(of: .value, with: { (snap) in
             
             if let mainObj = snap.value as? [String: AnyObject]{
@@ -268,7 +256,6 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
                 let userInfoDictionary = ["counter":count! + 1] as [String : Any]
                 
                 self.ref.child("users").child(self.userID!).child("counters").child(id).updateChildValues(userInfoDictionary)
-                
                 
             }
             
@@ -282,17 +269,31 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     
     @objc func onCounterButtonPress(sender: UIButton){
         
-        
+        //
         let counter = self.counters[sender.tag]
         
         dump("mycounter \(counter.id)")
-        
-        
         
         let userInfoDictionary = ["counter":counter.count + 1] as [String : Any]
         
         self.ref.child("users").child(userID!).child("counters").child(counter.id).updateChildValues(userInfoDictionary)
         
+        let parentDate = Date()
+        let formatter1 = DateFormatter()
+        formatter1.dateFormat = "dd-MM-yyyy"
+        let myparentDate = formatter1.string(from: parentDate)
+        
+        let today = Date()
+        let formatter2 = DateFormatter()
+        formatter2.dateFormat = "hh:mm:ss a"
+        let mydate = formatter2.string(from: today)
+        print("mydate \(mydate)")
+        
+        let dateData = ["date":mydate,"count":counter.count + 1] as [String : Any]
+        
+        
+        self.ref.child("users").child(userID!).child("counters").child(counter.id).child("countersData").child(myparentDate).child(mydate).setValue(dateData)
+        //
         
         
     }
@@ -304,21 +305,19 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         dump("mycounter \(counter.counterName)")
         
+        
+        
+        
+        
+        
+        
         let vc = storyboard?.instantiateViewController(identifier: "CounterSettings") as! CounterSettingsViewController
         
         vc.name = counter.counterName
         vc.id = counter.id
-        //        vc.name = counter
-        //        vc.reciv
-        //        let vc = CounterSettingsViewController(name:"Hello")
         vc.modalPresentationStyle = .formSheet
         present(vc,animated: true)
         
-        //         let userInfoDictionary = ["counter":counter.count + 1] as [String : Any]
-        //
-        //         self.ref.child("users").child(userID!).child("counters").child(counter.id).updateChildValues(userInfoDictionary)
-        //
-        //         print()
     }
     
     
