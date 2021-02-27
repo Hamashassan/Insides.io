@@ -19,6 +19,9 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var bottomDetailView: UIView!
     
+    var dragInitialIndexPath: IndexPath?
+    var dragCellSnapshot: UIView?
+    
     
     var counters : [Counter] = []
     
@@ -31,13 +34,18 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//         window?.overrideUserInterfaceStyle = .dark
+        //         window?.overrideUserInterfaceStyle = .dark
         
-//        view.overrideUserInterfaceStyle = .dark
+        //        view.overrideUserInterfaceStyle = .dark
         
         tableView?.backgroundView = nil;
         tableView?.isOpaque = false;
         tableView?.backgroundColor = .clear
+        //        tableView.isEditing = true
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(onLongPressGesture(sender:)))
+        longPress.minimumPressDuration = 0.2 // optional
+        tableView.addGestureRecognizer(longPress)
         
         
         bottomDetailView.layer.cornerRadius = 20
@@ -197,20 +205,115 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
      }
      */
     @IBAction func infoButton(_ sender: Any) {
-//        let counterId = self.counters[indexPath.row].id
+        //        let counterId = self.counters[indexPath.row].id
         
         let vc = storyboard?.instantiateViewController(identifier:
             "InfoScreen") as! InfoViewController
         
-//        vc.counterId = counterId
+        //        vc.counterId = counterId
         
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
+    @objc func onLongPressGesture(sender: UILongPressGestureRecognizer) {
+          let locationInView = sender.location(in: tableView)
+          let indexPath = tableView.indexPathForRow(at: locationInView)
+          
+          if sender.state == .began {
+              if indexPath != nil {
+                  dragInitialIndexPath = indexPath
+                  let cell = tableView.cellForRow(at: indexPath!)
+                  dragCellSnapshot = snapshotOfCell(inputView: cell!)
+                  var center = cell?.center
+                  dragCellSnapshot?.center = center!
+                  dragCellSnapshot?.alpha = 0.0
+                  tableView.addSubview(dragCellSnapshot!)
+                  
+                  UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                      center?.y = locationInView.y
+                      self.dragCellSnapshot?.center = center!
+                      self.dragCellSnapshot?.transform = (self.dragCellSnapshot?.transform.scaledBy(x: 1.05, y: 1.05))!
+                      self.dragCellSnapshot?.alpha = 0.99
+                      cell?.alpha = 0.0
+                  }, completion: { (finished) -> Void in
+                      if finished {
+                          cell?.isHidden = true
+                      }
+                  })
+              }
+          } else if sender.state == .changed && dragInitialIndexPath != nil {
+              var center = dragCellSnapshot?.center
+              center?.y = locationInView.y
+              dragCellSnapshot?.center = center!
+              
+              // to lock dragging to same section add: "&& indexPath?.section == dragInitialIndexPath?.section" to the if below
+              if indexPath != nil && indexPath != dragInitialIndexPath {
+                  // update your data model
+                  let dataToMove = counters[dragInitialIndexPath!.row]
+                  counters.remove(at: dragInitialIndexPath!.row)
+                  counters.insert(dataToMove, at: indexPath!.row)
+                  
+                  tableView.moveRow(at: dragInitialIndexPath!, to: indexPath!)
+                  dragInitialIndexPath = indexPath
+              }
+          } else if sender.state == .ended && dragInitialIndexPath != nil {
+              let cell = tableView.cellForRow(at: dragInitialIndexPath!)
+              cell?.isHidden = false
+              cell?.alpha = 0.0
+              UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                  self.dragCellSnapshot?.center = (cell?.center)!
+                  self.dragCellSnapshot?.transform = CGAffineTransform.identity
+                  self.dragCellSnapshot?.alpha = 0.0
+                  cell?.alpha = 1.0
+              }, completion: { (finished) -> Void in
+                  if finished {
+                      self.dragInitialIndexPath = nil
+                      self.dragCellSnapshot?.removeFromSuperview()
+                      self.dragCellSnapshot = nil
+                  }
+              })
+          }
+      }
+      
+      func snapshotOfCell(inputView: UIView) -> UIView {
+          UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0.0)
+          inputView.layer.render(in: UIGraphicsGetCurrentContext()!)
+          let image = UIGraphicsGetImageFromCurrentImageContext()
+          UIGraphicsEndImageContext()
+          
+          let cellSnapshot = UIImageView(image: image)
+          cellSnapshot.layer.masksToBounds = false
+          cellSnapshot.layer.cornerRadius = 0.0
+          cellSnapshot.layer.shadowOffset = CGSize(width: -5.0, height: 0.0)
+          cellSnapshot.layer.shadowRadius = 5.0
+          cellSnapshot.layer.shadowOpacity = 0.4
+          return cellSnapshot
+      }
+    
 }
 
 extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        self.counters.swapAt(sourceIndexPath.row, destinationIndexPath.row)
+    }
+    
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return counters.count
@@ -220,6 +323,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         print("indexPath \(indexPath)")
         let counter = self.counters[indexPath.row]
+        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CounterCell") as! CounterCell
         
@@ -382,6 +486,8 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
             alpha: CGFloat(1.0)
         )
     }
+    
+  
     
     
 }

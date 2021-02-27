@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "a0e04cac3e0072874d877b9ad9009b0b"
-build_time: [1614431253, 694916000]
+build_time: [1614433681, 12346000]
 inputs:
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/Helpers/Util.swift": [1612038999, 612707722]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/ViewController.swift": [1612271940, 506864686]
@@ -16,4 +16,4 @@ inputs:
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/SceneDelegate.swift": [1614414163, 889395633]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/DetailsViewController.swift": [1614417017, 797456180]
   "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/CalendarViewController.swift": [1613545163, 920649826]
-  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/HomeViewController.swift": [1614366031, 267768038]
+  "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides/HomeViewController.swift": [1614433680, 839751222]
