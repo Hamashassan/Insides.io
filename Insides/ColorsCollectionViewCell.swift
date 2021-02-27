@@ -31,8 +31,9 @@ class ColorsCollectionViewCell: UICollectionViewCell {
     
     
     func onSelect(){
-        contentView.layer.borderWidth = 1
-        contentView.layer.borderColor = UIColor.gray.cgColor
+        self.onUnSelect()
+        contentView.layer.borderWidth = 2
+        contentView.layer.borderColor = UIColor.init(named: "selection")?.cgColor
     }
     
     func onUnSelect(){

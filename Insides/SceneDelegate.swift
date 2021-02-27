@@ -13,8 +13,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     let counterActivityName = "com.insides.io.counter"
+     let userDefault = UserDefaults()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        
+       
         
         if let userActivity = connectionOptions.userActivities.first {
                   print("SCENE userActivity \(userActivity)")
@@ -45,7 +49,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        
+             let   value = userDefault.bool(forKey: "isDark")
+               
+               print("value",value)
+               
+               if(value){
+                   print("theme dark")
+            
+                   window?.overrideUserInterfaceStyle = .dark
+               }else{
+                   print("theme light")
+            
+                   window?.overrideUserInterfaceStyle = .light
+               }
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         // Make sure you set an Storyboard ID for the view controller you want to instantiate

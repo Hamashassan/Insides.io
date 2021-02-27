@@ -15,8 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     var window: UIWindow?
     let drinkActivityName = "com.insides.io.counter"
     
+   
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+  
         
         
         print("Launching Fresh")
@@ -43,12 +47,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         GIDSignIn.sharedInstance()?.delegate = self
         
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-
+        
         
         // Override point for customization after application launch.
         
- 
-            let userActivityDictionary = (launchOptions?[UIApplication.LaunchOptionsKey.userActivityDictionary] as? [UIApplication.LaunchOptionsKey: Any])
+        
+        let userActivityDictionary = (launchOptions?[UIApplication.LaunchOptionsKey.userActivityDictionary] as? [UIApplication.LaunchOptionsKey: Any])
         
         print("userActivityDictionary \(userActivityDictionary as Any)")
         
@@ -64,6 +68,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         let viewController = window?.rootViewController as? HomeViewController
         
         viewController?.incrementCounter(id: "")
+        
+         
+      
+           
+
         
         print("App launched")
         return true
@@ -92,11 +101,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-//        print("user email \(user.profile.email ?? "No email")")
+        //        print("user email \(user.profile.email ?? "No email")")
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-      return GIDSignIn.sharedInstance().handle(url)
+        return GIDSignIn.sharedInstance().handle(url)
     }
     
     //    private func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {

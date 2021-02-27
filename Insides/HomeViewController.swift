@@ -31,6 +31,10 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//         window?.overrideUserInterfaceStyle = .dark
+        
+//        view.overrideUserInterfaceStyle = .dark
+        
         tableView?.backgroundView = nil;
         tableView?.isOpaque = false;
         tableView?.backgroundColor = .clear
@@ -104,7 +108,7 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
                         snaps = snaps + 1
                         
                         
-                        self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0, counterColor: .blue))
+                        self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0, counterColor: self.hexStringToUIColor(hex: color!) ))
                         self.tableView.reloadData()
                     }
                     
@@ -192,6 +196,17 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
      // Pass the selected object to the new view controller.
      }
      */
+    @IBAction func infoButton(_ sender: Any) {
+//        let counterId = self.counters[indexPath.row].id
+        
+        let vc = storyboard?.instantiateViewController(identifier:
+            "InfoScreen") as! InfoViewController
+        
+//        vc.counterId = counterId
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
 }
 
@@ -235,10 +250,13 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         let counterId = self.counters[indexPath.row].id
         
+        let counter = self.counters[indexPath.row].count
+        
         let vc = storyboard?.instantiateViewController(identifier:
             "DetailsScreen") as! DetailsViewController
         
         vc.counterId = counterId
+        vc.count = counter
         
         self.navigationController?.pushViewController(vc, animated: true)
         
@@ -256,6 +274,25 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
                 let userInfoDictionary = ["counter":count! + 1] as [String : Any]
                 
                 self.ref.child("users").child(self.userID!).child("counters").child(id).updateChildValues(userInfoDictionary)
+                
+                let parentDate = Date()
+                let formatter1 = DateFormatter()
+                formatter1.dateFormat = "dd-MM-yyyy"
+                let myparentDate = formatter1.string(from: parentDate)
+                
+                let today = Date()
+                let formatter2 = DateFormatter()
+                formatter2.dateFormat = "hh:mm:ss a"
+                let mydate = formatter2.string(from: today)
+                print("mydate \(mydate)")
+                
+                let dateData = ["date":mydate,"count":count! + 1] as [String : Any]
+                
+                
+                self.ref.child("users").child(self.userID!).child("counters").child(id).child("countersData")
+                    .child(myparentDate).child(mydate).setValue(dateData)
+                
+                
                 
             }
             
@@ -289,12 +326,14 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         let mydate = formatter2.string(from: today)
         print("mydate \(mydate)")
         
-        let dateData = ["date":mydate,"count":counter.count + 1] as [String : Any]
+        let dateData = ["date":mydate,"count":counter.count + 1,"counter_name":counter.counterName,"identifier":counter.id] as [String : Any]
         
         
-        self.ref.child("users").child(userID!).child("counters").child(counter.id).child("countersData").child(myparentDate).child(mydate).setValue(dateData)
+        self.ref.child("users").child(userID!).child("counters").child(counter.id).child("countersData")
+            .child(myparentDate).child(mydate).setValue(dateData)
         //
-        
+        self.ref.child("users").child(self.userID!).child("allCounters")
+            .child(myparentDate).child(mydate).setValue(dateData)
         
     }
     
@@ -315,11 +354,34 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         vc.name = counter.counterName
         vc.id = counter.id
+        vc.count = counter.count
         vc.modalPresentationStyle = .formSheet
         present(vc,animated: true)
         
     }
     
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt64 = 0
+        Scanner(string: cString).scanHexInt64(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
     
     
 }

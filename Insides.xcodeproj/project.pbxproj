@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5DCA65CFE70034A9F9860028 /* Pods_Insides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2AE0B861C24544A828E3A0 /* Pods_Insides.framework */; };
 		AE1CC26625C3A3FB00194FC4 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CC26525C3A3FB00194FC4 /* Util.swift */; };
+		AE26BFC125E6DA1000328717 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26BFC025E6DA1000328717 /* InfoViewController.swift */; };
 		AE44627125B501360082BCD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44627025B501360082BCD0 /* AppDelegate.swift */; };
 		AE44627325B501360082BCD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44627225B501360082BCD0 /* SceneDelegate.swift */; };
 		AE44627525B501360082BCD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44627425B501360082BCD0 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		7A2AE0B861C24544A828E3A0 /* Pods_Insides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8B855A8E90E069694CCE5D /* Pods-Insides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insides.release.xcconfig"; path = "Target Support Files/Pods-Insides/Pods-Insides.release.xcconfig"; sourceTree = "<group>"; };
 		AE1CC26525C3A3FB00194FC4 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		AE26BFC025E6DA1000328717 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		AE44626D25B501360082BCD0 /* Insides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE44627025B501360082BCD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE44627225B501360082BCD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */,
 				AEE68CF425C62664008AAA71 /* CalendarViewController.swift */,
 				AEB2BD0825C9358400E97379 /* ColorsCollectionViewCell.swift */,
+				AE26BFC025E6DA1000328717 /* InfoViewController.swift */,
 			);
 			path = Insides;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				AE44627525B501360082BCD0 /* ViewController.swift in Sources */,
 				AE44627125B501360082BCD0 /* AppDelegate.swift in Sources */,
 				AE6580F525C07F1D0041AA48 /* AddCounterViewController.swift in Sources */,
+				AE26BFC125E6DA1000328717 /* InfoViewController.swift in Sources */,
 				AE6580FD25C164D50041AA48 /* AppSettingsTableViewController.swift in Sources */,
 				AED584C725C2F1BF002824BA /* SignUpViewController.swift in Sources */,
 				AEB2BD0925C9358400E97379 /* ColorsCollectionViewCell.swift in Sources */,

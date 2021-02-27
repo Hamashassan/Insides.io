@@ -39,6 +39,7 @@ class CounterSettingsViewController: UITableViewController {
     //    var name: Counter
     var name : String = ""
     var id : String = ""
+    var count: Int  = 0
     //    let color : UIColor
     //        let today_count : Int
     //    let weekly_count : Int
@@ -87,7 +88,7 @@ class CounterSettingsViewController: UITableViewController {
                             newlist.append(m.key)
                         }
                         
-                        self.last7DaysLabel.text = String(newlist.count / 2)
+                        self.last7DaysLabel.text = String(newlist.count)
                         self.last30DaysLabel.text =  String(newlist.count)
                         
                     }
@@ -97,6 +98,40 @@ class CounterSettingsViewController: UITableViewController {
         })
         
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        switch indexPath {
+        case [0,1]:
+            print("Color")
+        case [1,0]:
+            
+            let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            
+            alert.addAction(UIAlertAction(title: "Canel", style: .cancel))
+            alert.addAction(UIAlertAction(title: "Undo last count", style: .destructive, handler:  {
+                (action) in self.undoLastCount()
+            }))
+            
+            self.present(alert,animated: true)
+            
+        case [1,1]:
+            
+            let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            
+            alert.addAction(UIAlertAction(title: "Canel", style: .cancel))
+            alert.addAction(UIAlertAction(title: "Reset Counter", style: .destructive, handler:  {
+                (action) in self.resetCount()
+            }))
+            
+            self.present(alert,animated: true)
+            
+        case [1,2]:
+            print("Export Counter")
+        default:
+            print("unknown")
+        }
     }
     
     @IBAction func onBackPress(_ sender: Any) {
@@ -111,11 +146,30 @@ class CounterSettingsViewController: UITableViewController {
         let counterName = counterNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         let userInfoDictionary = ["identifier":self.id,"counte_name" : counterName,
-                                  "counter_color" : "UIColor.red"] as [String : Any]
+            ] as [String : Any]
         
         self.ref.child("users").child(userID).child("counters").child(self.id).updateChildValues(userInfoDictionary)
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    
+    func undoLastCount()  {
+        
+        let userInfoDictionary = ["counter":self.count - 1] as [String : Any]
+        
+        self.ref.child("users").child(userID!).child("counters").child(self.id).updateChildValues(userInfoDictionary)
+        
+    }
+    
+    func resetCount()  {
+        
+        let userInfoDictionary = ["counter":0] as [String : Any]
+        
+        self.ref.child("users").child(userID!).child("counters").child(self.id).updateChildValues(userInfoDictionary)
+        
+        self.ref.child("users").child(userID!).child("counters").child(self.id).child("countersData").removeValue()
+        
     }
     
 }

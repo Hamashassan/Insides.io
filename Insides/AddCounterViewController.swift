@@ -18,7 +18,7 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
     
     let one = UIColor.init(named: "one")
     
-    var colors : [String] = ["#e56969", "#ef916b", "#e9b35d", "#e3ca2f", "#68c163" ,"#43cead" ,"#49c6da" ,"#4fb3f1" ,"#556dc3", "#8453bc", "#b27adb", "#e691d2", "#8f9297", "#c2c2c2", "#989795" ]
+    var colors : [String] = ["#e56969", "#ef916b", "#e9b35d", "#e3ca2f", "#68c163" ,"#43cead" ,"#49c6da" ,"#4fb3f1" ,"#007aff", "#8453bc", "#b27adb", "#e691d2", "#8f9297", "#c2c2c2", "#989795" ]
     
     var dataSource : [String] = ["USA", "Brazil", "China", "UAE","USA", "Brazil", "China", "UAE","USA", "Brazil", "China", "UAE", ]
     
@@ -27,6 +27,8 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
     @IBOutlet weak var createButton: UIButton!
     
     @IBOutlet weak var backButton: UIButton!
+    
+    var selectedColor = "#007aff"
     
     
     
@@ -60,8 +62,10 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         collectionView.dataSource = self
         collectionView.delegate = self
         self.collectionView.isUserInteractionEnabled = true
-           self.collectionView.allowsSelection = true
-        
+        self.collectionView.allowsSelection = true
+        self.collectionView.allowsMultipleSelection = false
+        let selectedIndexPath = IndexPath(row: 0, section: 0)
+        self.collectionView.selectItem(at: selectedIndexPath, animated: true, scrollPosition: [])
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editTapped)
         )
         
@@ -83,9 +87,25 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print("Select ho bharwa")
+        print("Select ho bharwa",indexPath)
+        
+       let selectedColor = colors[indexPath.row]
+        
+        print("selected color ",selectedColor)
+        
+        self.selectedColor = selectedColor
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? ColorsCollectionViewCell {
+            cell.onSelect()
+        }
         
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? ColorsCollectionViewCell {
+            cell.onUnSelect()
+        }
     }
     
     
@@ -135,7 +155,7 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         let counterName = counterNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         let userInfoDictionary = ["identifier":identifier,"counte_name" : counterName,
-                                  "counter_color" : "UIColor.red","counter":0] as [String : Any]
+                                  "counter_color" : self.selectedColor,"counter":0] as [String : Any]
         
         self.ref.child("users").child(userID).child("counters").child(identifier).setValue(userInfoDictionary)
         

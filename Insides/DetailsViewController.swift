@@ -26,6 +26,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var counterId : String = ""
     
+    var count : Int = 0
+    
     let screenHeight = UIScreen.main.bounds.height
     let scrollViewContentHeight = 1200 as CGFloat
     
@@ -98,9 +100,28 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
+    
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            print("DELETE")
+            
+            let time = self.dateList[indexPath.section].sectionObjects.sorted().reversed()[indexPath.row]
+            
+//            let time = self.dateList[indexPath.section].sectionObjects[indexPath.row]
+            let sectionName = self.dateList[indexPath.section].sectionName!
+            let sectionNameSplit = sectionName.split{ $0.isWhitespace }.map{ String($0)}
+            let date = sectionNameSplit[0]
+            
+            print("time",time)
+            print("date",date)
+            
+            self.ref.child("users").child(userID!).child("counters").child(counterId).child("countersData")
+                .child(date).child(time).removeValue()
+            
+            let userInfoDictionary = ["counter":self.count - 1] as [String : Any]
+                         
+                         self.ref.child("users").child(self.userID!).child("counters").child(counterId).updateChildValues(userInfoDictionary)
+            print("DELETE",time,date)
         }
     }
     
@@ -344,6 +365,8 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func fetchData(){
         ref.child("users").child(userID!).child("counters").child(self.counterId).child("countersData").observe(.value, with: { (snapshot) in
+            
+            self.dateList.removeAll()
             
             if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
                 
