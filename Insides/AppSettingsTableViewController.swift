@@ -30,7 +30,7 @@ class AppSettingsTableViewController: UITableViewController {
             darkThemeSwitch.setOn(value as! Bool, animated: true)
         }
         
-      
+        
         
         
     }
@@ -61,7 +61,7 @@ class AppSettingsTableViewController: UITableViewController {
             self.present(alert,animated: true)
             
         case [1,2]:
-            print("Export")
+            self.exportCounter()
         case [2,0]:
             print("Feedback")
         case [2,1]:
@@ -160,6 +160,103 @@ class AppSettingsTableViewController: UITableViewController {
             
             
         })
+    }
+    
+    func exportCounter(){
+        print("export")
+        
+        let sFileName =
+        "insides.csv"
+        
+        let documentDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        
+        let documentUrl = URL(fileURLWithPath: documentDirectoryPath).appendingPathComponent(sFileName)
+        
+        let output = OutputStream.toMemory()
+        
+        let csvWrtier = CHCSVWriter(outputStream: output, encoding: String.Encoding.utf8.rawValue, delimiter: ",".utf16.first!)
+        
+        csvWrtier?.writeField("Date")
+        csvWrtier?.writeField("Time")
+        csvWrtier?.writeField("Counter Name")
+        csvWrtier?.writeField("Counter Value")
+        csvWrtier?.writeField("Increment")
+        csvWrtier?.finishLine()
+        
+        var arrOfCounter = [[String]]()
+        
+        
+        ref.child("users").child(userID!).child("allCounters").observe(.value, with: { (snapshot) in
+            
+            
+            if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
+                
+                for snap in snapShot {
+                    
+                    if let mainObj = snap.value as? [String: AnyObject]{
+                        print("mainObj \(mainObj)")
+                        print("inside \(snap.value)")
+                        let date = mainObj["date"] as? String
+                        
+                        var newlist = [String]()
+                        
+                        for m in mainObj {
+                            print("mf\(m.value)")
+                            
+                            newlist.append(m.key)
+                            
+                            let count = m.value["count"] as! Int
+                            
+                             let name = m.value["counter_name"] as! String
+                            
+                            arrOfCounter.append([snap.key,m.key,name,String(count),"1"])
+                            
+                        }
+                        
+                        
+                        
+                        
+                        
+                    }
+                }
+            }
+            for(elements) in arrOfCounter.enumerated(){
+                csvWrtier?.writeField((elements.element[0]))
+                csvWrtier?.writeField((elements.element[1]))
+                csvWrtier?.writeField((elements.element[2]))
+                csvWrtier?.writeField((elements.element[3]))
+                
+                csvWrtier?.finishLine()
+            }
+            
+            csvWrtier?.closeStream()
+            
+            let buffer = (output.property(forKey: .dataWrittenToMemoryStreamKey) as? Data)!
+            
+            do{
+                try buffer.write(to: documentUrl)
+                
+                let shareSheetVC = UIActivityViewController(activityItems:[documentUrl], applicationActivities:nil )
+                
+                self.present(shareSheetVC,animated:true)
+                
+            }catch{
+                
+            }
+        })
+        
+        
+        
+        
+        
+        //
+        //        arrOfCounter.append(["2021-02-27","17:20:44","4","1"])
+        //        arrOfCounter.append(["2021-02-27","17:20:45","3","1"])
+        //        arrOfCounter.append(["2021-02-27","17:20:46","2","1"])
+        //        arrOfCounter.append(["2021-02-27","17:20:47","1","1"])
+        
+        
+        
     }
     
 }
