@@ -68,7 +68,6 @@ depends-top-level:
 - "Objects2"
 - "String"
 - "StringLiteralType"
-- !private "UIBarButtonItem"
 - !private "UIColor"
 - !private "UIImage"
 - !private "UIImageView"
@@ -270,7 +269,6 @@ depends-member:
 - !private ["s7CVarArgP", "NumberFormatter"]
 - ["s7CVarArgP", "Objects2"]
 - ["s7CVarArgP", "String"]
-- !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIImageView"]
@@ -346,12 +344,10 @@ depends-member:
 - !private ["s7CVarArgP", "modalPresentationStyle"]
 - !private ["s7CVarArgP", "navigationBar"]
 - !private ["s7CVarArgP", "navigationController"]
-- !private ["s7CVarArgP", "navigationItem"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
 - !private ["s7CVarArgP", "numberStyle"]
 - !private ["s7CVarArgP", "observe"]
-- !private ["s7CVarArgP", "onBackPress"]
 - !private ["s7CVarArgP", "onSave"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
@@ -364,7 +360,6 @@ depends-member:
 - !private ["s7CVarArgP", "reversed"]
 - !private ["s7CVarArgP", "rightAnchor"]
 - !private ["s7CVarArgP", "rightAxis"]
-- !private ["s7CVarArgP", "rightBarButtonItem"]
 - !private ["s7CVarArgP", "scrollView"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
@@ -409,7 +404,6 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
-- !private ["s7CVarArgP", "withRenderingMode"]
 - !private ["s7CVarArgP", "xAxis"]
 - !private ["7Insides22CalendarViewControllerC", "modalPresentationStyle"]
 - !private ["7Insides22CalendarViewControllerC", "onSave"]
@@ -502,7 +496,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NumberFormatter"]
 - ["s28CustomDebugStringConvertibleP", "Objects2"]
 - ["s28CustomDebugStringConvertibleP", "String"]
-- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
@@ -580,12 +573,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "modalPresentationStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
-- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "numberStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "observe"]
-- !private ["s28CustomDebugStringConvertibleP", "onBackPress"]
 - !private ["s28CustomDebugStringConvertibleP", "onSave"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
@@ -598,7 +589,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "reversed"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "rightAxis"]
-- !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "scrollView"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -649,7 +639,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
-- !private ["s28CustomDebugStringConvertibleP", "withRenderingMode"]
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "xAxis"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
@@ -696,7 +685,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NumberFormatter"]
 - ["s23CustomStringConvertibleP", "Objects2"]
 - ["s23CustomStringConvertibleP", "String"]
-- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIImageView"]
@@ -775,12 +763,10 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "modalPresentationStyle"]
 - !private ["s23CustomStringConvertibleP", "navigationBar"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
-- !private ["s23CustomStringConvertibleP", "navigationItem"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s23CustomStringConvertibleP", "numberStyle"]
 - !private ["s23CustomStringConvertibleP", "observe"]
-- !private ["s23CustomStringConvertibleP", "onBackPress"]
 - !private ["s23CustomStringConvertibleP", "onSave"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
@@ -793,7 +779,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "reversed"]
 - !private ["s23CustomStringConvertibleP", "rightAnchor"]
 - !private ["s23CustomStringConvertibleP", "rightAxis"]
-- !private ["s23CustomStringConvertibleP", "rightBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "scrollView"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -842,7 +827,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
-- !private ["s23CustomStringConvertibleP", "withRenderingMode"]
 - !private ["s23CustomStringConvertibleP", "xAxis"]
 - !private ["So16FIRDataEventTypeV", "value"]
 - !private ["10Foundation12DataProtocolP", "append"]
@@ -939,7 +923,6 @@ depends-member:
 - !private ["SQ", "NumberFormatter"]
 - ["SQ", "Objects2"]
 - ["SQ", "String"]
-- !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIColor"]
 - !private ["SQ", "UIImage"]
 - !private ["SQ", "UIImageView"]
@@ -953,7 +936,6 @@ depends-member:
 - !private ["SQ", "activate"]
 - !private ["SQ", "addSubview"]
 - !private ["SQ", "allObjects"]
-- !private ["SQ", "alwaysOriginal"]
 - !private ["SQ", "append"]
 - ["SQ", "auth"]
 - !private ["SQ", "autoresizingMask"]
@@ -1027,15 +1009,12 @@ depends-member:
 - !private ["SQ", "modalPresentationStyle"]
 - !private ["SQ", "navigationBar"]
 - !private ["SQ", "navigationController"]
-- !private ["SQ", "navigationItem"]
 - !private ["SQ", "none"]
 - ["SQ", "numberOfSections"]
 - ["SQ", "numberOfSectionsInTableView"]
 - !private ["SQ", "numberStyle"]
 - !private ["SQ", "observe"]
-- !private ["SQ", "onBackPress"]
 - !private ["SQ", "onSave"]
-- !private ["SQ", "plain"]
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
 - !private ["SQ", "red"]
@@ -1047,7 +1026,6 @@ depends-member:
 - !private ["SQ", "reversed"]
 - !private ["SQ", "rightAnchor"]
 - !private ["SQ", "rightAxis"]
-- !private ["SQ", "rightBarButtonItem"]
 - !private ["SQ", "row"]
 - !private ["SQ", "scaleAspectFit"]
 - !private ["SQ", "scrollView"]
@@ -1100,7 +1078,6 @@ depends-member:
 - ["SQ", "viewForZoomingInScrollView"]
 - !private ["SQ", "viewWillDisappear"]
 - !private ["SQ", "width"]
-- !private ["SQ", "withRenderingMode"]
 - !private ["SQ", "x"]
 - !private ["SQ", "xAxis"]
 - !private ["SQ", "y"]
@@ -1153,7 +1130,6 @@ depends-member:
 - !private ["SH", "NumberFormatter"]
 - ["SH", "Objects2"]
 - ["SH", "String"]
-- !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIColor"]
 - !private ["SH", "UIImage"]
 - !private ["SH", "UIImageView"]
@@ -1167,7 +1143,6 @@ depends-member:
 - !private ["SH", "activate"]
 - !private ["SH", "addSubview"]
 - !private ["SH", "allObjects"]
-- !private ["SH", "alwaysOriginal"]
 - !private ["SH", "append"]
 - ["SH", "auth"]
 - !private ["SH", "autoresizingMask"]
@@ -1239,15 +1214,12 @@ depends-member:
 - !private ["SH", "modalPresentationStyle"]
 - !private ["SH", "navigationBar"]
 - !private ["SH", "navigationController"]
-- !private ["SH", "navigationItem"]
 - !private ["SH", "none"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInTableView"]
 - !private ["SH", "numberStyle"]
 - !private ["SH", "observe"]
-- !private ["SH", "onBackPress"]
 - !private ["SH", "onSave"]
-- !private ["SH", "plain"]
 - !private ["SH", "present"]
 - !private ["SH", "print"]
 - !private ["SH", "red"]
@@ -1259,7 +1231,6 @@ depends-member:
 - !private ["SH", "reversed"]
 - !private ["SH", "rightAnchor"]
 - !private ["SH", "rightAxis"]
-- !private ["SH", "rightBarButtonItem"]
 - !private ["SH", "row"]
 - !private ["SH", "scaleAspectFit"]
 - !private ["SH", "scrollView"]
@@ -1310,7 +1281,6 @@ depends-member:
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "viewWillDisappear"]
-- !private ["SH", "withRenderingMode"]
 - !private ["SH", "xAxis"]
 - !private ["6Charts19IAxisValueFormatterP", "init"]
 - !private ["6Charts16IBarChartDataSetP", "barBorderColor"]
@@ -1350,7 +1320,6 @@ depends-member:
 - !private ["7Insides18InfoViewControllerC", "NumberFormatter"]
 - ["7Insides18InfoViewControllerC", "Objects2"]
 - ["7Insides18InfoViewControllerC", "String"]
-- !private ["7Insides18InfoViewControllerC", "UIBarButtonItem"]
 - !private ["7Insides18InfoViewControllerC", "UIColor"]
 - !private ["7Insides18InfoViewControllerC", "UIImage"]
 - !private ["7Insides18InfoViewControllerC", "UIImageView"]
@@ -1375,7 +1344,6 @@ depends-member:
 - !private ["7Insides18InfoViewControllerC", "isMovingFromParent"]
 - ["7Insides18InfoViewControllerC", "listData"]
 - !private ["7Insides18InfoViewControllerC", "navigationController"]
-- !private ["7Insides18InfoViewControllerC", "navigationItem"]
 - ["7Insides18InfoViewControllerC", "numberOfSections"]
 - ["7Insides18InfoViewControllerC", "numberOfSectionsInTableView"]
 - ["7Insides18InfoViewControllerC", "onBackPress"]
@@ -1454,7 +1422,6 @@ depends-member:
 - !private ["So8NSCodingP", "NumberFormatter"]
 - ["So8NSCodingP", "Objects2"]
 - ["So8NSCodingP", "String"]
-- !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIImageView"]
@@ -1509,11 +1476,9 @@ depends-member:
 - !private ["So8NSCodingP", "modalPresentationStyle"]
 - !private ["So8NSCodingP", "navigationBar"]
 - !private ["So8NSCodingP", "navigationController"]
-- !private ["So8NSCodingP", "navigationItem"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
 - !private ["So8NSCodingP", "numberStyle"]
-- !private ["So8NSCodingP", "onBackPress"]
 - !private ["So8NSCodingP", "onSave"]
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
@@ -1523,7 +1488,6 @@ depends-member:
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "rightAnchor"]
 - !private ["So8NSCodingP", "rightAxis"]
-- !private ["So8NSCodingP", "rightBarButtonItem"]
 - !private ["So8NSCodingP", "scrollView"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
@@ -1564,7 +1528,6 @@ depends-member:
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "viewWillDisappear"]
-- !private ["So8NSCodingP", "withRenderingMode"]
 - !private ["So8NSCodingP", "xAxis"]
 - !private ["So9NSCopyingP", "barBorderColor"]
 - !private ["So9NSCopyingP", "black"]
@@ -1598,7 +1561,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "NumberFormatter"]
 - ["So26NSExtensionRequestHandlingP", "Objects2"]
 - ["So26NSExtensionRequestHandlingP", "String"]
-- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImageView"]
@@ -1621,10 +1583,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
-- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
-- !private ["So26NSExtensionRequestHandlingP", "onBackPress"]
 - !private ["So26NSExtensionRequestHandlingP", "onSave"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
@@ -1664,13 +1624,11 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "red"]
 - !private ["So21NSItemProviderReadingP", "systemBlue"]
 - !private ["So21NSItemProviderReadingP", "systemGreen"]
-- !private ["So21NSItemProviderReadingP", "withRenderingMode"]
 - !private ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "red"]
 - !private ["So21NSItemProviderWritingP", "systemBlue"]
 - !private ["So21NSItemProviderWritingP", "systemGreen"]
-- !private ["So21NSItemProviderWritingP", "withRenderingMode"]
 - !private ["So14NSLayoutAnchorC", "constraint"]
 - !private ["So18NSLayoutConstraintC", "activate"]
 - !private ["So17NSLayoutDimensionC", "constraint"]
@@ -1702,7 +1660,6 @@ depends-member:
 - !private ["So8NSObjectC", "NumberFormatter"]
 - ["So8NSObjectC", "Objects2"]
 - ["So8NSObjectC", "String"]
-- !private ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIImage"]
 - !private ["So8NSObjectC", "UIImageView"]
@@ -1778,7 +1735,6 @@ depends-member:
 - !private ["So8NSObjectC", "modalPresentationStyle"]
 - !private ["So8NSObjectC", "navigationBar"]
 - !private ["So8NSObjectC", "navigationController"]
-- !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "numberStyle"]
@@ -1794,7 +1750,6 @@ depends-member:
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "rightAnchor"]
 - !private ["So8NSObjectC", "rightAxis"]
-- !private ["So8NSObjectC", "rightBarButtonItem"]
 - ["So8NSObjectC", "screenHeight"]
 - ["So8NSObjectC", "scrollView"]
 - ["So8NSObjectC", "scrollViewContentHeight"]
@@ -1841,7 +1796,6 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewWillDisappear"]
-- !private ["So8NSObjectC", "withRenderingMode"]
 - !private ["So8NSObjectC", "xAxis"]
 - !private ["So8NSObjectP", "AnyObject"]
 - ["So8NSObjectP", "Auth"]
@@ -1862,7 +1816,6 @@ depends-member:
 - !private ["So8NSObjectP", "NumberFormatter"]
 - ["So8NSObjectP", "Objects2"]
 - ["So8NSObjectP", "String"]
-- !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UIImageView"]
@@ -1936,12 +1889,10 @@ depends-member:
 - !private ["So8NSObjectP", "modalPresentationStyle"]
 - !private ["So8NSObjectP", "navigationBar"]
 - !private ["So8NSObjectP", "navigationController"]
-- !private ["So8NSObjectP", "navigationItem"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectP", "numberStyle"]
 - !private ["So8NSObjectP", "observe"]
-- !private ["So8NSObjectP", "onBackPress"]
 - !private ["So8NSObjectP", "onSave"]
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
@@ -1952,7 +1903,6 @@ depends-member:
 - !private ["So8NSObjectP", "reloadData"]
 - !private ["So8NSObjectP", "rightAnchor"]
 - !private ["So8NSObjectP", "rightAxis"]
-- !private ["So8NSObjectP", "rightBarButtonItem"]
 - !private ["So8NSObjectP", "scrollView"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
@@ -1996,7 +1946,6 @@ depends-member:
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectP", "viewWillDisappear"]
-- !private ["So8NSObjectP", "withRenderingMode"]
 - !private ["So8NSObjectP", "xAxis"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
@@ -2004,7 +1953,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "red"]
 - !private ["So14NSSecureCodingP", "systemBlue"]
 - !private ["So14NSSecureCodingP", "systemGreen"]
-- !private ["So14NSSecureCodingP", "withRenderingMode"]
 - !private ["So15NSTextAlignmentV", "center"]
 - !private ["6Charts8NSUIViewC", "backgroundColor"]
 - !private ["6Charts8NSUIViewC", "bottomAnchor"]
@@ -2058,7 +2006,6 @@ depends-member:
 - !private ["Sm", "sectionName"]
 - !private ["Sm", "sectionObjects"]
 - !private ["Sm", "subscript"]
-- !private ["SY", "alwaysOriginal"]
 - !private ["SY", "bottom"]
 - !private ["SY", "center"]
 - !private ["SY", "default"]
@@ -2069,7 +2016,6 @@ depends-member:
 - ["SY", "insetGrouped"]
 - !private ["SY", "medium"]
 - !private ["SY", "none"]
-- !private ["SY", "plain"]
 - !private ["SY", "scaleAspectFit"]
 - !private ["SY", "value"]
 - !private ["SY", "vertical"]
@@ -2077,7 +2023,6 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "getFormattedDatee"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
-- !private ["So20UIImageRenderingModeV", "alwaysOriginal"]
 - !private ["s18ReversedCollectionV", "subscript"]
 - !private ["s10SIMDScalarP", "init"]
 - !private ["ST", "allObjects"]
@@ -2102,7 +2047,6 @@ depends-member:
 - !private ["So20NSDateFormatterStyleV", "medium"]
 - !private ["So20NSDateFormatterStyleV", "none"]
 - !private ["So22NSNumberFormatterStyleV", "none"]
-- !private ["So20UIBarButtonItemStyleV", "plain"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s20TextOutputStreamableP", "init"]
@@ -2149,7 +2093,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
 - !private ["So29UIAccessibilityIdentificationP", "textLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "topAnchor"]
-- !private ["So29UIAccessibilityIdentificationP", "withRenderingMode"]
 - !private ["So29UIAccessibilityIdentificationP", "xAxis"]
 - ["So12UIAppearanceP", "EditingStyle"]
 - !private ["So12UIAppearanceP", "addSubview"]
@@ -2210,7 +2153,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "NumberFormatter"]
 - ["So21UIAppearanceContainerP", "Objects2"]
 - ["So21UIAppearanceContainerP", "String"]
-- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIImageView"]
@@ -2260,10 +2202,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "modalPresentationStyle"]
 - !private ["So21UIAppearanceContainerP", "navigationBar"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
-- !private ["So21UIAppearanceContainerP", "navigationItem"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
-- !private ["So21UIAppearanceContainerP", "onBackPress"]
 - !private ["So21UIAppearanceContainerP", "onSave"]
 - !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
@@ -2309,8 +2249,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
 - !private ["So21UIAppearanceContainerP", "xAxis"]
-- !private ["So15UIBarButtonItemC", "init"]
-- !private ["So9UIBarItemC", "init"]
 - !private ["So12UIBarMetricsV", "default"]
 - !private ["So16UIBarPositioningP", "backgroundColor"]
 - !private ["So16UIBarPositioningP", "layoutIfNeeded"]
@@ -2339,7 +2277,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "NumberFormatter"]
 - ["So18UIContentContainerP", "Objects2"]
 - ["So18UIContentContainerP", "String"]
-- !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIImageView"]
@@ -2362,10 +2299,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "navigationBar"]
 - !private ["So18UIContentContainerP", "navigationController"]
-- !private ["So18UIContentContainerP", "navigationItem"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
-- !private ["So18UIContentContainerP", "onBackPress"]
 - !private ["So18UIContentContainerP", "onSave"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
@@ -2513,7 +2448,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "NumberFormatter"]
 - ["So18UIFocusEnvironmentP", "Objects2"]
 - ["So18UIFocusEnvironmentP", "String"]
-- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIImageView"]
@@ -2563,10 +2497,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "modalPresentationStyle"]
 - !private ["So18UIFocusEnvironmentP", "navigationBar"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
-- !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
-- !private ["So18UIFocusEnvironmentP", "onBackPress"]
 - !private ["So18UIFocusEnvironmentP", "onSave"]
 - !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
@@ -2730,13 +2662,11 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "topAnchor"]
 - !private ["So27UIGestureRecognizerDelegateP", "xAxis"]
 - !private ["So7UIImageC", "init"]
-- !private ["So7UIImageC", "withRenderingMode"]
 - !private ["So11UIImageViewC", "backgroundColor"]
 - !private ["So11UIImageViewC", "contentMode"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So11UIImageViewC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "withRenderingMode"]
 - !private ["So7UILabelC", "init"]
 - !private ["So7UILabelC", "text"]
 - !private ["So7UILabelC", "textAlignment"]
@@ -2787,7 +2717,6 @@ depends-member:
 - !private ["So15UINavigationBarC", "shadowImage"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So22UINavigationControllerC", "setNavigationBarHidden"]
-- !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "AnyObject"]
 - ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "BarChartData"]
@@ -2807,7 +2736,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "NumberFormatter"]
 - ["So30UIPasteConfigurationSupportingP", "Objects2"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImageView"]
@@ -2857,10 +2785,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "modalPresentationStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
-- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
-- !private ["So30UIPasteConfigurationSupportingP", "onBackPress"]
 - !private ["So30UIPasteConfigurationSupportingP", "onSave"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
@@ -2932,7 +2858,6 @@ depends-member:
 - !private ["So11UIResponderC", "NumberFormatter"]
 - ["So11UIResponderC", "Objects2"]
 - ["So11UIResponderC", "String"]
-- !private ["So11UIResponderC", "UIBarButtonItem"]
 - !private ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIImage"]
 - !private ["So11UIResponderC", "UIImageView"]
@@ -2984,7 +2909,6 @@ depends-member:
 - !private ["So11UIResponderC", "modalPresentationStyle"]
 - !private ["So11UIResponderC", "navigationBar"]
 - !private ["So11UIResponderC", "navigationController"]
-- !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - ["So11UIResponderC", "onBackPress"]
@@ -3055,7 +2979,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "NumberFormatter"]
 - ["So30UIResponderStandardEditActionsP", "Objects2"]
 - ["So30UIResponderStandardEditActionsP", "String"]
-- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImageView"]
@@ -3105,10 +3028,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "modalPresentationStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
-- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
-- !private ["So30UIResponderStandardEditActionsP", "onBackPress"]
 - !private ["So30UIResponderStandardEditActionsP", "onSave"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
@@ -3195,7 +3116,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "NumberFormatter"]
 - ["So20UIScrollViewDelegateP", "Objects2"]
 - ["So20UIScrollViewDelegateP", "String"]
-- !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UIImageView"]
@@ -3217,10 +3137,8 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "isMovingFromParent"]
 - !private ["So20UIScrollViewDelegateP", "modalPresentationStyle"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
-- !private ["So20UIScrollViewDelegateP", "navigationItem"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["So20UIScrollViewDelegateP", "onBackPress"]
 - !private ["So20UIScrollViewDelegateP", "onSave"]
 - !private ["So20UIScrollViewDelegateP", "present"]
 - !private ["So20UIScrollViewDelegateP", "print"]
@@ -3290,7 +3208,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "NumberFormatter"]
 - ["So16UIStateRestoringP", "Objects2"]
 - ["So16UIStateRestoringP", "String"]
-- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIImageView"]
@@ -3313,10 +3230,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "navigationBar"]
 - !private ["So16UIStateRestoringP", "navigationController"]
-- !private ["So16UIStateRestoringP", "navigationItem"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
-- !private ["So16UIStateRestoringP", "onBackPress"]
 - !private ["So16UIStateRestoringP", "onSave"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
@@ -3385,7 +3300,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "NumberFormatter"]
 - ["So21UITableViewDataSourceP", "Objects2"]
 - ["So21UITableViewDataSourceP", "String"]
-- !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
 - !private ["So21UITableViewDataSourceP", "UIImage"]
 - !private ["So21UITableViewDataSourceP", "UIImageView"]
@@ -3407,10 +3321,8 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "isMovingFromParent"]
 - !private ["So21UITableViewDataSourceP", "modalPresentationStyle"]
 - !private ["So21UITableViewDataSourceP", "navigationController"]
-- !private ["So21UITableViewDataSourceP", "navigationItem"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
-- !private ["So21UITableViewDataSourceP", "onBackPress"]
 - !private ["So21UITableViewDataSourceP", "onSave"]
 - !private ["So21UITableViewDataSourceP", "present"]
 - !private ["So21UITableViewDataSourceP", "print"]
@@ -3458,7 +3370,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "NumberFormatter"]
 - ["So19UITableViewDelegateP", "Objects2"]
 - ["So19UITableViewDelegateP", "String"]
-- !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
 - !private ["So19UITableViewDelegateP", "UIImage"]
 - !private ["So19UITableViewDelegateP", "UIImageView"]
@@ -3480,10 +3391,8 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "isMovingFromParent"]
 - !private ["So19UITableViewDelegateP", "modalPresentationStyle"]
 - !private ["So19UITableViewDelegateP", "navigationController"]
-- !private ["So19UITableViewDelegateP", "navigationItem"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["So19UITableViewDelegateP", "onBackPress"]
 - !private ["So19UITableViewDelegateP", "onSave"]
 - !private ["So19UITableViewDelegateP", "present"]
 - !private ["So19UITableViewDelegateP", "print"]
@@ -3532,7 +3441,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "NumberFormatter"]
 - ["So18UITraitEnvironmentP", "Objects2"]
 - ["So18UITraitEnvironmentP", "String"]
-- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIImageView"]
@@ -3583,10 +3491,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "modalPresentationStyle"]
 - !private ["So18UITraitEnvironmentP", "navigationBar"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
-- !private ["So18UITraitEnvironmentP", "navigationItem"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
-- !private ["So18UITraitEnvironmentP", "onBackPress"]
 - !private ["So18UITraitEnvironmentP", "onSave"]
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
@@ -3651,7 +3557,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "NumberFormatter"]
 - ["So23UIUserActivityRestoringP", "Objects2"]
 - ["So23UIUserActivityRestoringP", "String"]
-- !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UIImageView"]
@@ -3701,10 +3606,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "modalPresentationStyle"]
 - !private ["So23UIUserActivityRestoringP", "navigationBar"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
-- !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
-- !private ["So23UIUserActivityRestoringP", "onBackPress"]
 - !private ["So23UIUserActivityRestoringP", "onSave"]
 - !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "print"]
@@ -3815,7 +3718,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "NumberFormatter"]
 - ["So16UIViewControllerC", "Objects2"]
 - ["So16UIViewControllerC", "String"]
-- !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - !private ["So16UIViewControllerC", "UIImage"]
 - !private ["So16UIViewControllerC", "UIImageView"]
@@ -3842,7 +3744,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "modalPresentationStyle"]
 - !private ["So16UIViewControllerC", "navigationBar"]
 - !private ["So16UIViewControllerC", "navigationController"]
-- !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - ["So16UIViewControllerC", "onBackPress"]
@@ -3927,7 +3828,6 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "systemBlue"]
 - !private ["s26_ExpressibleByColorLiteralP", "systemGreen"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "withRenderingMode"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - ["s19_HasContiguousBytesP", "init"]
@@ -3959,7 +3859,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NumberFormatter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Objects2"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "String"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
@@ -4033,12 +3932,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "modalPresentationStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "numberStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "onBackPress"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "onSave"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
@@ -4049,7 +3946,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAxis"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
@@ -4093,7 +3989,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "withRenderingMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "xAxis"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AnyObject"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Auth"]
@@ -4114,7 +4009,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NumberFormatter"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Objects2"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImageView"]
@@ -4188,12 +4082,10 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "modalPresentationStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationBar"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationItem"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSections"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSectionsInTableView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observe"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "onBackPress"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "onSave"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
@@ -4204,7 +4096,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightAxis"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDecelerating"]
@@ -4248,7 +4139,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZooming"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillDisappear"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "withRenderingMode"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "xAxis"]
 - !private ["s21_ObjectiveCBridgeableP", "DateFormatter"]
 - !private ["s21_ObjectiveCBridgeableP", "addSubview"]
@@ -4417,7 +4307,6 @@ depends-nominal:
 - "Sm"
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "So20UIImageRenderingModeV"
 - !private "s18ReversedCollectionV"
 - !private "s10SIMDScalarP"
 - "ST"
@@ -4428,15 +4317,12 @@ depends-nominal:
 - "So16UITableViewStyleV"
 - !private "So20NSDateFormatterStyleV"
 - !private "So22NSNumberFormatterStyleV"
-- !private "So20UIBarButtonItemStyleV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
-- !private "So15UIBarButtonItemC"
-- !private "So9UIBarItemC"
 - !private "So12UIBarMetricsV"
 - !private "So16UIBarPositioningP"
 - !private "So7UIColorC"
@@ -4458,7 +4344,6 @@ depends-nominal:
 - !private "So24UIModalPresentationStyleV"
 - !private "So15UINavigationBarC"
 - !private "So22UINavigationControllerC"
-- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -4513,89 +4398,90 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-umbrella.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/Firebase/CoreOnly/Sources/Firebase.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRVersion.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorSession.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorAssertion.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneMultiFactorAssertion.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorInfo.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneMultiFactorInfo.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Insides-Bridging-Header.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/CHCSVParser.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorResolver.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneMultiFactorGenerator.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactor.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallations.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsErrors.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsAuthTokenResult.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+Consent.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRVersion.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorSession.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorAssertion.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneMultiFactorAssertion.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorInfo.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneMultiFactorInfo.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Insides-Bridging-Header.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/CHCSVParser.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactorResolver.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneMultiFactorGenerator.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRMultiFactor.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallations.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsErrors.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsAuthTokenResult.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+Consent.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/Firebase/CoreOnly/Sources/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Modules/module.modulemap"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Modules/module.modulemap"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

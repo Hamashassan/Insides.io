@@ -316,7 +316,7 @@ SWIFT_CLASS("_TtC7Insides11CounterCell")
 
 
 SWIFT_CLASS("_TtC7Insides29CounterSettingsViewController")
-@interface CounterSettingsViewController : UITableViewController
+@interface CounterSettingsViewController : UITableViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified counterNameField;
 @property (nonatomic, weak) IBOutlet UITableViewCell * _Null_unspecified colorCell;
 @property (nonatomic, weak) IBOutlet UITableViewCell * _Null_unspecified undoCell;
@@ -327,6 +327,10 @@ SWIFT_CLASS("_TtC7Insides29CounterSettingsViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified last30DaysLabel;
 @property (nonatomic, weak) IBOutlet UITableViewCell * _Null_unspecified counterHistoryCell;
 - (void)viewDidLoad;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (IBAction)onBackPress:(id _Nonnull)sender;
 - (IBAction)onSavePress:(id _Nonnull)sender;

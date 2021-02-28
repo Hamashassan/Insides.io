@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Charts.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		7uR0031LCGzb/8lUYpWlTzrhUjU=
+		Wa8tf/UXgnYaBgwMHzbh0W09HO4=
 		</data>
 		<key>Modules/Charts.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		7uR0031LCGzb/8lUYpWlTzrhUjU=
+		Wa8tf/UXgnYaBgwMHzbh0W09HO4=
 		</data>
 		<key>Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qUxd2HhVxRrVQV6cbtUNAM2tBEE=
+		W6EmWQUQOcf1HlFYik/IFnXyxog=
 		</data>
 		<key>Modules/Charts.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Charts.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		qUxd2HhVxRrVQV6cbtUNAM2tBEE=
+		W6EmWQUQOcf1HlFYik/IFnXyxog=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,22 +73,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7uR0031LCGzb/8lUYpWlTzrhUjU=
+			Wa8tf/UXgnYaBgwMHzbh0W09HO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			QDkXf0skAOo2IgeUudCw+CsoaZXKe016MLEVspF45wc=
+			/J8VW9+8r7xxdbXbZ2aat0whf3WL/+7HiBmOFed6I5o=
 			</data>
 		</dict>
 		<key>Modules/Charts.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7uR0031LCGzb/8lUYpWlTzrhUjU=
+			Wa8tf/UXgnYaBgwMHzbh0W09HO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			QDkXf0skAOo2IgeUudCw+CsoaZXKe016MLEVspF45wc=
+			/J8VW9+8r7xxdbXbZ2aat0whf3WL/+7HiBmOFed6I5o=
 			</data>
 		</dict>
 		<key>Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -106,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qUxd2HhVxRrVQV6cbtUNAM2tBEE=
+			W6EmWQUQOcf1HlFYik/IFnXyxog=
 			</data>
 			<key>hash2</key>
 			<data>
-			Cc1iXOVSHDa2R8Dy0ByE+Wsk6lQ+DujaYNdS9w/dgzk=
+			z/jXnaRQn13+D0lUbJB9Ch30y3CrTqY6yFo7QdpOpj8=
 			</data>
 		</dict>
 		<key>Modules/Charts.swiftmodule/x86_64.swiftdoc</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qUxd2HhVxRrVQV6cbtUNAM2tBEE=
+			W6EmWQUQOcf1HlFYik/IFnXyxog=
 			</data>
 			<key>hash2</key>
 			<data>
-			Cc1iXOVSHDa2R8Dy0ByE+Wsk6lQ+DujaYNdS9w/dgzk=
+			z/jXnaRQn13+D0lUbJB9Ch30y3CrTqY6yFo7QdpOpj8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

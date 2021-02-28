@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insides/CHCSVParser.m \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insides/CHCSVParser.h \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insides/Pods/Firebase/CoreOnly/Sources/module.modulemap
+  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/CHCSVParser.m \
+  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/CHCSVParser.h \
+  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/Firebase/CoreOnly/Sources/module.modulemap

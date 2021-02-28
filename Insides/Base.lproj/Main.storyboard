@@ -1016,8 +1016,8 @@
                                                         <rect key="frame" x="130" y="0.6666666666666714" width="113" height="32"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <segments>
-                                                            <segment title="All"/>
                                                             <segment title="Today"/>
+                                                            <segment title="All"/>
                                                         </segments>
                                                         <color key="selectedSegmentTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </segmentedControl>
@@ -1212,7 +1212,7 @@
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" verticalHuggingPriority="248" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HG0-C3-06s">
                                                 <rect key="frame" x="0.0" y="35" width="374" height="589"/>
-                                                <color key="backgroundColor" name="itemColor"/>
+                                                <color key="backgroundColor" name="colorSelectionBackground"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KnZ-DW-Oam">
                                                     <size key="itemSize" width="44" height="44"/>
                                                     <size key="estimatedItemSize" width="44" height="44"/>
@@ -1571,7 +1571,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-Uz-oFs">
                                                     <rect key="frame" x="15" y="10.000000000000002" width="344" height="23.666666666666671"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Logiut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8c-ku-Nlg">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8c-ku-Nlg">
                                                             <rect key="frame" x="0.0" y="1.6666666666666661" width="344" height="20.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -1730,6 +1730,9 @@
             <color red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="bg2">
+            <color red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorSelectionBackground">
             <color red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="datePicker">

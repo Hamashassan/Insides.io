@@ -305,8 +305,8 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.layoutIfNeeded()
         
-        let dateIcon = UIImage(named: "date")?.withRenderingMode(.alwaysOriginal)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: dateIcon, style: .plain, target: self, action: #selector(onBackPress))
+//        let dateIcon = UIImage(named: "date")?.withRenderingMode(.alwaysOriginal)
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: dateIcon, style: .plain, target: self, action: #selector(onBackPress))
         
     }
     

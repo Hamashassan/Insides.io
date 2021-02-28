@@ -32,6 +32,8 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
     
     
     
+    
+    
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
@@ -66,6 +68,9 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         self.collectionView.allowsMultipleSelection = false
         let selectedIndexPath = IndexPath(row: 0, section: 0)
         self.collectionView.selectItem(at: selectedIndexPath, animated: true, scrollPosition: [])
+        
+        
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editTapped)
         )
         
