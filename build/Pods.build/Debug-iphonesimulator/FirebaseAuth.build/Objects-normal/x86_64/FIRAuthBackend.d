@@ -4,15 +4,12 @@ dependencies: \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthBackend.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCRequest.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCResponse.h \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/build/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMReadMonitorInputStream.h \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMMIMEDocument.h \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.h \
+  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/build/Pods.build/Debug-iphonesimulator/GTMSessionFetcher-Core.build/module.modulemap \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
-  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
+  /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/Target\ Support\ Files/GTMSessionFetcher-Core/GTMSessionFetcher-Core-umbrella.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FirebaseAuth.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRActionCodeSettings.h \
   /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAdditionalUserInfo.h \

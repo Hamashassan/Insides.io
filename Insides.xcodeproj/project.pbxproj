@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DCA65CFE70034A9F9860028 /* Pods_Insides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2AE0B861C24544A828E3A0 /* Pods_Insides.framework */; };
+		8CEDD8684FE6E825F769DF9C /* Pods_CounterIntent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BAA1A4DD5053F73898F6E6 /* Pods_CounterIntent.framework */; };
 		AE1CC26625C3A3FB00194FC4 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1CC26525C3A3FB00194FC4 /* Util.swift */; };
 		AE26BFC125E6DA1000328717 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26BFC025E6DA1000328717 /* InfoViewController.swift */; };
 		AE44627125B501360082BCD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44627025B501360082BCD0 /* AppDelegate.swift */; };
@@ -28,9 +29,59 @@
 		AED584C725C2F1BF002824BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED584C625C2F1BF002824BA /* SignUpViewController.swift */; };
 		AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */; };
 		AEE68CF525C62665008AAA71 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF425C62664008AAA71 /* CalendarViewController.swift */; };
+		AEEF819025ED6F2D00F47629 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF818F25ED6F2D00F47629 /* IntentHandler.swift */; };
+		AEEF819825ED6F2D00F47629 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEF819725ED6F2D00F47629 /* IntentsUI.framework */; };
+		AEEF819B25ED6F2D00F47629 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF819A25ED6F2D00F47629 /* IntentViewController.swift */; };
+		AEEF819E25ED6F2D00F47629 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEF819C25ED6F2D00F47629 /* MainInterface.storyboard */; };
+		AEEF81A225ED6F2D00F47629 /* CounterIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AEEF81A525ED6F2D00F47629 /* CounterIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AEEF81B225ED701100F47629 /* CounterIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B125ED701100F47629 /* CounterIntentHandler.swift */; };
+		AEEF81B425ED711400F47629 /* CounterIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B325ED711400F47629 /* CounterIntent.intentdefinition */; };
+		AEEF81B525ED711400F47629 /* CounterIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B325ED711400F47629 /* CounterIntent.intentdefinition */; };
+		AEEF81B625ED714B00F47629 /* CounterIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B125ED701100F47629 /* CounterIntentHandler.swift */; };
+		AEEF81B925ED746A00F47629 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B825ED746A00F47629 /* FirebaseHelper.swift */; };
+		AEEF81BA25ED74E000F47629 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B825ED746A00F47629 /* FirebaseHelper.swift */; };
+		AEEF81BC25EDA6E100F47629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81BB25EDA6E100F47629 /* AppDelegate.swift */; };
+		AEEF81BE25EDB2C400F47629 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEEF81BD25EDB2C400F47629 /* GoogleService-Info.plist */; };
+		AEEF81C025EE819700F47629 /* CountersUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81BF25EE819700F47629 /* CountersUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AEEF81A025ED6F2D00F47629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE44626525B501360082BCD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEF819525ED6F2D00F47629;
+			remoteInfo = CounterIntentUI;
+		};
+		AEEF81A325ED6F2D00F47629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE44626525B501360082BCD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEF818C25ED6F2D00F47629;
+			remoteInfo = CounterIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEEF81A625ED6F2D00F47629 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AEEF81A225ED6F2D00F47629 /* CounterIntentUI.appex in Embed App Extensions */,
+				AEEF81A525ED6F2D00F47629 /* CounterIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		27BAA1A4DD5053F73898F6E6 /* Pods_CounterIntent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CounterIntent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A363B5A87252DC89A87088 /* Pods-CounterIntent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounterIntent.release.xcconfig"; path = "Target Support Files/Pods-CounterIntent/Pods-CounterIntent.release.xcconfig"; sourceTree = "<group>"; };
+		5BD6063B6CD2E90868730398 /* Pods-CounterIntent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CounterIntent.debug.xcconfig"; path = "Target Support Files/Pods-CounterIntent/Pods-CounterIntent.debug.xcconfig"; sourceTree = "<group>"; };
 		67BB5AF7525F32A21E05A6AE /* Pods-Insides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insides.debug.xcconfig"; path = "Target Support Files/Pods-Insides/Pods-Insides.debug.xcconfig"; sourceTree = "<group>"; };
 		7A2AE0B861C24544A828E3A0 /* Pods_Insides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8B855A8E90E069694CCE5D /* Pods-Insides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insides.release.xcconfig"; path = "Target Support Files/Pods-Insides/Pods-Insides.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +110,21 @@
 		AED584C625C2F1BF002824BA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		AEE68CF425C62664008AAA71 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEF818F25ED6F2D00F47629 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		AEEF819125ED6F2D00F47629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEF819725ED6F2D00F47629 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		AEEF819A25ED6F2D00F47629 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		AEEF819D25ED6F2D00F47629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AEEF819F25ED6F2D00F47629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEEF81B125ED701100F47629 /* CounterIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterIntentHandler.swift; sourceTree = "<group>"; };
+		AEEF81B325ED711400F47629 /* CounterIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CounterIntent.intentdefinition; sourceTree = "<group>"; };
+		AEEF81B825ED746A00F47629 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		AEEF81BB25EDA6E100F47629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEEF81BD25EDB2C400F47629 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEEF81BF25EE819700F47629 /* CountersUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersUserDefaults.swift; sourceTree = "<group>"; };
+		AEEF81C125EECEB800F47629 /* CounterIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterIntent.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +136,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEEF818A25ED6F2D00F47629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CEDD8684FE6E825F769DF9C /* Pods_CounterIntent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEF819325ED6F2D00F47629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEF819825ED6F2D00F47629 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				7A2AE0B861C24544A828E3A0 /* Pods_Insides.framework */,
+				AEEF819725ED6F2D00F47629 /* IntentsUI.framework */,
+				27BAA1A4DD5053F73898F6E6 /* Pods_CounterIntent.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +170,8 @@
 			children = (
 				67BB5AF7525F32A21E05A6AE /* Pods-Insides.debug.xcconfig */,
 				9E8B855A8E90E069694CCE5D /* Pods-Insides.release.xcconfig */,
+				5BD6063B6CD2E90868730398 /* Pods-CounterIntent.debug.xcconfig */,
+				43A363B5A87252DC89A87088 /* Pods-CounterIntent.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -94,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				AE1CC26525C3A3FB00194FC4 /* Util.swift */,
+				AEEF81B825ED746A00F47629 /* FirebaseHelper.swift */,
+				AEEF81BF25EE819700F47629 /* CountersUserDefaults.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -104,6 +192,8 @@
 				AE8FF81525EA6A060086EE7D /* CHCSVParser.h */,
 				AE8FF81625EA6A070086EE7D /* CHCSVParser.m */,
 				AE44626F25B501360082BCD0 /* Insides */,
+				AEEF818E25ED6F2D00F47629 /* CounterIntent */,
+				AEEF819925ED6F2D00F47629 /* CounterIntentUI */,
 				AE44626E25B501360082BCD0 /* Products */,
 				1FF02F5C55BC3C2EEF7CA4A2 /* Pods */,
 				16975135AA2E9AAA0CC798F5 /* Frameworks */,
@@ -115,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				AE44626D25B501360082BCD0 /* Insides.app */,
+				AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */,
+				AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +239,30 @@
 			path = Insides;
 			sourceTree = "<group>";
 		};
+		AEEF818E25ED6F2D00F47629 /* CounterIntent */ = {
+			isa = PBXGroup;
+			children = (
+				AEEF81C125EECEB800F47629 /* CounterIntent.entitlements */,
+				AEEF81BD25EDB2C400F47629 /* GoogleService-Info.plist */,
+				AEEF818F25ED6F2D00F47629 /* IntentHandler.swift */,
+				AEEF819125ED6F2D00F47629 /* Info.plist */,
+				AEEF81B125ED701100F47629 /* CounterIntentHandler.swift */,
+				AEEF81B325ED711400F47629 /* CounterIntent.intentdefinition */,
+				AEEF81BB25EDA6E100F47629 /* AppDelegate.swift */,
+			);
+			path = CounterIntent;
+			sourceTree = "<group>";
+		};
+		AEEF819925ED6F2D00F47629 /* CounterIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				AEEF819A25ED6F2D00F47629 /* IntentViewController.swift */,
+				AEEF819C25ED6F2D00F47629 /* MainInterface.storyboard */,
+				AEEF819F25ED6F2D00F47629 /* Info.plist */,
+			);
+			path = CounterIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,15 +276,53 @@
 				AE44626B25B501360082BCD0 /* Resources */,
 				16B480B0DB53234415EB4DC3 /* [CP] Embed Pods Frameworks */,
 				00F20EBC61994CB65853B3C4 /* [CP] Copy Pods Resources */,
+				AEEF81A625ED6F2D00F47629 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AEEF81A125ED6F2D00F47629 /* PBXTargetDependency */,
+				AEEF81A425ED6F2D00F47629 /* PBXTargetDependency */,
 			);
 			name = Insides;
 			productName = Insides;
 			productReference = AE44626D25B501360082BCD0 /* Insides.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AEEF818C25ED6F2D00F47629 /* CounterIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEF81AC25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntent" */;
+			buildPhases = (
+				5F342B3B53DB4A185B19704B /* [CP] Check Pods Manifest.lock */,
+				AEEF818925ED6F2D00F47629 /* Sources */,
+				AEEF818A25ED6F2D00F47629 /* Frameworks */,
+				AEEF818B25ED6F2D00F47629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CounterIntent;
+			productName = CounterIntent;
+			productReference = AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AEEF819525ED6F2D00F47629 /* CounterIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEF81AB25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntentUI" */;
+			buildPhases = (
+				AEEF819225ED6F2D00F47629 /* Sources */,
+				AEEF819325ED6F2D00F47629 /* Frameworks */,
+				AEEF819425ED6F2D00F47629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CounterIntentUI;
+			productName = CounterIntentUI;
+			productReference = AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,13 +330,19 @@
 		AE44626525B501360082BCD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Hamas Hassan";
 				TargetAttributes = {
 					AE44626C25B501360082BCD0 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1160;
+					};
+					AEEF818C25ED6F2D00F47629 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					AEEF819525ED6F2D00F47629 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
@@ -200,6 +360,8 @@
 			projectRoot = "";
 			targets = (
 				AE44626C25B501360082BCD0 /* Insides */,
+				AEEF818C25ED6F2D00F47629 /* CounterIntent */,
+				AEEF819525ED6F2D00F47629 /* CounterIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +375,22 @@
 				AE7EA1DC25C31E85000EDFC6 /* GoogleService-Info.plist in Resources */,
 				AE44627A25B501390082BCD0 /* Assets.xcassets in Resources */,
 				AE44627825B501360082BCD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEF818B25ED6F2D00F47629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEF81BE25EDB2C400F47629 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEF819425ED6F2D00F47629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEF819E25ED6F2D00F47629 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +431,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Insides/Pods-Insides-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5F342B3B53DB4A185B19704B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CounterIntent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E892662455DAA1A9741FF5B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,6 +484,7 @@
 			files = (
 				AE1CC26625C3A3FB00194FC4 /* Util.swift in Sources */,
 				AE44627525B501360082BCD0 /* ViewController.swift in Sources */,
+				AEEF81B925ED746A00F47629 /* FirebaseHelper.swift in Sources */,
 				AE44627125B501360082BCD0 /* AppDelegate.swift in Sources */,
 				AE6580F525C07F1D0041AA48 /* AddCounterViewController.swift in Sources */,
 				AE26BFC125E6DA1000328717 /* InfoViewController.swift in Sources */,
@@ -292,16 +493,52 @@
 				AEB2BD0925C9358400E97379 /* ColorsCollectionViewCell.swift in Sources */,
 				AEC299B925C52158009BC629 /* CounterSettingsViewController.swift in Sources */,
 				AE65810125C21D140041AA48 /* CounterModal.swift in Sources */,
+				AEEF81B425ED711400F47629 /* CounterIntent.intentdefinition in Sources */,
 				AE6580FF25C21B930041AA48 /* CounterCell.swift in Sources */,
 				AE44627325B501360082BCD0 /* SceneDelegate.swift in Sources */,
 				AE8FF81725EA6A070086EE7D /* CHCSVParser.m in Sources */,
+				AEEF81C025EE819700F47629 /* CountersUserDefaults.swift in Sources */,
 				AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */,
 				AEE68CF525C62665008AAA71 /* CalendarViewController.swift in Sources */,
 				AE6580F325BE07A20041AA48 /* HomeViewController.swift in Sources */,
+				AEEF81B625ED714B00F47629 /* CounterIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEF818925ED6F2D00F47629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEF81B525ED711400F47629 /* CounterIntent.intentdefinition in Sources */,
+				AEEF819025ED6F2D00F47629 /* IntentHandler.swift in Sources */,
+				AEEF81B225ED701100F47629 /* CounterIntentHandler.swift in Sources */,
+				AEEF81BC25EDA6E100F47629 /* AppDelegate.swift in Sources */,
+				AEEF81BA25ED74E000F47629 /* FirebaseHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEF819225ED6F2D00F47629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEF819B25ED6F2D00F47629 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEEF81A125ED6F2D00F47629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEEF819525ED6F2D00F47629 /* CounterIntentUI */;
+			targetProxy = AEEF81A025ED6F2D00F47629 /* PBXContainerItemProxy */;
+		};
+		AEEF81A425ED6F2D00F47629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEEF818C25ED6F2D00F47629 /* CounterIntent */;
+			targetProxy = AEEF81A325ED6F2D00F47629 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AE44627625B501360082BCD0 /* Main.storyboard */ = {
@@ -318,6 +555,14 @@
 				AE44627C25B501390082BCD0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AEEF819C25ED6F2D00F47629 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEEF819D25ED6F2D00F47629 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -441,10 +686,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67BB5AF7525F32A21E05A6AE /* Pods-Insides.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Insides/Insides.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V7JYR6MQU;
 				INFOPLIST_FILE = Insides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E8B855A8E90E069694CCE5D /* Pods-Insides.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Insides/Insides.entitlements;
@@ -475,6 +723,83 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Insides-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEEF81A725ED6F2D00F47629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD6063B6CD2E90868730398 /* Pods-CounterIntent.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CounterIntent/CounterIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9V7JYR6MQU;
+				INFOPLIST_FILE = CounterIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEEF81A825ED6F2D00F47629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A363B5A87252DC89A87088 /* Pods-CounterIntent.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CounterIntent/CounterIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CounterIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEEF81A925ED6F2D00F47629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CounterIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEEF81AA25ED6F2D00F47629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CounterIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -497,6 +822,24 @@
 			buildConfigurations = (
 				AE44628225B501390082BCD0 /* Debug */,
 				AE44628325B501390082BCD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEF81AB25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEF81A925ED6F2D00F47629 /* Debug */,
+				AEEF81AA25ED6F2D00F47629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEEF81AC25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEF81A725ED6F2D00F47629 /* Debug */,
+				AEEF81A825ED6F2D00F47629 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,6 @@
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/Helpers/Util.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/ViewController.swift
+/Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/Helpers/FirebaseHelper.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/AppDelegate.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/AddCounterViewController.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/InfoViewController.swift
@@ -10,6 +11,9 @@
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/CounterModal.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/CounterCell.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/SceneDelegate.swift
+/Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/Helpers/CountersUserDefaults.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/DetailsViewController.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/CalendarViewController.swift
 /Users/hamashassan/Desktop/Upwork\ Projects/Insidess/Insides/HomeViewController.swift
+/Users/hamashassan/Desktop/Upwork\ Projects/Insidess/CounterIntent/CounterIntentHandler.swift
+/Users/hamashassan/Desktop/Upwork\ Projects/Insidess/build/Insides.build/Debug-iphonesimulator/Insides.build/DerivedSources/IntentDefinitionGenerated/CounterIntent/CounterIntent.swift

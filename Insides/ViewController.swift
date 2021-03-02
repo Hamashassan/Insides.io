@@ -116,6 +116,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 guard let userID = Auth.auth().currentUser?.uid else { return }
                 
+                let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+                sharedDefaults?.set(userID, forKey: "userID")
+                
                 let userInfoDictionary = ["username" : "" ,
                                           "email" : email ?? "","couunters":[]] as [String : Any]
                 
@@ -148,7 +151,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { result, error in
                 
-                
+                print("result",result)
+
                 if error != nil {
                     
                     self.showError("Something went wrong, Please try again")

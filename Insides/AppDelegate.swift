@@ -15,16 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     var window: UIWindow?
     let drinkActivityName = "com.insides.io.counter"
     
-   
+    
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-  
         
+        let userDefaults = UserDefaults.standard
+
+         let userID = userDefaults.object(forKey: "userId") as? String
         
-        print("Launching Fresh")
+        print("Launching Fresh userID",userID)
         
+   
         //        let activityDic = launchOptions![UIApplication.LaunchOptionsKey.userActivityDictionary] as? [AnyHashable : Any]
         //
         
@@ -69,10 +72,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         viewController?.incrementCounter(id: "")
         
-         
-      
-           
-
+        
+        
+        
+        
         
         print("App launched")
         return true

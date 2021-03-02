@@ -1013,7 +1013,7 @@
                                                         </connections>
                                                     </button>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x7k-h8-9C4">
-                                                        <rect key="frame" x="130" y="0.6666666666666714" width="113" height="32"/>
+                                                        <rect key="frame" x="128.66666666666666" y="0.6666666666666714" width="113" height="32"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <segments>
                                                             <segment title="Today"/>
@@ -1022,8 +1022,8 @@
                                                         <color key="selectedSegmentTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </segmentedControl>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5o5-OL-0vp">
-                                                        <rect key="frame" x="355" y="5" width="19" height="22"/>
-                                                        <state key="normal" image="appSettings"/>
+                                                        <rect key="frame" x="352.33333333333331" y="5" width="21.666666666666686" height="22"/>
+                                                        <state key="normal" image="gear" catalog="system"/>
                                                         <connections>
                                                             <segue destination="eP1-Ij-Jap" kind="presentation" id="Pc6-wd-1PZ"/>
                                                         </connections>
@@ -1037,17 +1037,17 @@
                                                 <color key="sectionIndexTrackingBackgroundColor" name="backgroundColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CounterCell" id="i4q-M4-Zel" customClass="CounterCell" customModule="Insides" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="374" height="96.333335876464844"/>
+                                                        <rect key="frame" x="0.0" y="28" width="374" height="94.333335876464844"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i4q-M4-Zel" id="dZC-iG-hfa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="96.333335876464844"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="94.333335876464844"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="OQT-jY-ie7">
-                                                                    <rect key="frame" x="12" y="20.000000000000004" width="350" height="56.333333333333343"/>
+                                                                    <rect key="frame" x="12" y="20.000000000000004" width="350" height="54.333333333333343"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="smf-DX-YDb">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="272" height="56.333333333333336"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="272" height="54.333333333333336"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcG-aK-kQ6">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="20.333333333333332"/>
@@ -1056,13 +1056,14 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zR-3V-UcP">
-                                                                                    <rect key="frame" x="0.0" y="32.333333333333336" width="24" height="24"/>
-                                                                                    <state key="normal" image="counterSettings"/>
+                                                                                    <rect key="frame" x="0.0" y="32.333333333333336" width="21.666666666666668" height="22"/>
+                                                                                    <color key="tintColor" name="selection"/>
+                                                                                    <state key="normal" image="gear" catalog="system"/>
                                                                                 </button>
                                                                             </subviews>
                                                                         </stackView>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uar-co-zlj">
-                                                                            <rect key="frame" x="272" y="10" width="78" height="36.333333333333336"/>
+                                                                            <rect key="frame" x="272" y="10" width="78" height="34.333333333333336"/>
                                                                             <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="78" id="jUQ-ed-BWA"/>
@@ -1713,13 +1714,12 @@
     </scenes>
     <resources>
         <image name="add" width="18" height="19"/>
-        <image name="appSettings" width="19" height="19"/>
         <image name="apple" width="19.333333969116211" height="22.666666030883789"/>
         <image name="back" width="12" height="20.666666030883789"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="counterSettings" width="24" height="24"/>
         <image name="delete" width="17" height="23.333333969116211"/>
         <image name="export" width="18.333333969116211" height="18.333333969116211"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="google" width="24" height="24"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logo" width="60" height="60"/>
@@ -1740,6 +1740,9 @@
         </namedColor>
         <namedColor name="itemColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="selection">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

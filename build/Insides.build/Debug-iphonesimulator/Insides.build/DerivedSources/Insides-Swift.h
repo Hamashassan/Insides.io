@@ -189,6 +189,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import GoogleSignIn;
+@import Intents;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -315,6 +317,60 @@ SWIFT_CLASS("_TtC7Insides11CounterCell")
 @end
 
 
+SWIFT_CLASS_NAMED("CounterIntent") SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(macos,unavailable) SWIFT_AVAILABILITY(watchos,introduced=5.0) SWIFT_AVAILABILITY(ios,introduced=12.0)
+@interface CounterIntent : INIntent
+@property (nonatomic, copy) NSString * _Nullable counter;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CounterIntentResponse;
+@class INStringResolutionResult;
+
+SWIFT_PROTOCOL_NAMED("CounterIntentHandling") SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(macos,unavailable) SWIFT_AVAILABILITY(watchos,introduced=5.0) SWIFT_AVAILABILITY(ios,introduced=12.0)
+@protocol CounterIntentHandling <NSObject>
+- (void)handleCounter:(CounterIntent * _Nonnull)intent completion:(void (^ _Nonnull)(CounterIntentResponse * _Nonnull))completion;
+- (void)resolveCounterForCounter:(CounterIntent * _Nonnull)intent withCompletion:(void (^ _Nonnull)(INStringResolutionResult * _Nonnull))completion SWIFT_AVAILABILITY(watchos,introduced=6.0) SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)provideCounterOptionsForCounter:(CounterIntent * _Nonnull)intent withCompletion:(void (^ _Nonnull)(NSArray<NSString *> * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(watchos,introduced=6.0) SWIFT_AVAILABILITY(ios,introduced=13.0);
+@optional
+- (void)confirmCounter:(CounterIntent * _Nonnull)intent completion:(void (^ _Nonnull)(CounterIntentResponse * _Nonnull))completion;
+- (NSString * _Nullable)defaultCounterForCounter:(CounterIntent * _Nonnull)intent SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(watchos,introduced=6.0) SWIFT_AVAILABILITY(ios,introduced=13.0);
+@end
+
+
+SWIFT_CLASS("_TtC7Insides20CounterIntentHandler")
+@interface CounterIntentHandler : NSObject <CounterIntentHandling>
+- (void)resolveCounterForCounter:(CounterIntent * _Nonnull)intent withCompletion:(void (^ _Nonnull)(INStringResolutionResult * _Nonnull))completion;
+- (void)provideCounterOptionsForCounter:(CounterIntent * _Nonnull)intent withCompletion:(void (^ _Nonnull)(NSArray<NSString *> * _Nullable, NSError * _Nullable))completion;
+- (void)handleCounter:(CounterIntent * _Nonnull)intent completion:(void (^ _Nonnull)(CounterIntentResponse * _Nonnull))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class NSNumber;
+enum CounterIntentResponseCode : NSInteger;
+@class NSUserActivity;
+
+SWIFT_CLASS_NAMED("CounterIntentResponse") SWIFT_AVAILABILITY(tvos,unavailable) SWIFT_AVAILABILITY(macos,unavailable) SWIFT_AVAILABILITY(watchos,introduced=5.0) SWIFT_AVAILABILITY(ios,introduced=12.0)
+@interface CounterIntentResponse : INIntentResponse
+@property (nonatomic, strong) NSNumber * _Nullable counterValue;
+@property (nonatomic, readonly) enum CounterIntentResponseCode code;
+- (nonnull instancetype)initWithCode:(enum CounterIntentResponseCode)code userActivity:(NSUserActivity * _Nullable)userActivity;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, CounterIntentResponseCode, closed) {
+  CounterIntentResponseCodeUnspecified = 0,
+  CounterIntentResponseCodeReady = 1,
+  CounterIntentResponseCodeContinueInApp = 2,
+  CounterIntentResponseCodeInProgress = 3,
+  CounterIntentResponseCodeSuccess = 4,
+  CounterIntentResponseCodeFailure = 5,
+  CounterIntentResponseCodeFailureRequiringAppLaunch = 6,
+};
+
+
 SWIFT_CLASS("_TtC7Insides29CounterSettingsViewController")
 @interface CounterSettingsViewController : UITableViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified counterNameField;
@@ -408,7 +464,6 @@ SWIFT_CLASS("_TtC7Insides18InfoViewController")
 @end
 
 @class UIScene;
-@class NSUserActivity;
 
 SWIFT_CLASS("_TtC7Insides13SceneDelegate")
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>

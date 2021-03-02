@@ -44,6 +44,7 @@ depends-top-level:
 - "UITapGestureRecognizer"
 - "UITextField"
 - "UIViewController"
+- !private "UserDefaults"
 - !private "Util"
 - !private "||"
 depends-member:
@@ -64,6 +65,7 @@ depends-member:
 - !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "FirebaseAuth"]
 - !private ["s7CVarArgP", "UITapGestureRecognizer"]
+- !private ["s7CVarArgP", "UserDefaults"]
 - !private ["s7CVarArgP", "Util"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
@@ -92,6 +94,7 @@ depends-member:
 - !private ["s7CVarArgP", "ref"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "setupLabelTap"]
 - !private ["s7CVarArgP", "showError"]
@@ -114,6 +117,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseAuth"]
 - !private ["s28CustomDebugStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - !private ["s28CustomDebugStringConvertibleP", "Util"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
@@ -142,6 +146,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "ref"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "setupLabelTap"]
 - !private ["s28CustomDebugStringConvertibleP", "showError"]
@@ -171,6 +176,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "FirebaseAuth"]
 - !private ["s23CustomStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - !private ["s23CustomStringConvertibleP", "Util"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
@@ -199,6 +205,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "ref"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "setupLabelTap"]
 - !private ["s23CustomStringConvertibleP", "showError"]
@@ -245,6 +252,7 @@ depends-member:
 - !private ["SQ", "Database"]
 - !private ["SQ", "FirebaseAuth"]
 - !private ["SQ", "UITapGestureRecognizer"]
+- !private ["SQ", "UserDefaults"]
 - !private ["SQ", "Util"]
 - ["SQ", ""]
 - !private ["SQ", "addGestureRecognizer"]
@@ -273,6 +281,7 @@ depends-member:
 - !private ["SQ", "ref"]
 - !private ["SQ", "reference"]
 - !private ["SQ", "rootViewController"]
+- !private ["SQ", "set"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "setupLabelTap"]
 - !private ["SQ", "showError"]
@@ -309,6 +318,7 @@ depends-member:
 - !private ["SH", "Database"]
 - !private ["SH", "FirebaseAuth"]
 - !private ["SH", "UITapGestureRecognizer"]
+- !private ["SH", "UserDefaults"]
 - !private ["SH", "Util"]
 - ["SH", ""]
 - !private ["SH", "addGestureRecognizer"]
@@ -337,6 +347,7 @@ depends-member:
 - !private ["SH", "ref"]
 - !private ["SH", "reference"]
 - !private ["SH", "rootViewController"]
+- !private ["SH", "set"]
 - !private ["SH", "setValue"]
 - !private ["SH", "setupLabelTap"]
 - !private ["SH", "showError"]
@@ -359,6 +370,7 @@ depends-member:
 - !private ["So8NSCodingP", "Database"]
 - !private ["So8NSCodingP", "FirebaseAuth"]
 - !private ["So8NSCodingP", "UITapGestureRecognizer"]
+- !private ["So8NSCodingP", "UserDefaults"]
 - !private ["So8NSCodingP", "Util"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
@@ -397,6 +409,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Database"]
 - !private ["So26NSExtensionRequestHandlingP", "FirebaseAuth"]
 - !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
+- !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - !private ["So26NSExtensionRequestHandlingP", "Util"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "appleButton"]
@@ -433,6 +446,7 @@ depends-member:
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITapGestureRecognizer"]
 - ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "UserDefaults"]
 - !private ["So8NSObjectC", "Util"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addTarget"]
@@ -460,6 +474,7 @@ depends-member:
 - ["So8NSObjectC", "ref"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "rootViewController"]
+- !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "setValue"]
 - ["So8NSObjectC", "setupLabelTap"]
 - ["So8NSObjectC", "showError"]
@@ -479,6 +494,7 @@ depends-member:
 - !private ["So8NSObjectP", "Database"]
 - !private ["So8NSObjectP", "FirebaseAuth"]
 - !private ["So8NSObjectP", "UITapGestureRecognizer"]
+- !private ["So8NSObjectP", "UserDefaults"]
 - !private ["So8NSObjectP", "Util"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addGestureRecognizer"]
@@ -507,6 +523,7 @@ depends-member:
 - !private ["So8NSObjectP", "ref"]
 - !private ["So8NSObjectP", "reference"]
 - !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "set"]
 - !private ["So8NSObjectP", "setValue"]
 - !private ["So8NSObjectP", "setupLabelTap"]
 - !private ["So8NSObjectP", "showError"]
@@ -549,6 +566,7 @@ depends-member:
 - ["7Insides20SignUpViewControllerC", "UILabel"]
 - ["7Insides20SignUpViewControllerC", "UITapGestureRecognizer"]
 - ["7Insides20SignUpViewControllerC", "UITextField"]
+- !private ["7Insides20SignUpViewControllerC", "UserDefaults"]
 - !private ["7Insides20SignUpViewControllerC", "Util"]
 - ["7Insides20SignUpViewControllerC", "appleButton"]
 - ["7Insides20SignUpViewControllerC", "confirmPasswordInput"]
@@ -599,6 +617,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Database"]
 - !private ["So21UIAppearanceContainerP", "FirebaseAuth"]
 - !private ["So21UIAppearanceContainerP", "UITapGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "UserDefaults"]
 - !private ["So21UIAppearanceContainerP", "Util"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
@@ -636,6 +655,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Database"]
 - !private ["So18UIContentContainerP", "FirebaseAuth"]
 - !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
+- !private ["So18UIContentContainerP", "UserDefaults"]
 - !private ["So18UIContentContainerP", "Util"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "appleButton"]
@@ -689,6 +709,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Database"]
 - !private ["So18UIFocusEnvironmentP", "FirebaseAuth"]
 - !private ["So18UIFocusEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "UserDefaults"]
 - !private ["So18UIFocusEnvironmentP", "Util"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
@@ -760,6 +781,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Database"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseAuth"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITapGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - !private ["So30UIPasteConfigurationSupportingP", "Util"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
@@ -802,6 +824,7 @@ depends-member:
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITapGestureRecognizer"]
 - ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "UserDefaults"]
 - !private ["So11UIResponderC", "Util"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addTarget"]
@@ -838,6 +861,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseAuth"]
 - !private ["So30UIResponderStandardEditActionsP", "UITapGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - !private ["So30UIResponderStandardEditActionsP", "Util"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
@@ -875,6 +899,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Database"]
 - !private ["So16UIStateRestoringP", "FirebaseAuth"]
 - !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
+- !private ["So16UIStateRestoringP", "UserDefaults"]
 - !private ["So16UIStateRestoringP", "Util"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "appleButton"]
@@ -916,6 +941,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Database"]
 - !private ["So18UITraitEnvironmentP", "FirebaseAuth"]
 - !private ["So18UITraitEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "UserDefaults"]
 - !private ["So18UITraitEnvironmentP", "Util"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
@@ -952,6 +978,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Database"]
 - !private ["So23UIUserActivityRestoringP", "FirebaseAuth"]
 - !private ["So23UIUserActivityRestoringP", "UITapGestureRecognizer"]
+- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
 - !private ["So23UIUserActivityRestoringP", "Util"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addGestureRecognizer"]
@@ -1003,6 +1030,7 @@ depends-member:
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", "UITextField"]
+- !private ["So16UIViewControllerC", "UserDefaults"]
 - !private ["So16UIViewControllerC", "Util"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "appleButton"]
@@ -1030,6 +1058,8 @@ depends-member:
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["So7FIRUserC", "uid"]
+- !private ["So14NSUserDefaultsC", "init"]
+- !private ["So14NSUserDefaultsC", "set"]
 - !private ["So11FIRUserInfoP", "uid"]
 - !private ["7Insides4UtilC", "isValidEmail"]
 - !private ["7Insides4UtilC", "styleSocialButton"]
@@ -1044,6 +1074,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseAuth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITapGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Util"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
@@ -1072,6 +1103,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ref"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupLabelTap"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showError"]
@@ -1091,6 +1123,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FirebaseAuth"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UITapGestureRecognizer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Util"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addGestureRecognizer"]
@@ -1119,6 +1152,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ref"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setupLabelTap"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showError"]
@@ -1239,6 +1273,7 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "So8UIWindowC"
 - !private "So7FIRUserC"
+- !private "So14NSUserDefaultsC"
 - !private "So11FIRUserInfoP"
 - !private "7Insides4UtilC"
 - !private "s30_CustomPlaygroundQuickLookableP"
@@ -1259,9 +1294,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Intents.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
@@ -1357,9 +1395,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Intents.framework/Headers/Intents.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

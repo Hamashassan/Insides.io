@@ -105,6 +105,10 @@ class SignUpViewController: UIViewController {
                     
                     guard let userID = Auth.auth().currentUser?.uid else { return }
                     
+                  let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+                    sharedDefaults?.set(userID, forKey: "userID")
+
+                    
                     let userInfoDictionary = ["username" : username,
                                               "email" : email,"couunters":[]] as [String : Any]
                     

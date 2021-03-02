@@ -11,5 +11,12 @@ target 'Insides' do
   pod "GoogleSignIn"
   pod "Charts"
   # Pods for Insides
-
 end
+
+target 'CounterIntent' do
+  use_frameworks!
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+end
+

@@ -28,6 +28,7 @@ depends-top-level:
 - !private "NSDictionary"
 - "NSUserActivity"
 - "Set"
+- !private "String"
 - "StringLiteralType"
 - !private "UIAlertAction"
 - !private "UIAlertController"
@@ -39,6 +40,7 @@ depends-top-level:
 - "UISceneSession"
 - "UIWindow"
 - "URL"
+- !private "UserDefaults"
 - "Void"
 - !private "print"
 depends-member:
@@ -52,6 +54,7 @@ depends-member:
 - !private ["7Insides11AppDelegateC", "NSDictionary"]
 - ["7Insides11AppDelegateC", "NSUserActivity"]
 - ["7Insides11AppDelegateC", "Set"]
+- !private ["7Insides11AppDelegateC", "String"]
 - !private ["7Insides11AppDelegateC", "UIAlertAction"]
 - !private ["7Insides11AppDelegateC", "UIAlertController"]
 - ["7Insides11AppDelegateC", "UIApplication"]
@@ -60,6 +63,7 @@ depends-member:
 - ["7Insides11AppDelegateC", "UISceneSession"]
 - ["7Insides11AppDelegateC", "UIWindow"]
 - ["7Insides11AppDelegateC", "URL"]
+- !private ["7Insides11AppDelegateC", "UserDefaults"]
 - ["7Insides11AppDelegateC", "Void"]
 - ["7Insides11AppDelegateC", "application"]
 - ["7Insides11AppDelegateC", "applicationDidBecomeActive"]
@@ -90,6 +94,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UISceneConfiguration"]
+- !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addAction"]
 - ["s7CVarArgP", "application"]
@@ -110,6 +115,7 @@ depends-member:
 - !private ["s7CVarArgP", "handle"]
 - !private ["s7CVarArgP", "incrementCounter"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "object"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "restorePreviousSignIn"]
@@ -118,6 +124,7 @@ depends-member:
 - !private ["s7CVarArgP", "sharedInstance"]
 - ["s7CVarArgP", "sign"]
 - ["s7CVarArgP", "signIn"]
+- !private ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "userInfo"]
 - ["s7CVarArgP", "window"]
@@ -131,6 +138,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UISceneConfiguration"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - ["s28CustomDebugStringConvertibleP", "application"]
@@ -151,6 +159,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "handle"]
 - !private ["s28CustomDebugStringConvertibleP", "incrementCounter"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "object"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "restorePreviousSignIn"]
@@ -159,6 +168,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
 - ["s28CustomDebugStringConvertibleP", "sign"]
 - ["s28CustomDebugStringConvertibleP", "signIn"]
+- !private ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "userInfo"]
 - ["s28CustomDebugStringConvertibleP", "window"]
@@ -173,6 +183,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UISceneConfiguration"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
@@ -195,6 +206,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "handle"]
 - !private ["s23CustomStringConvertibleP", "incrementCounter"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "object"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "restorePreviousSignIn"]
@@ -203,6 +215,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sharedInstance"]
 - ["s23CustomStringConvertibleP", "sign"]
 - ["s23CustomStringConvertibleP", "signIn"]
+- !private ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - ["s23CustomStringConvertibleP", "window"]
@@ -222,6 +235,7 @@ depends-member:
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIApplication"]
 - !private ["SQ", "UISceneConfiguration"]
+- !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
 - !private ["SQ", "addAction"]
 - !private ["SQ", "alert"]
@@ -244,6 +258,7 @@ depends-member:
 - !private ["SQ", "handle"]
 - !private ["SQ", "incrementCounter"]
 - !private ["SQ", "init"]
+- !private ["SQ", "object"]
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
 - !private ["SQ", "restorePreviousSignIn"]
@@ -252,6 +267,7 @@ depends-member:
 - !private ["SQ", "sharedInstance"]
 - ["SQ", "sign"]
 - ["SQ", "signIn"]
+- !private ["SQ", "standard"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "userActivityDictionary"]
 - !private ["SQ", "userInfo"]
@@ -270,6 +286,7 @@ depends-member:
 - !private ["So17GIDSignInDelegateP", "UIAlertController"]
 - !private ["So17GIDSignInDelegateP", "UIApplication"]
 - !private ["So17GIDSignInDelegateP", "UISceneConfiguration"]
+- !private ["So17GIDSignInDelegateP", "UserDefaults"]
 - ["So17GIDSignInDelegateP", ""]
 - ["So17GIDSignInDelegateP", "application"]
 - ["So17GIDSignInDelegateP", "applicationDidBecomeActive"]
@@ -296,6 +313,7 @@ depends-member:
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIApplication"]
 - !private ["SH", "UISceneConfiguration"]
+- !private ["SH", "UserDefaults"]
 - ["SH", ""]
 - !private ["SH", "addAction"]
 - !private ["SH", "alert"]
@@ -318,6 +336,7 @@ depends-member:
 - !private ["SH", "handle"]
 - !private ["SH", "incrementCounter"]
 - !private ["SH", "init"]
+- !private ["SH", "object"]
 - !private ["SH", "present"]
 - !private ["SH", "print"]
 - !private ["SH", "restorePreviousSignIn"]
@@ -326,6 +345,7 @@ depends-member:
 - !private ["SH", "sharedInstance"]
 - ["SH", "sign"]
 - ["SH", "signIn"]
+- !private ["SH", "standard"]
 - !private ["SH", "subscript"]
 - !private ["SH", "userActivityDictionary"]
 - !private ["SH", "userInfo"]
@@ -358,6 +378,7 @@ depends-member:
 - ["So8NSObjectC", "NSUserActivity"]
 - ["So8NSObjectC", "OpenURLOptionsKey"]
 - ["So8NSObjectC", "Set"]
+- !private ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - ["So8NSObjectC", "UIApplication"]
@@ -366,6 +387,7 @@ depends-member:
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "UserDefaults"]
 - ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addAction"]
 - ["So8NSObjectC", "application"]
@@ -387,6 +409,7 @@ depends-member:
 - !private ["So8NSObjectC", "handle"]
 - !private ["So8NSObjectC", "incrementCounter"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "object"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "restorePreviousSignIn"]
@@ -395,6 +418,7 @@ depends-member:
 - !private ["So8NSObjectC", "sharedInstance"]
 - ["So8NSObjectC", "sign"]
 - ["So8NSObjectC", "signIn"]
+- !private ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "userInfo"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "ConnectionOptions"]
@@ -406,6 +430,7 @@ depends-member:
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UISceneConfiguration"]
+- !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addAction"]
 - ["So8NSObjectP", "application"]
@@ -426,6 +451,7 @@ depends-member:
 - !private ["So8NSObjectP", "handle"]
 - !private ["So8NSObjectP", "incrementCounter"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "object"]
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "restorePreviousSignIn"]
@@ -434,6 +460,7 @@ depends-member:
 - !private ["So8NSObjectP", "sharedInstance"]
 - ["So8NSObjectP", "sign"]
 - ["So8NSObjectP", "signIn"]
+- !private ["So8NSObjectP", "standard"]
 - !private ["So8NSObjectP", "userInfo"]
 - ["So8NSObjectP", "window"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -468,6 +495,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "UIAlertController"]
 - !private ["So21UIApplicationDelegateP", "UIApplication"]
 - !private ["So21UIApplicationDelegateP", "UISceneConfiguration"]
+- !private ["So21UIApplicationDelegateP", "UserDefaults"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -509,6 +537,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UISceneConfiguration"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -544,6 +573,7 @@ depends-member:
 - ["So11UIResponderC", "NSUserActivity"]
 - ["So11UIResponderC", "OpenURLOptionsKey"]
 - ["So11UIResponderC", "Set"]
+- !private ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - ["So11UIResponderC", "UIApplication"]
@@ -552,6 +582,7 @@ depends-member:
 - ["So11UIResponderC", "UISceneSession"]
 - ["So11UIResponderC", "UIWindow"]
 - ["So11UIResponderC", "URL"]
+- !private ["So11UIResponderC", "UserDefaults"]
 - ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "addAction"]
@@ -585,6 +616,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UISceneConfiguration"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -633,6 +665,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UISceneConfiguration"]
+- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addAction"]
 - ["So23UIUserActivityRestoringP", "application"]
@@ -661,6 +694,8 @@ depends-member:
 - !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So8UIWindowC", "rootViewController"]
+- !private ["So14NSUserDefaultsC", "object"]
+- !private ["So14NSUserDefaultsC", "standard"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "userActivityDictionary"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
@@ -672,6 +707,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UISceneConfiguration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
@@ -692,6 +728,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "incrementCounter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "restorePreviousSignIn"]
@@ -700,6 +737,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sign"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
@@ -711,6 +749,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UISceneConfiguration"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addAction"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
@@ -731,6 +770,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "incrementCounter"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "object"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "restorePreviousSignIn"]
@@ -739,6 +779,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sharedInstance"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sign"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "signIn"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userInfo"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
 - !private ["s21_ObjectiveCBridgeableP", "handle"]
@@ -814,6 +855,7 @@ depends-nominal:
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "So8UIWindowC"
+- !private "So14NSUserDefaultsC"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -828,9 +870,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Intents.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
@@ -926,9 +971,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Intents.framework/Headers/Intents.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

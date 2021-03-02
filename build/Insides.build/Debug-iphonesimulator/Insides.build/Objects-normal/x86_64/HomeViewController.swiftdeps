@@ -84,6 +84,7 @@ depends-top-level:
 - "UIViewController"
 - !private "UInt64"
 - !private "UnicodeScalarType"
+- !private "UserDefaults"
 - !private "Void"
 - !private "dump"
 - !private "print"
@@ -205,6 +206,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIImageView"]
 - !private ["s7CVarArgP", "UILongPressGestureRecognizer"]
 - !private ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addSubview"]
@@ -300,6 +302,7 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
+- !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "setCounter"]
 - !private ["s7CVarArgP", "setNavigationBarHidden"]
 - !private ["s7CVarArgP", "setValue"]
@@ -392,6 +395,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIImageView"]
 - !private ["s28CustomDebugStringConvertibleP", "UILongPressGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
@@ -491,6 +495,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
 - !private ["s28CustomDebugStringConvertibleP", "setCounter"]
 - !private ["s28CustomDebugStringConvertibleP", "setNavigationBarHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
@@ -579,6 +584,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIImageView"]
 - !private ["s23CustomStringConvertibleP", "UILongPressGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
@@ -677,6 +683,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "setCounter"]
 - !private ["s23CustomStringConvertibleP", "setNavigationBarHidden"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
@@ -830,6 +837,7 @@ depends-member:
 - !private ["SQ", "UIImageView"]
 - !private ["SQ", "UILongPressGestureRecognizer"]
 - !private ["SQ", "UIView"]
+- !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
 - !private ["SQ", "addGestureRecognizer"]
 - !private ["SQ", "addSubview"]
@@ -938,6 +946,7 @@ depends-member:
 - ["SQ", "scrollViewWillEndDragging"]
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
+- !private ["SQ", "set"]
 - !private ["SQ", "setCounter"]
 - !private ["SQ", "setNavigationBarHidden"]
 - !private ["SQ", "setValue"]
@@ -1051,6 +1060,7 @@ depends-member:
 - !private ["SH", "UIImageView"]
 - !private ["SH", "UILongPressGestureRecognizer"]
 - !private ["SH", "UIView"]
+- !private ["SH", "UserDefaults"]
 - ["SH", ""]
 - !private ["SH", "addGestureRecognizer"]
 - !private ["SH", "addSubview"]
@@ -1152,6 +1162,7 @@ depends-member:
 - ["SH", "scrollViewWillEndDragging"]
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
+- !private ["SH", "set"]
 - !private ["SH", "setCounter"]
 - !private ["SH", "setNavigationBarHidden"]
 - !private ["SH", "setValue"]
@@ -1218,6 +1229,7 @@ depends-member:
 - ["7Insides18HomeViewControllerC", "UITableViewCell"]
 - ["7Insides18HomeViewControllerC", "UIView"]
 - !private ["7Insides18HomeViewControllerC", "UInt64"]
+- !private ["7Insides18HomeViewControllerC", "UserDefaults"]
 - !private ["7Insides18HomeViewControllerC", "Void"]
 - ["7Insides18HomeViewControllerC", "bottomDetailView"]
 - ["7Insides18HomeViewControllerC", "counters"]
@@ -1319,6 +1331,7 @@ depends-member:
 - !private ["So8NSCodingP", "UIImageView"]
 - !private ["So8NSCodingP", "UILongPressGestureRecognizer"]
 - !private ["So8NSCodingP", "UIView"]
+- !private ["So8NSCodingP", "UserDefaults"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addSubview"]
@@ -1454,6 +1467,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIImageView"]
 - !private ["So26NSExtensionRequestHandlingP", "UILongPressGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "UIView"]
+- !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "bottomDetailView"]
 - !private ["So26NSExtensionRequestHandlingP", "count"]
@@ -1571,6 +1585,7 @@ depends-member:
 - ["So8NSObjectC", "UITableViewCell"]
 - ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "UInt64"]
+- !private ["So8NSObjectC", "UserDefaults"]
 - !private ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addSubview"]
@@ -1669,6 +1684,7 @@ depends-member:
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
 - ["So8NSObjectC", "segmentTab"]
+- !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "setCounter"]
 - !private ["So8NSObjectC", "setNavigationBarHidden"]
 - !private ["So8NSObjectC", "setValue"]
@@ -1716,6 +1732,7 @@ depends-member:
 - !private ["So8NSObjectP", "UIImageView"]
 - !private ["So8NSObjectP", "UILongPressGestureRecognizer"]
 - !private ["So8NSObjectP", "UIView"]
+- !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addGestureRecognizer"]
 - !private ["So8NSObjectP", "addSubview"]
@@ -1808,6 +1825,7 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectP", "set"]
 - !private ["So8NSObjectP", "setCounter"]
 - !private ["So8NSObjectP", "setNavigationBarHidden"]
 - !private ["So8NSObjectP", "setValue"]
@@ -2047,6 +2065,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIImageView"]
 - !private ["So21UIAppearanceContainerP", "UILongPressGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "UIView"]
+- !private ["So21UIAppearanceContainerP", "UserDefaults"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
@@ -2161,6 +2180,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIImageView"]
 - !private ["So18UIContentContainerP", "UILongPressGestureRecognizer"]
 - !private ["So18UIContentContainerP", "UIView"]
+- !private ["So18UIContentContainerP", "UserDefaults"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "bottomDetailView"]
 - !private ["So18UIContentContainerP", "count"]
@@ -2305,6 +2325,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIImageView"]
 - !private ["So18UIFocusEnvironmentP", "UILongPressGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "UIView"]
+- !private ["So18UIFocusEnvironmentP", "UserDefaults"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
@@ -2478,6 +2499,7 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "UIImageView"]
 - !private ["So27UIGestureRecognizerDelegateP", "UILongPressGestureRecognizer"]
 - !private ["So27UIGestureRecognizerDelegateP", "UIView"]
+- !private ["So27UIGestureRecognizerDelegateP", "UserDefaults"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "alpha"]
 - !private ["So27UIGestureRecognizerDelegateP", "bottomDetailView"]
@@ -2589,6 +2611,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIImageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UILongPressGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
@@ -2705,6 +2728,7 @@ depends-member:
 - ["So11UIResponderC", "UITableViewCell"]
 - ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "UInt64"]
+- !private ["So11UIResponderC", "UserDefaults"]
 - !private ["So11UIResponderC", "Void"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addSubview"]
@@ -2810,6 +2834,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIImageView"]
 - !private ["So30UIResponderStandardEditActionsP", "UILongPressGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
@@ -2920,6 +2945,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIImageView"]
 - !private ["So20UIScrollViewDelegateP", "UILongPressGestureRecognizer"]
 - !private ["So20UIScrollViewDelegateP", "UIView"]
+- !private ["So20UIScrollViewDelegateP", "UserDefaults"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "bottomDetailView"]
 - !private ["So20UIScrollViewDelegateP", "count"]
@@ -3001,6 +3027,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIImageView"]
 - !private ["So16UIStateRestoringP", "UILongPressGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "UIView"]
+- !private ["So16UIStateRestoringP", "UserDefaults"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "bottomDetailView"]
 - !private ["So16UIStateRestoringP", "count"]
@@ -3098,6 +3125,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UIImageView"]
 - !private ["So21UITableViewDataSourceP", "UILongPressGestureRecognizer"]
 - !private ["So21UITableViewDataSourceP", "UIView"]
+- !private ["So21UITableViewDataSourceP", "UserDefaults"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "bottomDetailView"]
 - !private ["So21UITableViewDataSourceP", "count"]
@@ -3165,6 +3193,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UIImageView"]
 - !private ["So19UITableViewDelegateP", "UILongPressGestureRecognizer"]
 - !private ["So19UITableViewDelegateP", "UIView"]
+- !private ["So19UITableViewDelegateP", "UserDefaults"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "bottomDetailView"]
 - !private ["So19UITableViewDelegateP", "count"]
@@ -3233,6 +3262,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIImageView"]
 - !private ["So18UITraitEnvironmentP", "UILongPressGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "UIView"]
+- !private ["So18UITraitEnvironmentP", "UserDefaults"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
@@ -3332,6 +3362,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIImageView"]
 - !private ["So23UIUserActivityRestoringP", "UILongPressGestureRecognizer"]
 - !private ["So23UIUserActivityRestoringP", "UIView"]
+- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addGestureRecognizer"]
 - !private ["So23UIUserActivityRestoringP", "addSubview"]
@@ -3476,6 +3507,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "UInt64"]
+- !private ["So16UIViewControllerC", "UserDefaults"]
 - !private ["So16UIViewControllerC", "Void"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "bottomDetailView"]
@@ -3536,6 +3568,8 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So7FIRUserC", "uid"]
+- !private ["So14NSUserDefaultsC", "init"]
+- !private ["So14NSUserDefaultsC", "set"]
 - ["So11FIRUserInfoP", "uid"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
@@ -3635,6 +3669,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UILongPressGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
@@ -3727,6 +3762,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setCounter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBarHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
@@ -3774,6 +3810,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImageView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UILongPressGestureRecognizer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addGestureRecognizer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addSubview"]
@@ -3866,6 +3903,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewWillEndDragging"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionIndexTitles"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setCounter"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setNavigationBarHidden"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
@@ -4095,6 +4133,7 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - "So7FIRUserC"
+- !private "So14NSUserDefaultsC"
 - "So11FIRUserInfoP"
 - !private "s14_ArrayProtocolP"
 - !private "s15_CVarArgAlignedP"
@@ -4119,9 +4158,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Intents.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
@@ -4217,9 +4259,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Intents.framework/Headers/Intents.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

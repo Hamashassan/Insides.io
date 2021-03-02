@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import Intents
 
 class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
@@ -94,7 +95,7 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         print("Select ho bharwa",indexPath)
         
-       let selectedColor = colors[indexPath.row]
+        let selectedColor = colors[indexPath.row]
         
         print("selected color ",selectedColor)
         
@@ -157,6 +158,13 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         guard let userID = Auth.auth().currentUser?.uid else { return }
         
+//        let userDefaults = UserDefaults.standard
+//
+//        userDefaults.set(userID, forKey: "userId")
+        
+        let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+        sharedDefaults?.set(userID, forKey: "userID")
+        
         let counterName = counterNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         let userInfoDictionary = ["identifier":identifier,"counte_name" : counterName,
@@ -170,6 +178,10 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
     }
     
+    //    func saveToUserDefaults(id:String,counterName:String){
+    //
+    //    }
+    
     @objc func onBackPress(){
         self.dismiss(animated: true, completion: nil) }
 }
@@ -177,16 +189,39 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
 
 extension AddCounterViewController {
     func donateUserActivity(id: String,title:String) {
-        let activityTypeName = "com.insides.io.counter"
-        let activity = NSUserActivity(activityType: activityTypeName)
-        activity.title = "Increment \(title)"
-        activity.userInfo = ["id" : id]
-        activity.isEligibleForSearch = true
-        activity.isEligibleForPrediction = true
-        //        activity.suggestedInvocationPhrase = "Increment \(counter.counterName)"
-        view.userActivity = activity
+        //        let activityTypeName = "com.insides.io.counter"
+        //        let activity = NSUserActivity(activityType: activityTypeName)
+        //        activity.title = "Increment \(title)"
+        //        activity.userInfo = ["id" : id]
+        //        activity.isEligibleForSearch = true
+        //        activity.isEligibleForPrediction = true
+        //        //        activity.suggestedInvocationPhrase = "Increment \(counter.counterName)"
+        //        view.userActivity = activity
+        //
+        //        activity.becomeCurrent()
         
-        activity.becomeCurrent()
+        //        New code
+        
+        let intent = CounterIntent()
+        intent.suggestedInvocationPhrase = "Intent \(title)"
+        //        intent.c
+        //        intent.ti
+        //        intent.
+        //        intent.userI
+        
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { (error) in
+            if error != nil {
+                if (error as NSError?) != nil {
+                    print("error",error!)
+                } else {
+                    print("error undefined")
+                }
+            }
+        }
+        print("Successfull Donate")
     }
 }
 

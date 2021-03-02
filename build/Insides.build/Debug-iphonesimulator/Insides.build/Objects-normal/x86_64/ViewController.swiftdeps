@@ -58,6 +58,7 @@ depends-top-level:
 - "UITapGestureRecognizer"
 - "UITextField"
 - "UIViewController"
+- !private "UserDefaults"
 - !private "Util"
 - "ViewController"
 - !private "print"
@@ -89,6 +90,7 @@ depends-member:
 - !private ["s7CVarArgP", "GIDSignIn"]
 - !private ["s7CVarArgP", "GoogleAuthProvider"]
 - !private ["s7CVarArgP", "UITapGestureRecognizer"]
+- !private ["s7CVarArgP", "UserDefaults"]
 - !private ["s7CVarArgP", "Util"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "accessToken"]
@@ -149,6 +151,7 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
+- !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "setNavigationBarHidden"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "setupLabelTap"]
@@ -190,6 +193,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "GoogleAuthProvider"]
 - !private ["s28CustomDebugStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - !private ["s28CustomDebugStringConvertibleP", "Util"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "accessToken"]
@@ -251,6 +255,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
 - !private ["s28CustomDebugStringConvertibleP", "setNavigationBarHidden"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "setupLabelTap"]
@@ -306,6 +311,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "GIDSignIn"]
 - !private ["s23CustomStringConvertibleP", "GoogleAuthProvider"]
 - !private ["s23CustomStringConvertibleP", "UITapGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - !private ["s23CustomStringConvertibleP", "Util"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "accessToken"]
@@ -369,6 +375,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "setNavigationBarHidden"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "setupLabelTap"]
@@ -458,6 +465,7 @@ depends-member:
 - !private ["SQ", "GIDSignIn"]
 - !private ["SQ", "GoogleAuthProvider"]
 - !private ["SQ", "UITapGestureRecognizer"]
+- !private ["SQ", "UserDefaults"]
 - !private ["SQ", "Util"]
 - ["SQ", ""]
 - !private ["SQ", "accessToken"]
@@ -519,6 +527,7 @@ depends-member:
 - ["SQ", "scrollViewWillEndDragging"]
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
+- !private ["SQ", "set"]
 - !private ["SQ", "setNavigationBarHidden"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "setupLabelTap"]
@@ -595,6 +604,7 @@ depends-member:
 - !private ["So17GIDSignInDelegateP", "GIDSignIn"]
 - !private ["So17GIDSignInDelegateP", "GoogleAuthProvider"]
 - !private ["So17GIDSignInDelegateP", "UITapGestureRecognizer"]
+- !private ["So17GIDSignInDelegateP", "UserDefaults"]
 - !private ["So17GIDSignInDelegateP", "Util"]
 - ["So17GIDSignInDelegateP", ""]
 - !private ["So17GIDSignInDelegateP", "appleButton"]
@@ -649,6 +659,7 @@ depends-member:
 - !private ["SH", "GIDSignIn"]
 - !private ["SH", "GoogleAuthProvider"]
 - !private ["SH", "UITapGestureRecognizer"]
+- !private ["SH", "UserDefaults"]
 - !private ["SH", "Util"]
 - ["SH", ""]
 - !private ["SH", "accessToken"]
@@ -710,6 +721,7 @@ depends-member:
 - ["SH", "scrollViewWillEndDragging"]
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
+- !private ["SH", "set"]
 - !private ["SH", "setNavigationBarHidden"]
 - !private ["SH", "setValue"]
 - !private ["SH", "setupLabelTap"]
@@ -751,6 +763,7 @@ depends-member:
 - !private ["So8NSCodingP", "GIDSignIn"]
 - !private ["So8NSCodingP", "GoogleAuthProvider"]
 - !private ["So8NSCodingP", "UITapGestureRecognizer"]
+- !private ["So8NSCodingP", "UserDefaults"]
 - !private ["So8NSCodingP", "Util"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "accessToken"]
@@ -833,6 +846,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "GIDSignIn"]
 - !private ["So26NSExtensionRequestHandlingP", "GoogleAuthProvider"]
 - !private ["So26NSExtensionRequestHandlingP", "UITapGestureRecognizer"]
+- !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - !private ["So26NSExtensionRequestHandlingP", "Util"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "appleButton"]
@@ -905,6 +919,7 @@ depends-member:
 - ["So8NSObjectC", "UITableViewCell"]
 - ["So8NSObjectC", "UITapGestureRecognizer"]
 - ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "UserDefaults"]
 - !private ["So8NSObjectC", "Util"]
 - !private ["So8NSObjectC", "accessToken"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
@@ -963,6 +978,7 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "setNavigationBarHidden"]
 - !private ["So8NSObjectC", "setValue"]
 - ["So8NSObjectC", "setupLabelTap"]
@@ -994,6 +1010,7 @@ depends-member:
 - !private ["So8NSObjectP", "GIDSignIn"]
 - !private ["So8NSObjectP", "GoogleAuthProvider"]
 - !private ["So8NSObjectP", "UITapGestureRecognizer"]
+- !private ["So8NSObjectP", "UserDefaults"]
 - !private ["So8NSObjectP", "Util"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "accessToken"]
@@ -1053,6 +1070,7 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectP", "set"]
 - !private ["So8NSObjectP", "setNavigationBarHidden"]
 - !private ["So8NSObjectP", "setValue"]
 - !private ["So8NSObjectP", "setupLabelTap"]
@@ -1160,6 +1178,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "GIDSignIn"]
 - !private ["So21UIAppearanceContainerP", "GoogleAuthProvider"]
 - !private ["So21UIAppearanceContainerP", "UITapGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "UserDefaults"]
 - !private ["So21UIAppearanceContainerP", "Util"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
@@ -1228,6 +1247,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "GIDSignIn"]
 - !private ["So18UIContentContainerP", "GoogleAuthProvider"]
 - !private ["So18UIContentContainerP", "UITapGestureRecognizer"]
+- !private ["So18UIContentContainerP", "UserDefaults"]
 - !private ["So18UIContentContainerP", "Util"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "appleButton"]
@@ -1315,6 +1335,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "GIDSignIn"]
 - !private ["So18UIFocusEnvironmentP", "GoogleAuthProvider"]
 - !private ["So18UIFocusEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "UserDefaults"]
 - !private ["So18UIFocusEnvironmentP", "Util"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
@@ -1426,6 +1447,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
 - !private ["So30UIPasteConfigurationSupportingP", "GoogleAuthProvider"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITapGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - !private ["So30UIPasteConfigurationSupportingP", "Util"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
@@ -1506,6 +1528,7 @@ depends-member:
 - ["So11UIResponderC", "UITableViewCell"]
 - ["So11UIResponderC", "UITapGestureRecognizer"]
 - ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "UserDefaults"]
 - !private ["So11UIResponderC", "Util"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addTarget"]
@@ -1573,6 +1596,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
 - !private ["So30UIResponderStandardEditActionsP", "GoogleAuthProvider"]
 - !private ["So30UIResponderStandardEditActionsP", "UITapGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - !private ["So30UIResponderStandardEditActionsP", "Util"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
@@ -1641,6 +1665,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "GIDSignIn"]
 - !private ["So20UIScrollViewDelegateP", "GoogleAuthProvider"]
 - !private ["So20UIScrollViewDelegateP", "UITapGestureRecognizer"]
+- !private ["So20UIScrollViewDelegateP", "UserDefaults"]
 - !private ["So20UIScrollViewDelegateP", "Util"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "appleButton"]
@@ -1696,6 +1721,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "GIDSignIn"]
 - !private ["So16UIStateRestoringP", "GoogleAuthProvider"]
 - !private ["So16UIStateRestoringP", "UITapGestureRecognizer"]
+- !private ["So16UIStateRestoringP", "UserDefaults"]
 - !private ["So16UIStateRestoringP", "Util"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "appleButton"]
@@ -1755,6 +1781,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "GIDSignIn"]
 - !private ["So21UITableViewDataSourceP", "GoogleAuthProvider"]
 - !private ["So21UITableViewDataSourceP", "UITapGestureRecognizer"]
+- !private ["So21UITableViewDataSourceP", "UserDefaults"]
 - !private ["So21UITableViewDataSourceP", "Util"]
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "appleButton"]
@@ -1808,6 +1835,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "GIDSignIn"]
 - !private ["So19UITableViewDelegateP", "GoogleAuthProvider"]
 - !private ["So19UITableViewDelegateP", "UITapGestureRecognizer"]
+- !private ["So19UITableViewDelegateP", "UserDefaults"]
 - !private ["So19UITableViewDelegateP", "Util"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "appleButton"]
@@ -1874,6 +1902,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "GIDSignIn"]
 - !private ["So18UITraitEnvironmentP", "GoogleAuthProvider"]
 - !private ["So18UITraitEnvironmentP", "UITapGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "UserDefaults"]
 - !private ["So18UITraitEnvironmentP", "Util"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
@@ -1941,6 +1970,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "GIDSignIn"]
 - !private ["So23UIUserActivityRestoringP", "GoogleAuthProvider"]
 - !private ["So23UIUserActivityRestoringP", "UITapGestureRecognizer"]
+- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
 - !private ["So23UIUserActivityRestoringP", "Util"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addGestureRecognizer"]
@@ -2032,6 +2062,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", "UITextField"]
+- !private ["So16UIViewControllerC", "UserDefaults"]
 - !private ["So16UIViewControllerC", "Util"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "appleButton"]
@@ -2086,6 +2117,8 @@ depends-member:
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["So7FIRUserC", "uid"]
+- !private ["So14NSUserDefaultsC", "init"]
+- !private ["So14NSUserDefaultsC", "set"]
 - !private ["So11FIRUserInfoP", "uid"]
 - !private ["7Insides4UtilC", "isValidEmail"]
 - !private ["7Insides4UtilC", "styleSocialButton"]
@@ -2109,6 +2142,7 @@ depends-member:
 - ["7Insides14ViewControllerC", "UITableViewCell"]
 - ["7Insides14ViewControllerC", "UITapGestureRecognizer"]
 - ["7Insides14ViewControllerC", "UITextField"]
+- !private ["7Insides14ViewControllerC", "UserDefaults"]
 - !private ["7Insides14ViewControllerC", "Util"]
 - ["7Insides14ViewControllerC", "appleButton"]
 - ["7Insides14ViewControllerC", "counters"]
@@ -2178,6 +2212,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GoogleAuthProvider"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITapGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Util"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accessToken"]
@@ -2237,6 +2272,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setNavigationBarHidden"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupLabelTap"]
@@ -2268,6 +2304,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GIDSignIn"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GoogleAuthProvider"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UITapGestureRecognizer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Util"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "accessToken"]
@@ -2327,6 +2364,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewWillEndDragging"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionIndexTitles"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sectionIndexTitlesForTableView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setNavigationBarHidden"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setupLabelTap"]
@@ -2496,6 +2534,7 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "So8UIWindowC"
 - !private "So7FIRUserC"
+- !private "So14NSUserDefaultsC"
 - !private "So11FIRUserInfoP"
 - !private "7Insides4UtilC"
 - "7Insides14ViewControllerC"
@@ -2519,9 +2558,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Intents.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
@@ -2617,9 +2659,12 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/usr/include/Darwin.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Intents.framework/Headers/Intents.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
