@@ -30,11 +30,7 @@
 		AEE68CF325C61CBA008AAA71 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */; };
 		AEE68CF525C62665008AAA71 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE68CF425C62664008AAA71 /* CalendarViewController.swift */; };
 		AEEF819025ED6F2D00F47629 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF818F25ED6F2D00F47629 /* IntentHandler.swift */; };
-		AEEF819825ED6F2D00F47629 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEF819725ED6F2D00F47629 /* IntentsUI.framework */; };
-		AEEF819B25ED6F2D00F47629 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF819A25ED6F2D00F47629 /* IntentViewController.swift */; };
-		AEEF819E25ED6F2D00F47629 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEF819C25ED6F2D00F47629 /* MainInterface.storyboard */; };
-		AEEF81A225ED6F2D00F47629 /* CounterIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AEEF81A525ED6F2D00F47629 /* CounterIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AEEF81A525ED6F2D00F47629 /* Siri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEEF818D25ED6F2D00F47629 /* Siri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AEEF81B225ED701100F47629 /* CounterIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B125ED701100F47629 /* CounterIntentHandler.swift */; };
 		AEEF81B425ED711400F47629 /* CounterIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B325ED711400F47629 /* CounterIntent.intentdefinition */; };
 		AEEF81B525ED711400F47629 /* CounterIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AEEF81B325ED711400F47629 /* CounterIntent.intentdefinition */; };
@@ -47,13 +43,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AEEF81A025ED6F2D00F47629 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE44626525B501360082BCD0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEEF819525ED6F2D00F47629;
-			remoteInfo = CounterIntentUI;
-		};
 		AEEF81A325ED6F2D00F47629 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE44626525B501360082BCD0 /* Project object */;
@@ -70,8 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				AEEF81A225ED6F2D00F47629 /* CounterIntentUI.appex in Embed App Extensions */,
-				AEEF81A525ED6F2D00F47629 /* CounterIntent.appex in Embed App Extensions */,
+				AEEF81A525ED6F2D00F47629 /* Siri.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,16 +92,16 @@
 		AE8FF81425EA6A060086EE7D /* Insides-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Insides-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE8FF81525EA6A060086EE7D /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
 		AE8FF81625EA6A070086EE7D /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		AE9DAE9425F02E7400135A41 /* CounterIntentRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterIntentRelease.entitlements; sourceTree = "<group>"; };
 		AEB2BD0825C9358400E97379 /* ColorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEC299B825C52158009BC629 /* CounterSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterSettingsViewController.swift; sourceTree = "<group>"; };
 		AEC299BA25C56CEF009BC629 /* Insides.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Insides.entitlements; sourceTree = "<group>"; };
 		AED584C625C2F1BF002824BA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AEE68CF225C61CBA008AAA71 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		AEE68CF425C62664008AAA71 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEF818D25ED6F2D00F47629 /* Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEF818F25ED6F2D00F47629 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		AEEF819125ED6F2D00F47629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEF819725ED6F2D00F47629 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		AEEF819A25ED6F2D00F47629 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		AEEF819D25ED6F2D00F47629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -125,6 +113,7 @@
 		AEEF81BD25EDB2C400F47629 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEEF81BF25EE819700F47629 /* CountersUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersUserDefaults.swift; sourceTree = "<group>"; };
 		AEEF81C125EECEB800F47629 /* CounterIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterIntent.entitlements; sourceTree = "<group>"; };
+		AEEF81C225F0235200F47629 /* InsidesRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsidesRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,14 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CEDD8684FE6E825F769DF9C /* Pods_CounterIntent.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEEF819325ED6F2D00F47629 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEEF819825ED6F2D00F47629 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				AE44626D25B501360082BCD0 /* Insides.app */,
-				AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */,
-				AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */,
+				AEEF818D25ED6F2D00F47629 /* Siri.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +194,7 @@
 		AE44626F25B501360082BCD0 /* Insides */ = {
 			isa = PBXGroup;
 			children = (
+				AEEF81C225F0235200F47629 /* InsidesRelease.entitlements */,
 				AEC299BA25C56CEF009BC629 /* Insides.entitlements */,
 				AE1CC26425C3A3E400194FC4 /* Helpers */,
 				AE7EA1DB25C31E85000EDFC6 /* GoogleService-Info.plist */,
@@ -242,6 +223,7 @@
 		AEEF818E25ED6F2D00F47629 /* CounterIntent */ = {
 			isa = PBXGroup;
 			children = (
+				AE9DAE9425F02E7400135A41 /* CounterIntentRelease.entitlements */,
 				AEEF81C125EECEB800F47629 /* CounterIntent.entitlements */,
 				AEEF81BD25EDB2C400F47629 /* GoogleService-Info.plist */,
 				AEEF818F25ED6F2D00F47629 /* IntentHandler.swift */,
@@ -281,7 +263,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				AEEF81A125ED6F2D00F47629 /* PBXTargetDependency */,
 				AEEF81A425ED6F2D00F47629 /* PBXTargetDependency */,
 			);
 			name = Insides;
@@ -289,9 +270,9 @@
 			productReference = AE44626D25B501360082BCD0 /* Insides.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AEEF818C25ED6F2D00F47629 /* CounterIntent */ = {
+		AEEF818C25ED6F2D00F47629 /* Siri */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEEF81AC25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntent" */;
+			buildConfigurationList = AEEF81AC25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "Siri" */;
 			buildPhases = (
 				5F342B3B53DB4A185B19704B /* [CP] Check Pods Manifest.lock */,
 				AEEF818925ED6F2D00F47629 /* Sources */,
@@ -302,26 +283,9 @@
 			);
 			dependencies = (
 			);
-			name = CounterIntent;
+			name = Siri;
 			productName = CounterIntent;
-			productReference = AEEF818D25ED6F2D00F47629 /* CounterIntent.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		AEEF819525ED6F2D00F47629 /* CounterIntentUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEEF81AB25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntentUI" */;
-			buildPhases = (
-				AEEF819225ED6F2D00F47629 /* Sources */,
-				AEEF819325ED6F2D00F47629 /* Frameworks */,
-				AEEF819425ED6F2D00F47629 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CounterIntentUI;
-			productName = CounterIntentUI;
-			productReference = AEEF819625ED6F2D00F47629 /* CounterIntentUI.appex */;
+			productReference = AEEF818D25ED6F2D00F47629 /* Siri.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -341,9 +305,6 @@
 					AEEF818C25ED6F2D00F47629 = {
 						CreatedOnToolsVersion = 11.6;
 					};
-					AEEF819525ED6F2D00F47629 = {
-						CreatedOnToolsVersion = 11.6;
-					};
 				};
 			};
 			buildConfigurationList = AE44626825B501360082BCD0 /* Build configuration list for PBXProject "Insides" */;
@@ -360,8 +321,7 @@
 			projectRoot = "";
 			targets = (
 				AE44626C25B501360082BCD0 /* Insides */,
-				AEEF818C25ED6F2D00F47629 /* CounterIntent */,
-				AEEF819525ED6F2D00F47629 /* CounterIntentUI */,
+				AEEF818C25ED6F2D00F47629 /* Siri */,
 			);
 		};
 /* End PBXProject section */
@@ -383,14 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEEF81BE25EDB2C400F47629 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEEF819425ED6F2D00F47629 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEEF819E25ED6F2D00F47629 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,25 +469,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEEF819225ED6F2D00F47629 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEEF819B25ED6F2D00F47629 /* IntentViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AEEF81A125ED6F2D00F47629 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEEF819525ED6F2D00F47629 /* CounterIntentUI */;
-			targetProxy = AEEF81A025ED6F2D00F47629 /* PBXContainerItemProxy */;
-		};
 		AEEF81A425ED6F2D00F47629 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AEEF818C25ED6F2D00F47629 /* CounterIntent */;
+			target = AEEF818C25ED6F2D00F47629 /* Siri */;
 			targetProxy = AEEF81A325ED6F2D00F47629 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -690,8 +629,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Insides/Insides.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V7JYR6MQU;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Insides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -699,10 +641,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Insides-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -713,8 +656,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Insides/Insides.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Insides/InsidesRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = WUMJQ38H6C;
 				INFOPLIST_FILE = Insides/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,9 +668,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Profile Production";
 				SWIFT_OBJC_BRIDGING_HEADER = "Insides-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -733,19 +680,22 @@
 			baseConfigurationReference = 5BD6063B6CD2E90868730398 /* Pods-CounterIntent.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CounterIntent/CounterIntent.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V7JYR6MQU;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CounterIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntent;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.siri;
+				PRODUCT_NAME = Siri;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -753,55 +703,23 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43A363B5A87252DC89A87088 /* Pods-CounterIntent.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CounterIntent/CounterIntent.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CounterIntent/CounterIntentRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = WUMJQ38H6C;
 				INFOPLIST_FILE = CounterIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntent;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.siri;
+				PRODUCT_NAME = Siri;
+				PROVISIONING_PROFILE_SPECIFIER = "Siri Provisioning Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		AEEF81A925ED6F2D00F47629 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CounterIntentUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntentUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AEEF81AA25ED6F2D00F47629 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CounterIntentUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.insides.io.CounterIntentUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -826,16 +744,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEEF81AB25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntentUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEEF81A925ED6F2D00F47629 /* Debug */,
-				AEEF81AA25ED6F2D00F47629 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEEF81AC25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "CounterIntent" */ = {
+		AEEF81AC25ED6F2D00F47629 /* Build configuration list for PBXNativeTarget "Siri" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEEF81A725ED6F2D00F47629 /* Debug */,

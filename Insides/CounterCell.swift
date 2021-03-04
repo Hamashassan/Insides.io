@@ -34,13 +34,18 @@ class CounterCell: UITableViewCell {
     
     func setCounter(counter: Counter!){
         
+       
+        
         counterButton.layer.cornerRadius = 10; // this value vary as per your desire
         
         self.counter = counter
         
+        let count = counter.type == "all" ? counter.count : counter.todayCount
+        
+        
         counterName.text = counter.counterName
         counterButton.backgroundColor = counter.counterColor
-        counterButton.setTitle(String(counter.count), for: .normal)
+        counterButton.setTitle(String( count), for: .normal)
         
     }
     

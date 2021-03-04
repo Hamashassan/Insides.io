@@ -23,7 +23,7 @@ class FirebaseHelper {
         FirebaseApp.configure()
         
         let ref = Database.database().reference()
-        
+         os_log("I amase fireb %@")
         //                let userID = "lpfrCtFks1TbfQolvuRuP7RP8IH2"
         //                let userID = Auth.auth().currentUser?.uid ?? "abcd"
         
@@ -31,11 +31,13 @@ class FirebaseHelper {
         
         //        let userID = userDefaults.object(forKey: "userId") as? String ?? String()
         
-        //        os_log("userID %@",userID!)
+             
         
         //        var countersName = [String]()
         
-        let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+         let sharedDefaults = UserDefaults(suiteName: "group.insides.io")
+        
+          
         
         guard let userID = sharedDefaults?.string(forKey: "userID") else { return }
         
@@ -99,7 +101,7 @@ class FirebaseHelper {
         
         //        let userID = Auth.auth().currentUser?.uid
         
-        let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+         let sharedDefaults = UserDefaults(suiteName: "group.insides.io")
         
         guard let userID = sharedDefaults?.string(forKey: "userID") else { return }
         
@@ -144,7 +146,7 @@ class FirebaseHelper {
         
         //        let userID = Auth.auth().currentUser?.uid
         
-        let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+        let sharedDefaults = UserDefaults(suiteName: "group.insides.io")
         
         guard let userID = sharedDefaults?.string(forKey: "userID") else { return }
         
@@ -164,8 +166,27 @@ class FirebaseHelper {
             
             if let mainObj = snap.value as? [String: AnyObject]{
                 let count = mainObj["counter"] as? Int
+                let todayCount = mainObj["todayCount"] as? Int
+                let currentDate = mainObj["currentDate"] as? String
                 
-                let userInfoDictionary = ["counter":count! + 1] as [String : Any]
+                let my = Date()
+                let formatterx = DateFormatter()
+                formatterx.dateFormat = "dd-MM-yyyy"
+                let mycurrentDate = formatterx.string(from: my)
+                
+                var myTodayCount = 0
+                
+                
+                if mycurrentDate == currentDate{
+                    print("same")
+                    myTodayCount = todayCount! + 1
+                    print("same",myTodayCount)
+                }else {
+                    print("else")
+                    myTodayCount = 0 + 1
+                }
+                
+                let userInfoDictionary = ["counter":count! + 1,"currentDate":mycurrentDate,"todayCount":myTodayCount] as [String : Any]
                 
                 ref.child("users").child(userID).child("counters").child(id).updateChildValues(userInfoDictionary)
                 

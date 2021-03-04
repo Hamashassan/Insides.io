@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules"
+    'name': '/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules'
     'contents': [{
       'type': 'file',
-      'name': "module.modulemap",
-      'external-contents': "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Pods.build/Debug-iphonesimulator/Charts.build/unextended-module.modulemap",
+      'name': 'module.modulemap',
+      'external-contents': '/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Pods.build/Debug-iphonesimulator/Charts.build/unextended-module.modulemap',
     }]
   }]
 }

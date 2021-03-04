@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>9V7JYR6MQU.com.insides.io</string>
+	<string>WUMJQ38H6C.com.insides.io</string>
 	<key>com.apple.developer.applesignin</key>
 	<array>
 		<string>Default</string>
@@ -12,7 +12,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.insides.io</string>
+		<string>group.insides.io</string>
 	</array>
 </dict>
 </plist>

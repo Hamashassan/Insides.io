@@ -180,7 +180,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Intent Counter</string>
+			<string>Increment Counter</string>
 			<key>INIntentTitleID</key>
 			<string>apb6Cn</string>
 			<key>INIntentType</key>

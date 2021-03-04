@@ -34,7 +34,11 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+        print("segmentTab",segmentTab.selectedSegmentIndex)
+        
+        segmentTab.addTarget(self, action: #selector(updateView), for: .valueChanged)
+        
+        let sharedDefaults = UserDefaults(suiteName: "group.insides.io")
         sharedDefaults?.set(userID, forKey: "userID")
         
         
@@ -100,47 +104,68 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         
         print("userID \(userID!)")
         
-        ref.child("users").child(userID!).child("counters").observe(.value, with: { (snapshot) in
+        let  selectedTab = segmentTab.selectedSegmentIndex
+        
+        
+        
+        if selectedTab == 0{
             
-            //        self.ref.child("users").observe(.value, with: { (snapshot) in
-            var total = 0
-            var snaps = 0
-            if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
-                self.counters.removeAll()
-                for snap in snapShot {
-                    print("mySnap \(snap)")
-                    
-                    if let mainObj = snap.value as? [String: AnyObject]{
-                        let id = mainObj["identifier"] as? String
-                        let counterName = mainObj["counte_name"] as? String
-                        let counter = mainObj["counter"] as? Int
-                        let color = mainObj["counter_color"] as? String
+            ref.child("users").child(userID!).child("counters").observe(.value, with: { (snapshot) in
+                
+                //        self.ref.child("users").observe(.value, with: { (snapshot) in
+                var total = 0
+                var snaps = 0
+                if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
+                    self.counters.removeAll()
+                    for snap in snapShot {
+                        print("mySnap \(snap)")
                         
-                        total = total + counter!
-                        snaps = snaps + 1
+                        if let mainObj = snap.value as? [String: AnyObject]{
+                            let id = mainObj["identifier"] as? String
+                            let counterName = mainObj["counte_name"] as? String
+                            let counter =  mainObj["counter"] as? Int
+                            let todayCount = mainObj["todayCount"] as? Int
+                            let color = mainObj["counter_color"] as? String
+                            let currentDate = mainObj["currentDate"] as? String
+                            total = total + counter!
+                            snaps = snaps + 1
+                            
+                            let my = Date()
+                            let formatterx = DateFormatter()
+                            formatterx.dateFormat = "dd-MM-yyyy"
+                            let myCurrentDate = formatterx.string(from: my)
+                            
+                            var myTodayCount = 0
+                            
+                            
+                            if currentDate == myCurrentDate{
+                                print("same")
+                                myTodayCount = todayCount ?? 0
+                                print("same",myTodayCount)
+                            }
+                            
+                            
+                            self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0 , counterColor: self.hexStringToUIColor(hex: color!),currentDate: currentDate ?? "", todayCount: todayCount ?? 0,type: "today" ))
+                            self.tableView.reloadData()
+                        }
                         
-                        
-                        self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0, counterColor: self.hexStringToUIColor(hex: color!) ))
-                        self.tableView.reloadData()
                     }
                     
                 }
+                print("XX total XX",snaps)
+                if snaps > 0 {
+                    self.totalLabel.text = "Total: \(total), Average: \(total/snaps)"
+                }
                 
+                
+                
+                
+                
+            })
+            { (error) in
+                print(error.localizedDescription)
             }
-            print("XX total XX",snaps)
-            if snaps > 0 {
-                self.totalLabel.text = "Total: \(total), Average: \(total/snaps)"
-            }
-            
-            
-            
-            
-            
-        })
-        { (error) in
-            print(error.localizedDescription)
         }
-        
         
         //        self.counters = createCounters()
         
@@ -169,6 +194,118 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
     //
     //    }
     
+    @objc func updateView()  {
+        print("segmentTab",segmentTab.selectedSegmentIndex)
+        
+        let  selectedTab = segmentTab.selectedSegmentIndex
+        
+        
+        
+        if selectedTab == 1{
+            ref.child("users").child(userID!).child("counters").observe(.value, with: { (snapshot) in
+                
+                //        self.ref.child("users").observe(.value, with: { (snapshot) in
+                var total = 0
+                var snaps = 0
+                if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
+                    self.counters.removeAll()
+                    for snap in snapShot {
+                        print("mySnap \(snap)")
+                        
+                        if let mainObj = snap.value as? [String: AnyObject]{
+                            let id = mainObj["identifier"] as? String
+                            let counterName = mainObj["counte_name"] as? String
+                            let counter = mainObj["counter"] as? Int
+                            let color = mainObj["counter_color"] as? String
+                            let currentDate = mainObj["currentDate"] as? String
+                            let todayCount = mainObj["todayCount"] as? Int
+                            total = total + counter!
+                            snaps = snaps + 1
+                            
+                            
+                            self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0, counterColor: self.hexStringToUIColor(hex: color!),currentDate: currentDate ?? "", todayCount: todayCount ?? 0 ,type: "all"))
+                            self.tableView.reloadData()
+                        }
+                        
+                    }
+                    
+                }
+                print("XX total XX",snaps)
+                if snaps > 0 {
+                    self.totalLabel.text = "Total: \(total), Average: \(total/snaps)"
+                }
+                
+                
+                
+                
+                
+            })
+            { (error) in
+                print(error.localizedDescription)
+            }
+        }else{
+            print("FUCKS")
+            ref.child("users").child(userID!).child("counters").observe(.value, with: { (snapshot) in
+                
+                //        self.ref.child("users").observe(.value, with: { (snapshot) in
+                var total = 0
+                var snaps = 0
+                if let snapShot = snapshot.children.allObjects as? [DataSnapshot]{
+                    self.counters.removeAll()
+                    for snap in snapShot {
+                        print("mySnap \(snap)")
+                        
+                        if let mainObj = snap.value as? [String: AnyObject]{
+                            let id = mainObj["identifier"] as? String
+                            let counterName = mainObj["counte_name"] as? String
+                            let counter =  mainObj["counter"] as? Int
+                            let todayCount = mainObj["todayCount"] as? Int
+                            let color = mainObj["counter_color"] as? String
+                            let currentDate = mainObj["currentDate"] as? String
+                            total = total + counter!
+                            snaps = snaps + 1
+                            
+                            let my = Date()
+                            let formatterx = DateFormatter()
+                            formatterx.dateFormat = "dd-MM-yyyy"
+                            let myCurrentDate = formatterx.string(from: my)
+                            
+                            var myTodayCount = 0
+                            
+                            
+                            if currentDate == myCurrentDate{
+                                print("same")
+                                myTodayCount = todayCount ?? 0
+                                
+                            }
+                            
+                            
+                            self.counters.append(Counter.init(id: id ?? "", counterName: counterName ?? "", count: counter ?? 0 , counterColor: self.hexStringToUIColor(hex: color!),currentDate: currentDate ?? "", todayCount: todayCount ?? 0,type: "today" ))
+                            self.tableView.reloadData()
+                        }
+                        
+                    }
+                    
+                }
+                print("XX total XX",snaps)
+                if snaps > 0 {
+                    self.totalLabel.text = "Total: \(total), Average: \(total/snaps)"
+                }
+                
+                
+                
+                
+                
+            })
+            { (error) in
+                print(error.localizedDescription)
+            }
+        }
+        
+        
+        
+    }
+    
     
     @objc func onAddCounter(){
         let vc = storyboard?.instantiateViewController(identifier: "CreateCounter") as! AddCounterViewController
@@ -184,6 +321,8 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         vc.modalPresentationStyle = .formSheet
         present(vc,animated: true)
         
+      
+        
         //          let vc = storyboard?.instantiateViewController(identifier: "CreateCounter") as! AddCounterViewController
         //        let navController = UINavigationController(rootViewController: vc) // Creating a navigation controller with VC1 at the root of the navigation stack.
         //        self.present(navController, animated:true, completion: nil)
@@ -195,7 +334,7 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         //           vc.modalPresentationStyle = .formSheet
         //           vc.title = "Create Counter"
         //
-        //           present(vc,animated: true)
+        //           present(vc,animated: true)t
     }
     
     
@@ -320,7 +459,8 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return counters.count
+        print("TABLEeeee",counters)
+        return  counters.count == nil ? 0 : counters.count 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -419,7 +559,27 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         
         dump("mycounter \(counter.id)")
         
-        let userInfoDictionary = ["counter":counter.count + 1] as [String : Any]
+        let my = Date()
+        let formatterx = DateFormatter()
+        formatterx.dateFormat = "dd-MM-yyyy"
+        let currentDate = formatterx.string(from: my)
+        
+        var myTodayCount = 0
+        
+        print("currentDate",currentDate)
+        print("counter currentDate",counter.currentDate)
+        if currentDate == counter.currentDate{
+            print("same")
+            myTodayCount = counter.todayCount + 1
+            print("same",myTodayCount)
+        }else {
+            print("else")
+            myTodayCount = 0 + 1
+        }
+        
+        print("myTodayCount",myTodayCount)
+        
+        let userInfoDictionary = ["counter":counter.count + 1,"currentDate":currentDate,"todayCount":myTodayCount] as [String : Any]
         
         self.ref.child("users").child(userID!).child("counters").child(counter.id).updateChildValues(userInfoDictionary)
         
@@ -463,6 +623,7 @@ extension HomeViewController: UITableViewDataSource,UITableViewDelegate{
         vc.name = counter.counterName
         vc.id = counter.id
         vc.count = counter.count
+        vc.todayCount = counter.todayCount
         vc.modalPresentationStyle = .formSheet
         present(vc,animated: true)
         

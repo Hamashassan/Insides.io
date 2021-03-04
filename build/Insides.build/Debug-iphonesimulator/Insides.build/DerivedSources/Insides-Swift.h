@@ -219,13 +219,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSCoder;
 
 SWIFT_CLASS("_TtC7Insides24AddCounterViewController")
-@interface AddCounterViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface AddCounterViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified collectionViewHeight;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified counterNameField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backButton;
 - (void)viewDidLoad;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)editTapped;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -423,6 +424,7 @@ SWIFT_CLASS("_TtC7Insides18HomeViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified bottomDetailView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)updateView;
 - (void)onAddCounter;
 - (IBAction)didTapButton;
 - (IBAction)onAppSettingsPress;
@@ -481,7 +483,7 @@ SWIFT_CLASS("_TtC7Insides13SceneDelegate")
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC7Insides20SignUpViewController")
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : UIViewController <GIDSignInDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameInput;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailInput;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordInput;
@@ -492,15 +494,18 @@ SWIFT_CLASS("_TtC7Insides20SignUpViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified signInLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified errorLabel;
 - (void)viewDidLoad;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)labelTapped:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)onSignUpPress;
+- (void)onGoogleSignInPress;
+- (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC7Insides14ViewController")
-@interface ViewController : UIViewController <GIDSignInDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <GIDSignInDelegate, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified signUpLabel;
@@ -511,6 +516,7 @@ SWIFT_CLASS("_TtC7Insides14ViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)onGoogleSignInPress;
 - (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
 - (void)onSignInPress;

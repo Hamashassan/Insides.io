@@ -10,8 +10,16 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
+//vc.onDelete = {
+//
+//          self.tableView.reloadData()
+//
+//      }
+
 class AppSettingsTableViewController: UITableViewController {
     
+    
+     var onDelete: ((_ id: Date) -> Void)?
     
     let userDefault = UserDefaults()
     
@@ -120,7 +128,7 @@ class AppSettingsTableViewController: UITableViewController {
                         let id = mainObj["identifier"] as? String
                         
                         
-                        let userInfoDictionary = ["counter":0] as [String : Any]
+                        let userInfoDictionary = ["counter":0,"todayCount":0] as [String : Any]
                         
                         self.ref.child("users").child(self.userID!).child("counters").child(id!).updateChildValues(userInfoDictionary)
                         

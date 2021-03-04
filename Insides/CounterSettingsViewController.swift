@@ -47,6 +47,7 @@ class CounterSettingsViewController: UITableViewController, UICollectionViewData
     var name : String = ""
     var id : String = ""
     var count: Int  = 0
+    var todayCount: Int = 0
     //    let color : UIColor
     //        let today_count : Int
     //    let weekly_count : Int
@@ -123,8 +124,10 @@ class CounterSettingsViewController: UITableViewController, UICollectionViewData
         collectionview.delegate = self
         collectionview.register(ColorsCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         collectionview.showsVerticalScrollIndicator = false
-//        collectionview.backgroundColor = UIColor.white
+       collectionview.backgroundView = nil;
+        collectionview.backgroundColor = UIColor.cyan
         
+
         
         //        self.view.addSubview(collectionview)
         
@@ -227,7 +230,7 @@ class CounterSettingsViewController: UITableViewController, UICollectionViewData
     
     func undoLastCount()  {
         
-        let userInfoDictionary = ["counter":self.count - 1] as [String : Any]
+        let userInfoDictionary = ["counter":self.count - 1,"todayCount":self.todayCount - 1] as [String : Any]
         
         self.ref.child("users").child(userID!).child("counters").child(self.id).updateChildValues(userInfoDictionary)
         
@@ -235,7 +238,7 @@ class CounterSettingsViewController: UITableViewController, UICollectionViewData
     
     func resetCount()  {
         
-        let userInfoDictionary = ["counter":0] as [String : Any]
+        let userInfoDictionary = ["counter":0,"todayCount":0] as [String : Any]
         
         self.ref.child("users").child(userID!).child("counters").child(self.id).updateChildValues(userInfoDictionary)
         

@@ -9,8 +9,9 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import GoogleSignIn
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate, GIDSignInDelegate {
     
     @IBOutlet weak var usernameInput: UITextField!
     
@@ -43,8 +44,12 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 0
         
         // focus to usernameInput
-        usernameInput.becomeFirstResponder()
+        //        usernameInput.becomeFirstResponder()
         
+        self.usernameInput.delegate = self
+        self.emailInput.delegate = self
+        self.passwordInput.delegate = self
+        self.confirmPasswordInput.delegate = self
         //
         signUpButton.addTarget(self, action: #selector(onSignUpPress), for: .touchUpInside)
         
@@ -61,8 +66,15 @@ class SignUpViewController: UIViewController {
         Util.styleTextField(passwordInput)
         Util.styleTextField(confirmPasswordInput)
         
+          googleButton.addTarget(self, action: #selector(onGoogleSignInPress), for: .touchUpInside)
+        
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+             self.view.endEditing(true)
+             return false
+         }
     
     // sign in label on press
     @objc func labelTapped(_ sender: UITapGestureRecognizer) {
@@ -105,9 +117,9 @@ class SignUpViewController: UIViewController {
                     
                     guard let userID = Auth.auth().currentUser?.uid else { return }
                     
-                  let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+                    let sharedDefaults = UserDefaults(suiteName: "group.insides.io")
                     sharedDefaults?.set(userID, forKey: "userID")
-
+                    
                     
                     let userInfoDictionary = ["username" : username,
                                               "email" : email,"couunters":[]] as [String : Any]
@@ -163,6 +175,54 @@ class SignUpViewController: UIViewController {
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
+        
+    }
+    
+    @objc func onGoogleSignInPress(){
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        // ...
+        if let error = error {
+            // ...
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        // ...
+        
+        let userId = user.userID              // For client-side use only!
+        let idToken = user.authentication.idToken // Safe to send to the server
+        let fullName = user.profile.name
+        let givenName = user.profile.givenName
+        let familyName = user.profile.familyName
+        let email = user.profile.email
+        
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                print("Login error: \(error?.localizedDescription)")
+                return
+            }else{
+                
+                guard let userID = Auth.auth().currentUser?.uid else { return }
+                
+                let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+                sharedDefaults?.set(userID, forKey: "userID")
+                
+                let userInfoDictionary = ["username" : "" ,
+                                          "email" : email ?? "","couunters":[]] as [String : Any]
+                
+                self.ref.child("users").child(userID).setValue(userInfoDictionary)
+                
+                self.transitionToHome()
+            }
+        })
+        
         
     }
     

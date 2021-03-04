@@ -11,6 +11,7 @@ provides-dynamic-lookup:
 - "exportCounter"
 - "onBackPress"
 - "onDarkThemePress"
+- "onDelete"
 - "ref"
 - "resetAllCounters"
 - "resetToLogin"
@@ -32,6 +33,7 @@ depends-top-level:
 - !private "Data"
 - !private "DataSnapshot"
 - "Database"
+- "Date"
 - !private "FloatLiteralType"
 - "IndexPath"
 - !private "Int"
@@ -53,6 +55,7 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - "UserDefaults"
 - !private "ViewController"
+- "Void"
 - !private "print"
 - !private "~="
 depends-member:
@@ -63,6 +66,7 @@ depends-member:
 - !private ["7Insides30AppSettingsTableViewControllerC", "Data"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "DataSnapshot"]
 - ["7Insides30AppSettingsTableViewControllerC", "Database"]
+- ["7Insides30AppSettingsTableViewControllerC", "Date"]
 - ["7Insides30AppSettingsTableViewControllerC", "IndexPath"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "Int"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "NSError"]
@@ -79,6 +83,7 @@ depends-member:
 - !private ["7Insides30AppSettingsTableViewControllerC", "URL"]
 - ["7Insides30AppSettingsTableViewControllerC", "UserDefaults"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "ViewController"]
+- ["7Insides30AppSettingsTableViewControllerC", "Void"]
 - ["7Insides30AppSettingsTableViewControllerC", "darkThemeSwitch"]
 - ["7Insides30AppSettingsTableViewControllerC", "deinit"]
 - ["7Insides30AppSettingsTableViewControllerC", "deleteAllCounters"]
@@ -87,6 +92,7 @@ depends-member:
 - ["7Insides30AppSettingsTableViewControllerC", "init"]
 - ["7Insides30AppSettingsTableViewControllerC", "onBackPress"]
 - ["7Insides30AppSettingsTableViewControllerC", "onDarkThemePress"]
+- ["7Insides30AppSettingsTableViewControllerC", "onDelete"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "present"]
 - !private ["7Insides30AppSettingsTableViewControllerC", "print"]
 - ["7Insides30AppSettingsTableViewControllerC", "ref"]
@@ -658,6 +664,7 @@ depends-member:
 - !private ["So8NSObjectC", "Data"]
 - !private ["So8NSObjectC", "DataSnapshot"]
 - ["So8NSObjectC", "Database"]
+- ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "IndexPath"]
 - !private ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSError"]
@@ -674,6 +681,7 @@ depends-member:
 - !private ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", "UserDefaults"]
 - !private ["So8NSObjectC", "ViewController"]
+- ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addAction"]
 - !private ["So8NSObjectC", "allObjects"]
 - ["So8NSObjectC", "auth"]
@@ -696,6 +704,7 @@ depends-member:
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - ["So8NSObjectC", "onBackPress"]
 - ["So8NSObjectC", "onDarkThemePress"]
+- ["So8NSObjectC", "onDelete"]
 - !private ["So8NSObjectC", "overrideUserInterfaceStyle"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
@@ -1032,6 +1041,7 @@ depends-member:
 - !private ["So11UIResponderC", "Data"]
 - !private ["So11UIResponderC", "DataSnapshot"]
 - ["So11UIResponderC", "Database"]
+- ["So11UIResponderC", "Date"]
 - ["So11UIResponderC", "IndexPath"]
 - !private ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSError"]
@@ -1048,6 +1058,7 @@ depends-member:
 - !private ["So11UIResponderC", "URL"]
 - ["So11UIResponderC", "UserDefaults"]
 - !private ["So11UIResponderC", "ViewController"]
+- ["So11UIResponderC", "Void"]
 - !private ["So11UIResponderC", "addAction"]
 - ["So11UIResponderC", "darkThemeSwitch"]
 - ["So11UIResponderC", "deleteAllCounters"]
@@ -1058,6 +1069,7 @@ depends-member:
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
 - ["So11UIResponderC", "onBackPress"]
 - ["So11UIResponderC", "onDarkThemePress"]
+- ["So11UIResponderC", "onDelete"]
 - !private ["So11UIResponderC", "overrideUserInterfaceStyle"]
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
@@ -1178,6 +1190,7 @@ depends-member:
 - !private ["So21UITableViewControllerC", "Data"]
 - !private ["So21UITableViewControllerC", "DataSnapshot"]
 - ["So21UITableViewControllerC", "Database"]
+- ["So21UITableViewControllerC", "Date"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - !private ["So21UITableViewControllerC", "Int"]
 - !private ["So21UITableViewControllerC", "NSError"]
@@ -1194,6 +1207,7 @@ depends-member:
 - !private ["So21UITableViewControllerC", "URL"]
 - ["So21UITableViewControllerC", "UserDefaults"]
 - !private ["So21UITableViewControllerC", "ViewController"]
+- ["So21UITableViewControllerC", "Void"]
 - ["So21UITableViewControllerC", ""]
 - ["So21UITableViewControllerC", "darkThemeSwitch"]
 - ["So21UITableViewControllerC", "deleteAllCounters"]
@@ -1202,6 +1216,7 @@ depends-member:
 - ["So21UITableViewControllerC", "init"]
 - ["So21UITableViewControllerC", "onBackPress"]
 - ["So21UITableViewControllerC", "onDarkThemePress"]
+- ["So21UITableViewControllerC", "onDelete"]
 - !private ["So21UITableViewControllerC", "present"]
 - !private ["So21UITableViewControllerC", "print"]
 - ["So21UITableViewControllerC", "ref"]
@@ -1352,6 +1367,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "Data"]
 - !private ["So16UIViewControllerC", "DataSnapshot"]
 - ["So16UIViewControllerC", "Database"]
+- ["So16UIViewControllerC", "Date"]
 - ["So16UIViewControllerC", "IndexPath"]
 - !private ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSError"]
@@ -1368,6 +1384,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", "UserDefaults"]
 - !private ["So16UIViewControllerC", "ViewController"]
+- ["So16UIViewControllerC", "Void"]
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "darkThemeSwitch"]
 - ["So16UIViewControllerC", "deleteAllCounters"]
@@ -1376,6 +1393,7 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "onBackPress"]
 - ["So16UIViewControllerC", "onDarkThemePress"]
+- ["So16UIViewControllerC", "onDelete"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "ref"]
@@ -1706,12 +1724,13 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Intents.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
@@ -1786,7 +1805,6 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+Consent.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
@@ -1806,8 +1824,9 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Intents.framework/Headers/Intents.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e7e646a4f2406d1d81393030a9f63fa4"
+interface-hash: "7a5fce80d1dba78ee4f7368a43d6e17c"

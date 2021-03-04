@@ -13,12 +13,15 @@ provides-dynamic-lookup:
 - "counterSettingButton"
 - "setCounter"
 depends-top-level:
+- !private "=="
 - "AssignmentPrecedence"
 - "Counter"
 - "CounterCell"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "String"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
 - "UIButton"
 - !private "UIEdgeInsets"
 - "UILabel"
@@ -58,6 +61,8 @@ depends-member:
 - !private ["7Insides7CounterC", "count"]
 - !private ["7Insides7CounterC", "counterColor"]
 - !private ["7Insides7CounterC", "counterName"]
+- !private ["7Insides7CounterC", "todayCount"]
+- !private ["7Insides7CounterC", "type"]
 - ["7Insides11CounterCellC", "Counter"]
 - !private ["7Insides11CounterCellC", "String"]
 - ["7Insides11CounterCellC", "UIButton"]
@@ -88,6 +93,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "layoutMargins"]
 - !private ["s28CustomDebugStringConvertibleP", "setTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "todayCount"]
+- !private ["s28CustomDebugStringConvertibleP", "type"]
 - !private ["s17CustomReflectableP", "backgroundColor"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "counterColor"]
@@ -96,6 +103,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "layer"]
 - !private ["s17CustomReflectableP", "setTitle"]
 - !private ["s17CustomReflectableP", "text"]
+- !private ["s17CustomReflectableP", "todayCount"]
+- !private ["s17CustomReflectableP", "type"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIEdgeInsets"]
 - ["s23CustomStringConvertibleP", ""]
@@ -118,6 +127,8 @@ depends-member:
 - !private ["Se", "layer"]
 - !private ["Se", "setTitle"]
 - !private ["Se", "text"]
+- !private ["Se", "todayCount"]
+- !private ["Se", "type"]
 - !private ["SE", "backgroundColor"]
 - !private ["SE", "count"]
 - !private ["SE", "counterColor"]
@@ -126,6 +137,8 @@ depends-member:
 - !private ["SE", "layer"]
 - !private ["SE", "setTitle"]
 - !private ["SE", "text"]
+- !private ["SE", "todayCount"]
+- !private ["SE", "type"]
 - !private ["SQ", "String"]
 - !private ["SQ", "UIEdgeInsets"]
 - ["SQ", ""]
@@ -143,6 +156,8 @@ depends-member:
 - !private ["SQ", "normal"]
 - !private ["SQ", "setTitle"]
 - !private ["SQ", "text"]
+- !private ["SQ", "todayCount"]
+- !private ["SQ", "type"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
@@ -152,6 +167,8 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "layer"]
 - !private ["s23ExpressibleByNilLiteralP", "setTitle"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s23ExpressibleByNilLiteralP", "todayCount"]
+- !private ["s23ExpressibleByNilLiteralP", "type"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -171,6 +188,8 @@ depends-member:
 - !private ["SH", "layoutMargins"]
 - !private ["SH", "setTitle"]
 - !private ["SH", "text"]
+- !private ["SH", "todayCount"]
+- !private ["SH", "type"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "String"]
@@ -226,6 +245,8 @@ depends-member:
 - !private ["Sq", "layer"]
 - !private ["Sq", "setTitle"]
 - !private ["Sq", "text"]
+- !private ["Sq", "todayCount"]
+- !private ["Sq", "type"]
 - !private ["Sm", "init"]
 - !private ["SY", "normal"]
 - !private ["ST", "init"]
@@ -501,6 +522,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "layer"]
 - !private ["s21_ObjectiveCBridgeableP", "setTitle"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "todayCount"]
+- !private ["s21_ObjectiveCBridgeableP", "type"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "String"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIEdgeInsets"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
@@ -598,12 +621,13 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Intents.swiftmodule/x86_64.swiftmodule"
+- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/Charts/Charts.framework/Modules/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
@@ -678,7 +702,6 @@ depends-external:
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+Consent.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/hamashassan/Desktop/Upwork Projects/Insides/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/Pods/Firebase/CoreOnly/Sources/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/hamashassan/Desktop/Upwork Projects/Insidess/build/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
@@ -698,6 +721,7 @@ depends-external:
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/Intents.framework/Headers/Intents.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Users/hamashassan/Downloads/Xcode 2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.6.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"

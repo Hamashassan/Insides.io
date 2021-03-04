@@ -12,7 +12,7 @@ import FirebaseDatabase
 import GoogleSignIn
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GIDSignInDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GIDSignInDelegate, UITextFieldDelegate {
     
     
     
@@ -59,11 +59,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.setupLabelTap()
         
-        usernameField.becomeFirstResponder()
+//        usernameField.becomeFirstResponder()
         
         errorLabel.alpha = 0
         
+        self.usernameField.delegate = self
+        self.passwordField.delegate = self
         
+//        usernameField.addTarget(self, action: "textFieldDidChange:", for: UIControl.Event.editingChanged)
+//        
         
         // Social Button Shadow
         Util.styleSocialButton(appleButton)
@@ -82,6 +86,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+          self.view.endEditing(true)
+          return false
+      }
+    
+//    func textFieldDidChange(textField: UITextField){
+//
+//        let text = textField.text
+//
+//        if text?.utf16.count ?? 0 >= 1{
+//            passwordField.becomeFirstResponder()
+//        }else{
+//
+//        }
+//    }
     
     @objc func onGoogleSignInPress(){
         GIDSignIn.sharedInstance().delegate = self

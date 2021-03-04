@@ -11,7 +11,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import Intents
 
-class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UITextFieldDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -50,7 +50,10 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         ref = Database.database().reference()
         
-        counterNameField.becomeFirstResponder()
+//        counterNameField.becomeFirstResponder()
+        
+        self.counterNameField.delegate = self
+        
         
         createButton.addTarget(self, action: #selector(onCreatePress), for: .touchUpInside)
         
@@ -79,6 +82,11 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         // Do any additional setup after loading the view.
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+             self.view.endEditing(true)
+             return false
+         }
     
     //    override func viewDidLayoutSubviews() {
     //        super.viewDidLayoutSubviews()
@@ -158,17 +166,26 @@ class AddCounterViewController: UIViewController,UICollectionViewDataSource,UICo
         
         guard let userID = Auth.auth().currentUser?.uid else { return }
         
-//        let userDefaults = UserDefaults.standard
-//
-//        userDefaults.set(userID, forKey: "userId")
+        //        let userDefaults = UserDefaults.standard
+        //
+        //        userDefaults.set(userID, forKey: "userId")
         
-        let sharedDefaults = UserDefaults(suiteName: "group.com.insides.io")
+         let sharedDefaults = UserDefaults(suiteName: "group.insides.io")
         sharedDefaults?.set(userID, forKey: "userID")
         
+        
+        let fyf = sharedDefaults?.string(forKey: "userID")
+        print("userID123",fyf  )
         let counterName = counterNameField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        let parentDate = Date()
+        let formatter1 = DateFormatter()
+        formatter1.dateFormat = "dd-MM-yyyy"
+        let currentDate = formatter1.string(from: parentDate)
+        
+        
         let userInfoDictionary = ["identifier":identifier,"counte_name" : counterName,
-                                  "counter_color" : self.selectedColor,"counter":0] as [String : Any]
+                                  "counter_color" : self.selectedColor,"counter":0,"todayCounter":0,"currentDate":currentDate] as [String : Any]
         
         self.ref.child("users").child(userID).child("counters").child(identifier).setValue(userInfoDictionary)
         
